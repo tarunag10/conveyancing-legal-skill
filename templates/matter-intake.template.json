@@ -1,0 +1,13 @@
+{
+  "matter_id": "REPLACE_WITH_PSEUDONYMOUS_ID",
+  "jurisdiction": "England",
+  "transaction_type": "registered-freehold-purchase",
+  "acting_roles": ["buyer_conveyancer"],
+  "documents": [],
+  "charges": [],
+  "restrictions": [],
+  "access": {},
+  "lender_requirements": [],
+  "building_safety": {},
+  "missing_documents": []
+}

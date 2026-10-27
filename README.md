@@ -14,17 +14,6 @@ A portable, evidence-gated conveyancing knowledge and workflow package for the l
 - Python standard-library completion statement, deadline and restricted tax calculation functions; optional PDF/DOCX extraction and evidence-controlled DOCX changes with exact logs.
 - GitHub Actions unit tests and a **proposed** weekly read-only source watch. Workflow jobs do not run until the user enables them in their GitHub repository. A source change always enters a human review queue.
 
-## Prerequisites
-
-- Python 3.10 or newer and `pip`. Git is needed to clone the repository; a ZIP download also works.
-- The core CLI uses Python's standard library and needs no API keys or external services. Internet access is needed to install packages and only when you explicitly check current public sources.
-- PDF/DOCX extraction requires the optional `documents` extra (`pypdf` and `python-docx`); install it with the command below.
-- Use this as supervised support for qualified conveyancing practitioners. Check current law, lender instructions and firm requirements at the point of use.
-
-## Use with a coding agent
-
-See [USING_WITH_CODING_AGENTS.md](USING_WITH_CODING_AGENTS.md) for access steps and a copy-paste task prompt. The guide explains the written-permission requirement and safeguards for legal research and confidential matter data.
-
 ## Quick start (Python 3.10+)
 
 ```bash
@@ -68,12 +57,13 @@ The **authoritative skill is the root `SKILL.md`**. Platform `SKILL.md` files ar
 ## Work on a matter
 
 1. Create a client-authorised confidential workspace outside a public repository. Never add live client documents, IDs, bank statements, matter credentials, lender offers or privileged advice to Git, CI logs or third-party AI tools without approved firm policy.
-2. Select one of 28 profiles: `conveyancing workflow --list`. Collect matter facts and documents; the default status for every stage is **outstanding**.
-3. Extract uploaded material only when local policy permits; compare the actual scanned original, page, plan and seal with the text. OCR is not automatic.
-4. Put structured facts (with original evidence refs) into JSON like `examples/matter-input.json`; run `conveyancing review ...` for a list of unresolved issues. An empty blocker list **never** equals clearance to exchange or complete.
-5. Check up-to-date legislation, HMLR forms, HMRC/WRA tax guidance, firm policies, lender offer and the actual applicable UK Finance Part 1/2/3 (or bespoke) instructions. Raise and record enquiries.
-6. Draft correspondence using the original templates at `templates/`, not the statutory form facsimiles. Convert original reports to editable Word with `conveyancing to-docx INPUT.md OUTPUT.docx` (requires `python-docx`). Use `fill-docx` **only** for named evidence-supported `{{PLACEHOLDER}}` values in an authorised template; see `examples/field-values.json`.
-7. Supervised conveyancer checks changes, confirms no unresolved registration/completion blockers, then personally authorises any filing or communication through their approved tools. **The skill never executes those actions.**
+2. Start from [`templates/matter-intake.template.json`](templates/matter-intake.template.json) in that private workspace. Use a pseudonymous matter ID, give each document a stable ID, and cite the actual document plus page/clause for every recorded fact. The template is only an intake aid; it contains no client data.
+3. Select one of 28 profiles: `conveyancing workflow --list`. Collect matter facts and documents; the default status for every stage is **outstanding**. See [`docs/PRACTICAL_MATTER_WORKFLOW.md`](docs/PRACTICAL_MATTER_WORKFLOW.md) for a step-by-step example.
+4. Extract documents only when firm policy permits; compare the original, page, plan and execution with extracted text. OCR is not automatic. Record each applicable lender condition in [`templates/LENDER_CONDITION_CHECKLIST.md`](templates/LENDER_CONDITION_CHECKLIST.md), against the actual current offer/instructions.
+5. Put structured facts and source locators into the intake JSON; run `conveyancing review /private/approved/path/matter.json` for unresolved issues. Findings carry document ID/page references when supplied. An empty blocker list **never** equals clearance to exchange or complete.
+6. Check up-to-date legislation, HMLR forms, HMRC/WRA tax guidance, firm policies, lender offer and the actual applicable UK Finance Part 1/2/3 (or bespoke) instructions. Raise and record enquiries.
+7. Draft correspondence using the original templates at `templates/`, not the statutory form facsimiles. Convert original reports to editable Word with `conveyancing to-docx INPUT.md OUTPUT.docx` (requires `python-docx`). Use `fill-docx` **only** for named evidence-supported `{{PLACEHOLDER}}` values in an authorised template; see `examples/field-values.json`.
+8. A supervised conveyancer checks findings and drafts, confirms any unresolved registration/completion blockers, and personally authorises filing or communication through approved tools. **The skill never executes those actions.**
 
 ## Repository layout
 
@@ -110,7 +100,7 @@ Read `docs/SOURCE_VERIFICATION_REPORT.md`, `docs/VALIDATION_AND_LIMITATIONS.md`,
 
 ## Licence and confidentiality
 
-No licence is granted automatically. Any use, including non-commercial use, requires prior written permission from the copyright holder; commercial use requires separate prior written permission. No proprietary Law Society forms, premium Handbook content, lender internal terms or third-party confidential legal pack is included or sublicensed. Official materials remain under their publisher's rights.
+No licence is granted automatically. Any use, including internal evaluation or non-commercial research, requires prior written permission from the copyright holder. Using the tool on fee-earning client matters is likely commercial use and requires separate prior written permission. See [`docs/USE_PERMISSION.md`](docs/USE_PERMISSION.md) for a permission request checklist. No proprietary Law Society forms, premium Handbook content, lender internal terms or third-party confidential legal pack is included or sublicensed. Official materials remain under their publisher's rights.
 
 ### Extract candidate lender conditions and compare documents
 

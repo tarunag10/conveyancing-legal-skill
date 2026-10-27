@@ -4,9 +4,15 @@
   "documents": [
     {
       "document_id": "OC1-A",
+      "document_type": "official-copy-register",
       "title_number": "AB123456",
       "property_address": "1 Example Street, London",
       "source": "fictional extract page 1"
+    },
+    {
+      "document_id": "seller-email-demo",
+      "document_type": "seller-email",
+      "source": "fictional seller email, paragraph 3"
     }
   ],
   "charges": [
@@ -14,7 +20,9 @@
       "id": "mortgage dated 01.01.1999",
       "status": "vacated",
       "evidence_type": "email",
-      "evidence_ref": "seller-email-demo paragraph 3"
+      "evidence_ref": "seller says charge was vacated",
+      "evidence_document_id": "seller-email-demo",
+      "evidence_locator": "paragraph 3"
     }
   ],
   "restrictions": [
@@ -22,7 +30,9 @@
       "required": true,
       "wording": "No disposition without certificate",
       "status": "unknown",
-      "evidence_ref": "OC1-A register B3"
+      "evidence_ref": "restriction entry",
+      "evidence_document_id": "OC1-A",
+      "evidence_locator": "Proprietorship Register, entry B3"
     }
   ],
   "lender_requirements": [
@@ -31,7 +41,8 @@
       "text": "Proof of redemption in agreed form",
       "status": "outstanding",
       "blocking": true,
-      "source_ref": "lender-example schedule 1"
+      "source_ref": "fictional lender instruction, schedule 1",
+      "evidence_ref": "No evidence supplied"
     }
   ]
 }

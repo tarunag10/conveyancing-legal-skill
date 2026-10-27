@@ -132,8 +132,13 @@ def completion(statement:dict):
 # Detect issues from structured, explicit case assertions: never claim to have parsed an unsupplied deed.
 def review_matter(m:dict):
     issues=[]
-    def add(code,levels,fact,missing,action,source=None,blocker=False):
-        issues.append({'code':code,'risk_levels':levels,'recorded_fact':fact,'missing_evidence':missing,'next_action':action,'evidence_ref':source or 'No satisfactory primary evidence supplied','completion_blocker':blocker})
+    def add(code,levels,fact,missing,action,source=None,blocker=False,document_id=None,locator=None,requirement_ref=None):
+        issue={'code':code,'risk_levels':levels,'recorded_fact':fact,'missing_evidence':missing,'next_action':action,'evidence_ref':source or 'No satisfactory primary evidence supplied','completion_blocker':blocker}
+        if document_id or locator:
+            issue['evidence_location']={'document_id':document_id,'locator':locator}
+        if requirement_ref:
+            issue['requirement_source_ref']=requirement_ref
+        issues.append(issue)
     docs=m.get('documents',[])
     titles={d.get('title_number') for d in docs if d.get('title_number')}
     addresses={re.sub(r'\s+',' ',d.get('property_address','').strip()).lower() for d in docs if d.get('property_address')}
@@ -145,20 +150,21 @@ def review_matter(m:dict):
         state=c.get('status','unknown').lower()
         evidence=c.get('evidence_type','').lower()
         if state in ('vacated','discharged','redeemed','released') and (evidence not in ('registered_discharge','executed_release','accepted_e-ds1','accepted_eds1','official_register_updated','acceptable_endorsed_receipt') or not c.get('evidence_ref')):
-            add('UNPROVEN_CHARGE_DISCHARGE',['R2','R3','R4'],f'Claimed {state} for charge {c.get("id","unknown")}','Satisfactory executed/recorded discharge and full scope of release','Obtain discharge evidence and verify registration / lender acceptance',c.get('evidence_ref'),blocker=True)
+            add('UNPROVEN_CHARGE_DISCHARGE',['R2','R3','R4'],f'Claimed {state} for charge {c.get("id","unknown")}','Satisfactory executed/recorded discharge and full scope of release','Obtain discharge evidence and verify registration / lender acceptance',c.get('evidence_ref'),blocker=True,document_id=c.get('evidence_document_id'),locator=c.get('evidence_locator'))
         elif state in ('outstanding','unknown'):
-            add('OUTSTANDING_CHARGE',['R2','R3','R4'],f'Charge {c.get("id","unknown")} not proven discharged','Redemption and release mechanism','Seek documentary release and assess lender priority',c.get('evidence_ref'),blocker=True)
+            add('OUTSTANDING_CHARGE',['R2','R3','R4'],f'Charge {c.get("id","unknown")} not proven discharged','Redemption and release mechanism','Seek documentary release and assess lender priority',c.get('evidence_ref'),blocker=True,document_id=c.get('evidence_document_id'),locator=c.get('evidence_locator'))
     for r in m.get('restrictions',[]):
         if r.get('required') and (r.get('status') not in ('verified','authorised_waiver') or not r.get('evidence_ref') or not r.get('checked_by_human')):
-            add('UNSATISFIED_RESTRICTION',['R2','R4'],r.get('wording','Restriction recorded'),'Correct certificate/consent or registrar-acceptable removal','Request evidence satisfying the exact restriction',r.get('evidence_ref'),blocker=True)
+            add('UNSATISFIED_RESTRICTION',['R2','R4'],r.get('wording','Restriction recorded'),'Correct certificate/consent or registrar-acceptable removal','Request evidence satisfying the exact restriction',r.get('evidence_ref'),blocker=True,document_id=r.get('evidence_document_id'),locator=r.get('evidence_locator'))
     access=m.get('access',{})
     if access.get('public_highway_claimed') and not (access.get('official_highways_confirmation') and access.get('evidence_ref') and access.get('checked_by_human')):
-        add('HIGHWAY_STATUS_UNVERIFIED',['R1','R3'],'Property stated to abut or have access to a public highway','Highway authority confirmation and legal access route','Verify adoption/public highway extent and deed rights',access.get('evidence_ref'),blocker=bool(access.get('critical_to_lender',False)))
+        add('HIGHWAY_STATUS_UNVERIFIED',['R1','R3'],'Property stated to abut or have access to a public highway','Highway authority confirmation and legal access route','Verify adoption/public highway extent and deed rights',access.get('evidence_ref'),blocker=bool(access.get('critical_to_lender',False)),document_id=access.get('evidence_document_id'),locator=access.get('evidence_locator'))
     for x in m.get('lender_requirements',[]):
         if (x.get('status') not in ('verified','waived_by_lender','not_applicable') or not x.get('source_ref') or not x.get('evidence_ref') or not x.get('checked_by_human')):
-            add('LENDER_CONDITION_OPEN',['R3','R4'] if x.get('blocking') else ['R1','R3'],f'Lender requirement {x.get("id","unknown")}: {x.get("text","not transcribed")}','Evidence or written lender waiver','Obtain and verify precisely required document/approval',x.get('source_ref'),blocker=bool(x.get('blocking')))
+            add('LENDER_CONDITION_OPEN',['R3','R4'] if x.get('blocking') else ['R1','R3'],f'Lender requirement {x.get("id","unknown")}: {x.get("text","not transcribed")}','Evidence or written lender waiver','Obtain and verify precisely required document/approval',x.get('evidence_ref'),blocker=bool(x.get('blocking')),document_id=x.get('evidence_document_id'),locator=x.get('evidence_locator'),requirement_ref=x.get('source_ref'))
     if m.get('building_safety',{}).get('potentially_applicable') and not m.get('building_safety',{}).get('documented_assessment'):
         add('BUILDING_SAFETY_UNASSESSED',['R2','R3'],'Building Safety Act protections may apply (not yet evidenced)','Building and lease status, landlord/leaseholder certificates as applicable','Evaluate England-specific rules and lender evidence',blocker=True)
     for req in m.get('missing_documents',[]):
         add('MISSING_DOCUMENT',['R1'],f'Missing: {req}','Required document','Obtain and assess before sign-off')
-    return {'matter_id':m.get('matter_id','UNSPECIFIED'),'jurisdiction':m.get('jurisdiction','UNKNOWN'),'observed_document_count':len(docs),'issues':issues,'completion_blockers':[i['code'] for i in issues if i['completion_blocker']],'completion_readiness':'NOT ASSESSED / NO AUTOMATED SIGN-OFF','notices':['Findings use only structured facts provided to the CLI; no underlying signatures or legal instruments authenticated.','Underlying lender and statutory source instructions need current use-point verification.']}
+    doc_register=[{'document_id':d.get('document_id'),'document_type':d.get('document_type')} for d in docs]
+    return {'matter_id':m.get('matter_id','UNSPECIFIED'),'jurisdiction':m.get('jurisdiction','UNKNOWN'),'transaction_type':m.get('transaction_type'),'observed_document_count':len(docs),'document_register':doc_register,'issues':issues,'completion_blockers':[i['code'] for i in issues if i['completion_blocker']],'completion_readiness':'NOT ASSESSED / NO AUTOMATED SIGN-OFF','notices':['Findings use only structured facts provided to the CLI; no underlying signatures or legal instruments authenticated.','Evidence locations are user-entered references, not verified citations; check every reference against the original.','Underlying lender and statutory source instructions need current use-point verification.']}
