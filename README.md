@@ -21,6 +21,10 @@ A portable, evidence-gated conveyancing knowledge and workflow package for the l
 - PDF/DOCX extraction requires the optional `documents` extra (`pypdf` and `python-docx`); install it with the command below.
 - Use this as supervised support for qualified conveyancing practitioners. Check current law, lender instructions and firm requirements at the point of use.
 
+## Use with a coding agent
+
+See [USING_WITH_CODING_AGENTS.md](USING_WITH_CODING_AGENTS.md) for access steps and a copy-paste task prompt. The guide explains the written-permission requirement and safeguards for legal research and confidential matter data.
+
 ## Quick start (Python 3.10+)
 
 ```bash
