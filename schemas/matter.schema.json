@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ew-conveyancing/matter.schema.json",
+  "title": "Unverified structured conveyancing matter observations",
+  "description": "Schema only validates shapes. Any statement of discharge, satisfaction or highway adoption needs documentary source and independent solicitor assessment.",
+  "type": "object",
+  "required": ["matter_id", "jurisdiction", "documents"],
+  "properties": {
+    "matter_id": {"type": "string", "minLength": 1},
+    "jurisdiction": {"enum": ["England", "Wales"]},
+    "documents": {"type": "array", "items": {"type": "object", "required": ["document_id"], "properties": {"document_id": {"type": "string"},"title_number": {"type": "string"}, "property_address": {"type": "string"},"source": {"type": "string"}}}},
+    "multiple_titles_explained": {"type": "boolean"},
+    "charges": {"type": "array", "items": {"type": "object", "required": ["id", "status"],"properties": {"id": {"type": "string"},"status": {"enum": ["vacated", "discharged", "released", "redeemed", "outstanding", "unknown"]}, "evidence_type": {"type": "string"},"evidence_ref": {"type": "string"}}}},
+    "restrictions": {"type": "array", "items": {"type": "object","properties": {"required": {"type": "boolean"}, "wording": {"type": "string"},"status": {"type": "string"},"evidence_ref": {"type": "string"},"checked_by_human": {"type": "boolean"}}}},
+    "access": {"type": "object", "properties": {"public_highway_claimed": {"type": "boolean"},"official_highways_confirmation": {"type": "boolean"},"critical_to_lender": {"type": "boolean"},"evidence_ref": {"type": "string"},"checked_by_human": {"type": "boolean"}}},
+    "lender_requirements": {"type": "array", "items": {"type": "object","required": ["id", "status"],"properties": {"id": {"type": "string"},"text": {"type": "string"},"source_ref": {"type": "string"},"evidence_ref": {"type": "string"},"status": {"type": "string"},"checked_by_human": {"type": "boolean"},"blocking": {"type": "boolean"}}}},
+    "building_safety": {"type": "object", "properties": {"potentially_applicable": {"type": "boolean"},"documented_assessment": {"type": "boolean"}}},
+    "missing_documents": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

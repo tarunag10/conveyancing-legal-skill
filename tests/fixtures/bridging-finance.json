@@ -1,0 +1,23 @@
+{
+  "matter_id": "bridging-finance",
+  "test_case_description": "Bridging loan day-one requirement schedule unconfirmed",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "bridging-finance-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [
+    {
+      "id": "BR-01",
+      "text": "Lender-approved property insurance",
+      "status": "awaiting",
+      "blocking": true,
+      "source_ref": "fictional special conditions §8"
+    }
+  ]
+}

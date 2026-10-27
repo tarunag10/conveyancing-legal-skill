@@ -1,0 +1,28 @@
+{
+  "matter_id": "historic-charge",
+  "jurisdiction": "England",
+  "observed_document_count": 1,
+  "issues": [
+    {
+      "code": "UNPROVEN_CHARGE_DISCHARGE",
+      "risk_levels": [
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "recorded_fact": "Claimed vacated for charge 22.01.1976 further charge",
+      "missing_evidence": "Satisfactory executed/recorded discharge and full scope of release",
+      "next_action": "Obtain discharge evidence and verify registration / lender acceptance",
+      "evidence_ref": "fictional seller email §4",
+      "completion_blocker": true
+    }
+  ],
+  "completion_blockers": [
+    "UNPROVEN_CHARGE_DISCHARGE"
+  ],
+  "completion_readiness": "NOT ASSESSED / NO AUTOMATED SIGN-OFF",
+  "notices": [
+    "Findings use only structured facts provided to the CLI; no underlying signatures or legal instruments authenticated.",
+    "Underlying lender and statutory source instructions need current use-point verification."
+  ]
+}

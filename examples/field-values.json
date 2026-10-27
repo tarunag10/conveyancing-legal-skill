@@ -1,0 +1,14 @@
+{
+  "values": {
+    "PROPERTY_ADDRESS": "1 Example Road, Test Town",
+    "TITLE_NUMBER": "XX123456"
+  },
+  "allowed_fields": [
+    "PROPERTY_ADDRESS",
+    "TITLE_NUMBER"
+  ],
+  "source_refs": {
+    "PROPERTY_ADDRESS": "fictional register OC1-A page 1",
+    "TITLE_NUMBER": "fictional official copy OC1-A heading"
+  }
+}

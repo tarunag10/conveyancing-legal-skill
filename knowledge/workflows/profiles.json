@@ -1,0 +1,684 @@
+[
+  {
+    "id": "registered-freehold-purchase",
+    "title": "Registered Freehold Purchase",
+    "roles": "Buyer; optional buyer+lender",
+    "module": "title",
+    "scope": "Investigate freehold register, filed deeds, plan, restrictions, charges and rights; physical extent/roads",
+    "priority_documents": [
+      "OC1/OC2",
+      "seller contract and TA6",
+      "enquiries and searches",
+      "TR1",
+      "AP1"
+    ],
+    "mandatory_variation_tasks": [
+      "Prove title and right to buy",
+      "Check covenants affecting intended use",
+      "Resolve discharge and registration restrictions"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "registered-freehold-sale",
+    "title": "Registered Freehold Sale",
+    "roles": "Seller",
+    "module": "title",
+    "scope": "Prove ability to convey full/limited guarantee as agreed and discharge securities at completion",
+    "priority_documents": [
+      "OC1",
+      "TA6/TA10",
+      "redemption statement",
+      "TR1",
+      "TA13"
+    ],
+    "mandatory_variation_tasks": [
+      "Resolve title impediments and mortgage payoff",
+      "Accurately respond to enquiries",
+      "Verify undertakings and completion statement"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "leasehold-purchase",
+    "title": "Leasehold Purchase",
+    "roles": "Buyer and possibly lender",
+    "module": "leasehold",
+    "scope": "Lease term, variation, ground rent, service charge arrears, LPE1, management and restriction consent",
+    "priority_documents": [
+      "lease and deeds",
+      "TA6/TA7",
+      "LPE1 pack",
+      "insurance schedule",
+      "landlord certificate if relevant"
+    ],
+    "mandatory_variation_tasks": [
+      "Evaluate alienation and assignment/registration fees",
+      "Assess ground rent and forfeiture",
+      "Obtain required consent/certificate"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "leasehold-sale",
+    "title": "Leasehold Sale",
+    "roles": "Seller",
+    "module": "leasehold",
+    "scope": "Supply correct management information, obtain landlord replies, resolve debts and notice requirements",
+    "priority_documents": [
+      "TA6/TA7",
+      "LPE1",
+      "lease",
+      "statement of account"
+    ],
+    "mandatory_variation_tasks": [
+      "Identify anticipated apportionments and retention",
+      "Check sale consent and landlord notice",
+      "Review licence/certificate condition"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "new-build-purchase",
+    "title": "New Build Purchase",
+    "roles": "Buyer and possible lender",
+    "module": "development",
+    "scope": "Plot layout/estate roads, adoption, building regulations, warranty, developer insolvency exposure and longstop",
+    "priority_documents": [
+      "plot plan",
+      "planning approvals",
+      "section 38/104 agreements",
+      "warranty",
+      "draft transfer/lease"
+    ],
+    "mandatory_variation_tasks": [
+      "Review incentives and reservation fee",
+      "Check infrastructure provision and access",
+      "Assess deposit protection and completion notice"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "auction-purchase",
+    "title": "Auction Purchase",
+    "roles": "Auction buyer; lender if appointed",
+    "module": "auctions",
+    "scope": "Auction contract usually binds on fall of hammer; special conditions may shift costs and default risks",
+    "priority_documents": [
+      "auction conditions",
+      "legal pack",
+      "completion notice",
+      "funding letter"
+    ],
+    "mandatory_variation_tasks": [
+      "Calculate contractual completion date and interest precisely",
+      "Reconcile auction fees and buyer premium",
+      "Flag no mortgage contingency unless inserted"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "auction-sale",
+    "title": "Auction Sale",
+    "roles": "Auction seller",
+    "module": "auctions",
+    "scope": "Prepare reliable legal pack, correct special conditions and discharge arrangements",
+    "priority_documents": [
+      "special conditions",
+      "register/deeds",
+      "tenancy schedules",
+      "seller replies"
+    ],
+    "mandatory_variation_tasks": [
+      "Check guarantee variation terms and vacant possession",
+      "Disclose auction fees and completion conditions",
+      "Plan discharge and title evidence"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "unregistered-purchase",
+    "title": "Unregistered Purchase",
+    "roles": "Buyer; may represent lender",
+    "module": "title-unregistered",
+    "scope": "Examine sound root and every subsequent deed, documentary chain of ownership and historic charges",
+    "priority_documents": [
+      "root conveyance",
+      "epitome",
+      "K15 searches",
+      "SIM search",
+      "FR1/DL"
+    ],
+    "mandatory_variation_tasks": [
+      "Trace parties, consideration and every charge",
+      "Distinguish purported vacatur from release",
+      "Lodge correct first registration evidence"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "first-registration",
+    "title": "First Registration",
+    "roles": "Owner/borrower",
+    "module": "title-unregistered",
+    "scope": "Identify voluntary or compulsory first registration and adequate class of title",
+    "priority_documents": [
+      "FR1",
+      "DL",
+      "original title deeds",
+      "searches",
+      "title plan"
+    ],
+    "mandatory_variation_tasks": [
+      "Check registration trigger and time limit",
+      "Construct full epitome and search chain",
+      "Confirm supporting originals and DL duplication"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "remortgage",
+    "title": "Remortgage",
+    "roles": "Borrower and lender where instructed",
+    "module": "lenders",
+    "scope": "Confirm existing security, redemption and new lender registration priority",
+    "priority_documents": [
+      "mortgage offer",
+      "redemption statement",
+      "DS1/e-DS1",
+      "CH1 or lender deed",
+      "AP1"
+    ],
+    "mandatory_variation_tasks": [
+      "Validate redemption completion mechanism",
+      "Check all-monies/further security",
+      "Confirm priority and security registration"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "bridging-finance",
+    "title": "Bridging Finance",
+    "roles": "Borrower/lender per retainer",
+    "module": "lenders",
+    "scope": "Check charge ranking, short completion and bespoke conditions; distinguish solicitor-client duties",
+    "priority_documents": [
+      "facility agreement",
+      "lender letter",
+      "debenture/charges",
+      "guarantee and ILA docs",
+      "valuation"
+    ],
+    "mandatory_variation_tasks": [
+      "Determine first/second charge and any deed of priority",
+      "Review exit plan and maturity/defaults",
+      "Resolve any independent advice/report-on-title condition"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "buy-to-let",
+    "title": "Buy To Let",
+    "roles": "Buyer/borrower",
+    "module": "lenders",
+    "scope": "Assess lender occupation/tenancy, licensing, minimum tenancy terms and rent schedule",
+    "priority_documents": [
+      "tenancy or proposed form",
+      "offer",
+      "local licensing",
+      "buildings insurance"
+    ],
+    "mandatory_variation_tasks": [
+      "Confirm tenant/vacant possession instructions",
+      "Check lender letting provisions",
+      "Resolve HMO/landlord compliance if applicable"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "company-purchase",
+    "title": "Company Purchase",
+    "roles": "Corporate buyer/borrower",
+    "module": "lenders",
+    "scope": "Check authority, directors, execution, registration of corporate security and UK/overseas status",
+    "priority_documents": [
+      "Companies House data",
+      "board minutes",
+      "MR01",
+      "security documents",
+      "offer"
+    ],
+    "mandatory_variation_tasks": [
+      "Verify borrower's legal existence and resolutions",
+      "Track MR01 21-day clock if applicable",
+      "Check corporate SDLT and VAT analysis"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "overseas-entity",
+    "title": "Overseas Entity",
+    "roles": "Overseas purchaser/seller",
+    "module": "development",
+    "scope": "Check Register of Overseas Entities and restrictions, signatory law and UK land registration",
+    "priority_documents": [
+      "overseas entity ID",
+      "ownership structure",
+      "constitutional proof",
+      "register"
+    ],
+    "mandatory_variation_tasks": [
+      "Review PG78 and statutory exceptions",
+      "Validate foreign execution evidence",
+      "Check register restrictions and source of funds"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "transfer-of-equity",
+    "title": "Transfer Of Equity",
+    "roles": "Transfer parties and lender",
+    "module": "title",
+    "scope": "Check mortgage consent/release, beneficial shares, undervalue, tax and ILA if appropriate",
+    "priority_documents": [
+      "TR1",
+      "offer/consent",
+      "declaration of trust",
+      "SDLT/LTT review"
+    ],
+    "mandatory_variation_tasks": [
+      "Determine whether an existing charge remains",
+      "Check insolvency/undervalue and third-party consent",
+      "Ensure executed trust arrangements supported"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "transfer-of-part",
+    "title": "Transfer Of Part",
+    "roles": "Transferor/transferee",
+    "module": "title",
+    "scope": "Ensure compliant plan, new easements/reservations, restrictive covenants and new title boundary",
+    "priority_documents": [
+      "TP1",
+      "part plan",
+      "service rights",
+      "retained land register"
+    ],
+    "mandatory_variation_tasks": [
+      "Verify roads/service media access for both plots",
+      "Agree estate covenants and maintenance",
+      "Check lender releases of part"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "lease-extension",
+    "title": "Lease Extension",
+    "roles": "Leaseholder/freeholder",
+    "module": "leasehold",
+    "scope": "Determine statutory or informal route, applicable commenced legislation, valuation and surrender/regrant",
+    "priority_documents": [
+      "existing lease",
+      "notice/counter-notice",
+      "deed/lease",
+      "valuation"
+    ],
+    "mandatory_variation_tasks": [
+      "Do not apply uncommenced 2024 reform provisions",
+      "Check lender consent and registration of regrant",
+      "Confirm ground rent, premium, term, timing"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "enfranchisement",
+    "title": "Enfranchisement",
+    "roles": "Leaseholder/freeholder",
+    "module": "leasehold",
+    "scope": "Evaluate eligibility, statutory notices, participation, valuation and tribunal route",
+    "priority_documents": [
+      "notices",
+      "leases",
+      "ownership history",
+      "valuation"
+    ],
+    "mandatory_variation_tasks": [
+      "Verify current commencement section by section",
+      "Track specialist statutory deadlines",
+      "Secure lender and title registration arrangements"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "commercial-acquisition",
+    "title": "Commercial Acquisition",
+    "roles": "Buyer, possible lender",
+    "module": "commercial",
+    "scope": "Review contract, CPSE, VAT/TOGC, property use, title, occupational leases and capital allowances",
+    "priority_documents": [
+      "CPSE replies",
+      "VAT option evidence",
+      "rent roll",
+      "EPC",
+      "title pack"
+    ],
+    "mandatory_variation_tasks": [
+      "Ascertain taxable/exempt/TOGC treatment",
+      "Review seller title, tenants and rent deposits",
+      "Check planning, asbestos and environmental exposure"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "commercial-disposal",
+    "title": "Commercial Disposal",
+    "roles": "Seller",
+    "module": "commercial",
+    "scope": "Review title, VAT status, enquiries, lettings and contractual completion mechanics",
+    "priority_documents": [
+      "sale pack",
+      "occupational leases",
+      "CPSE replies",
+      "VAT election evidence"
+    ],
+    "mandatory_variation_tasks": [
+      "Evidence seller option to tax",
+      "Resolve security and tenants/deposits",
+      "Negotiate liability and guarantee"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "commercial-lease",
+    "title": "Commercial Lease",
+    "roles": "Landlord or tenant",
+    "module": "commercial",
+    "scope": "Term, contracted-out status, rent review, breaks, repair and alienation, incentives",
+    "priority_documents": [
+      "heads of terms",
+      "draft lease",
+      "1954 Act notices/declaration",
+      "plan"
+    ],
+    "mandatory_variation_tasks": [
+      "Check 1954 Act contracting-out procedure if proposed",
+      "Review break condition precision",
+      "Assess dilapidations and security of tenure"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "commercial-assignment",
+    "title": "Commercial Assignment",
+    "roles": "Assignor/assignee/landlord",
+    "module": "commercial",
+    "scope": "Confirm alienation and consent; consider AGA, rent deposit and continuing liabilities",
+    "priority_documents": [
+      "lease",
+      "licence to assign",
+      "AGA",
+      "assignment deed"
+    ],
+    "mandatory_variation_tasks": [
+      "Obtain landlord consent and release terms",
+      "Check assignment execution and notices",
+      "Assess tax and registration triggers"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "commercial-surrender",
+    "title": "Commercial Surrender",
+    "roles": "Landlord/tenant",
+    "module": "commercial",
+    "scope": "Validate express surrender, payment, encumbrances, vacant possession and taxation",
+    "priority_documents": [
+      "deed of surrender",
+      "lease",
+      "landlord consent",
+      "vacant possession proof"
+    ],
+    "mandatory_variation_tasks": [
+      "Confirm third-party interests and lender consent",
+      "Consider reinstatement/dilapidations",
+      "Confirm registration of lease determination"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "probate-disposition",
+    "title": "Probate Disposition",
+    "roles": "Personal representatives/beneficiaries",
+    "module": "development",
+    "scope": "Test grant, assent/sale authority, title restrictions and estate tax position",
+    "priority_documents": [
+      "grant",
+      "AS1/TR1",
+      "death certificate",
+      "register"
+    ],
+    "mandatory_variation_tasks": [
+      "Identify all personal representatives and authority",
+      "Check interests/trusts and encumbrances",
+      "Register proper assent or transfer"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "property-trust",
+    "title": "Property Trust",
+    "roles": "Trustees/beneficiaries",
+    "module": "development",
+    "scope": "Verify trust powers, overreaching, Form A restrictions, declarations and advice",
+    "priority_documents": [
+      "trust deed",
+      "appointment/removal evidence",
+      "TR1",
+      "title register"
+    ],
+    "mandatory_variation_tasks": [
+      "Ensure proper trustees/capital money compliance",
+      "Consider beneficial consent and capacity",
+      "Check lender and insolvency issues"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "shared-ownership",
+    "title": "Shared Ownership",
+    "roles": "Buyer/owner/lender",
+    "module": "leasehold",
+    "scope": "Understand premium, rent, resale nomination, staircasing, restrictions and statutory changes",
+    "priority_documents": [
+      "shared ownership lease",
+      "nomination clauses",
+      "consent",
+      "mortgage offer"
+    ],
+    "mandatory_variation_tasks": [
+      "Determine provider consent and affordability",
+      "Check percentage, staircasing and tax elections",
+      "Review lender terms and lease wording"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "help-to-buy-redemption",
+    "title": "Help To Buy Redemption",
+    "roles": "Equity loan borrower",
+    "module": "development",
+    "scope": "Determine applicable legacy scheme, repayment/consent and lender charge release",
+    "priority_documents": [
+      "scheme loan agreement",
+      "redemption authority",
+      "valuation",
+      "release"
+    ],
+    "mandatory_variation_tasks": [
+      "Verify scheme remains applicable to existing loan",
+      "Obtain lender/scheme administrator consent",
+      "Calculate apportionment using scheme terms"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  },
+  {
+    "id": "development-site",
+    "title": "Development Site",
+    "roles": "Developer/investor/lender",
+    "module": "development",
+    "scope": "Planning/section 106/CIL, utilities, access, overage, clawback and lender security",
+    "priority_documents": [
+      "planning record",
+      "roads/sewers agreements",
+      "title plans",
+      "environmental searches"
+    ],
+    "mandatory_variation_tasks": [
+      "Investigate utility and highway agreements",
+      "Check permitted uses, planning conditions and building safety",
+      "Review ransom strips and easements"
+    ],
+    "conditional_variation_tasks": [
+      "Apply applicable lender, tax, local authority and company rules only if triggered by actual facts"
+    ],
+    "risk_escalation": "Any title/security defect, inability to comply with contract or missing evidence triggers lawyer review",
+    "stage_overrides": {},
+    "human_approval_required": true
+  }
+]

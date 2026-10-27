@@ -1,0 +1,23 @@
+{
+  "matter_id": "mortgage-guarantee",
+  "test_case_description": "Guarantee and ILA requested, deed and lender advice forms unresolved",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "mortgage-guarantee-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [
+    {
+      "id": "ILA-001",
+      "text": "Director independent legal advice certificate",
+      "status": "outstanding",
+      "source_ref": "fictional lender letter para 10",
+      "blocking": true
+    }
+  ]
+}

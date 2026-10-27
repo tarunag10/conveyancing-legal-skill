@@ -1,0 +1,20 @@
+{
+  "matter_id": "commercial-vat-togc",
+  "test_case_description": "Commercial opted property with disputed TOGC status",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "commercial-vat-togc-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [],
+  "missing_documents": [
+    "Seller option-to-tax evidence",
+    "Tenancy and rental-business continuation documents",
+    "Purchaser VAT and option election advice"
+  ]
+}

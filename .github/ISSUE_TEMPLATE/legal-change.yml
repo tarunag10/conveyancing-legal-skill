@@ -1,0 +1,36 @@
+name: Proposed legal authority update
+description: Record possible authoritative change for manual professional review; never automatic promotion.
+labels: [legal-review]
+body:
+  - type: input
+    id: authority
+    attributes:
+      label: Direct authoritative URL and provision
+      description: Cite legislation, HMLR, HMRC/WRA, SRA, UK Finance or decision source.
+    validations:
+      required: true
+  - type: input
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction and extent
+    validations:
+      required: true
+  - type: input
+    id: relevant_dates
+    attributes:
+      label: Publication, commencement and transitional dates
+    validations:
+      required: true
+  - type: textarea
+    id: affected_rules
+    attributes:
+      label: Propositions, forms, deadline calculations and workflow modules affected
+    validations:
+      required: true
+  - type: textarea
+    id: legal_review
+    attributes:
+      label: Reviewer approval (name, qualification, date and evidence) required before merge
+      description: Do not enter live matter or personal data.
+    validations:
+      required: false

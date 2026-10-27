@@ -1,0 +1,15 @@
+{
+  "matter_id": "registered-freehold",
+  "test_case_description": "Registered freehold without any asserted issues; no legal sign-off is implied",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "registered-freehold-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": []
+}

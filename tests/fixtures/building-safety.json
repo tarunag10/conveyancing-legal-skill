@@ -1,0 +1,23 @@
+{
+  "matter_id": "building-safety",
+  "test_case_description": "Flat possibly within England building-safety protections",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "building-safety-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [],
+  "building_safety": {
+    "potentially_applicable": true,
+    "documented_assessment": false
+  },
+  "missing_documents": [
+    "Building height/storey confirmation",
+    "Landlord and leaseholder certificates if applicable"
+  ]
+}

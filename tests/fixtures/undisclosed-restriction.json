@@ -1,0 +1,23 @@
+{
+  "matter_id": "undisclosed-restriction",
+  "test_case_description": "Restriction missed from transaction pack",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "undisclosed-restriction-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [],
+  "restrictions": [
+    {
+      "required": true,
+      "wording": "No disposition without certificate by management company",
+      "status": "outstanding",
+      "evidence_ref": "official copy register B7"
+    }
+  ]
+}

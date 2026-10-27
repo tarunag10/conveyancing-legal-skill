@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.venv/
+.mypy_cache/
+*.log
+private-matters/
+client-documents/
+source-snapshots/runtime/
+output/
+.DS_Store
+*.egg-info/
+build/
+dist/

@@ -1,0 +1,27 @@
+{
+  "side": "buyer",
+  "purchase_price": "250000.00",
+  "deposit_paid": "25000.00",
+  "seller_debits": [
+    {
+      "description": "service-charge apportionment (illustrative)",
+      "amount": "125.75"
+    }
+  ],
+  "seller_credits": [
+    {
+      "description": "credit for prepaid ground rent (illustrative)",
+      "amount": "25.00"
+    }
+  ],
+  "other_payments": [
+    {
+      "description": "professional fee + VAT + tax and disbursements (example only)",
+      "amount": "4200.00"
+    }
+  ],
+  "cleared_client_funds": "150000.75",
+  "cleared_lender_funds": "79000.00",
+  "bank_evidence_confirmed_by_human": false,
+  "lender_conditions_satisfied_by_human": false
+}

@@ -1,0 +1,24 @@
+{
+  "lender": "FICTIONAL lender, DO NOT TREAT AS ACTUAL HANDBOOK",
+  "matter_id": "DEMO-001",
+  "requirements": [
+    {
+      "id": "LTR-001",
+      "requirement": "Buildings insurance acceptable to named lender",
+      "source": "example lender instruction clause 4",
+      "evidence_status": "outstanding",
+      "completion_blocker": true,
+      "owner": "acting solicitor",
+      "due": "before certificate of title or completion as specifically instructed"
+    },
+    {
+      "id": "LTR-002",
+      "requirement": "Certificate confirming no adverse occupiers",
+      "source": "example special conditions clause 5",
+      "evidence_status": "not reviewed",
+      "completion_blocker": true,
+      "owner": "acting solicitor",
+      "due": "before completion"
+    }
+  ]
+}

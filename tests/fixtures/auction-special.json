@@ -1,0 +1,25 @@
+{
+  "matter_id": "auction-special",
+  "test_case_description": "Auction special conditions require purchaser to discharge existing charges",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "auction-special-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [
+    {
+      "id": "auction seller security",
+      "status": "outstanding",
+      "evidence_type": "auction pack",
+      "evidence_ref": "special conditions clause 7"
+    }
+  ],
+  "lender_requirements": [],
+  "missing_documents": [
+    "contract completion funds apportionment schedule"
+  ]
+}

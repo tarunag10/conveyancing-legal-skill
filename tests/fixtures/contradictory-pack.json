@@ -1,0 +1,19 @@
+{
+  "matter_id": "contradictory-pack",
+  "test_case_description": "Different title numbers and postal addresses in legal pack",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "A",
+      "title_number": "XX123456",
+      "property_address": "1 Example Road"
+    },
+    {
+      "document_id": "B",
+      "title_number": "XX987654",
+      "property_address": "3 Example Road"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": []
+}

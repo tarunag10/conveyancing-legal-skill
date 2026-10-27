@@ -1,0 +1,22 @@
+{
+  "matter_id": "ambiguous-discharge",
+  "test_case_description": "An ambiguous stamped annotation is not a proven release",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "ambiguous-discharge-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [
+    {
+      "id": "1973 charge",
+      "status": "discharged",
+      "evidence_type": "ambiguous_endorsement",
+      "evidence_ref": "fictional deed p2 margin"
+    }
+  ],
+  "lender_requirements": []
+}

@@ -1,0 +1,50 @@
+name: Public legal source watch (review queue only)
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+jobs:
+  source-watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore prior public-source fingerprint cache (not a legal-rule approval)
+        uses: actions/cache/restore@v4
+        with:
+          path: source-snapshots/runtime/fingerprints.json
+          key: legal-source-fingerprints-${{ github.run_id }}
+          restore-keys: |
+            legal-source-fingerprints-
+      - name: Ensure first-run technical baseline exists
+        run: |
+          mkdir -p source-snapshots/runtime
+          test -s source-snapshots/runtime/fingerprints.json || printf '{}\n' > source-snapshots/runtime/fingerprints.json
+      - name: Compare public source fingerprints without changing legal rules
+        run: |
+          PYTHONPATH=src python -m conveyancing_skill.cli source-watch \
+            --allow-network --limit 60 \
+            --baseline source-snapshots/runtime/fingerprints.json \
+            --baseline-out source-snapshots/runtime/fingerprints.json \
+            --output source-snapshots/runtime/source-watch.json \
+            --fail-on-change
+      - name: Save next technical fingerprint cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: source-snapshots/runtime/fingerprints.json
+          key: legal-source-fingerprints-${{ github.run_id }}
+      - name: Attach source status and legal review queue
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-source-status
+          path: |
+            source-snapshots/runtime/source-watch.json
+            source-snapshots/runtime/fingerprints.json
+          if-no-files-found: warn

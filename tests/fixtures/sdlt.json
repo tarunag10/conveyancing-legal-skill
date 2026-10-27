@@ -1,0 +1,18 @@
+{
+  "matter_id": "sdlt",
+  "test_case_description": "Simple England tax matter requiring up-to-date relief and return review",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "sdlt-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [],
+  "missing_documents": [
+    "Executed completion contract to prove SDLT effective date"
+  ]
+}

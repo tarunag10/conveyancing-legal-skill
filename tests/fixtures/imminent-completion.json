@@ -1,0 +1,29 @@
+{
+  "matter_id": "imminent-completion",
+  "test_case_description": "Completion in two business days, redemption and lender conditions unresolved",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "imminent-completion-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [
+    {
+      "id": "seller mortgage",
+      "status": "outstanding",
+      "evidence_ref": "fictional seller statement"
+    }
+  ],
+  "lender_requirements": [
+    {
+      "id": "COF-01",
+      "text": "Certificate of Title acceptance",
+      "status": "pending",
+      "source_ref": "fictional lender instructions",
+      "blocking": true
+    }
+  ]
+}

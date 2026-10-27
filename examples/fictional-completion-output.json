@@ -1,0 +1,18 @@
+{
+  "purchase_price": "250000.00",
+  "deposit_credit": "25000.00",
+  "seller_debits": "125.75",
+  "seller_credits": "25.00",
+  "balance_due_to_seller": "225100.75",
+  "other_payments": "4200.00",
+  "total_required_at_completion": "229300.75",
+  "input_cleared_funds": "229000.75",
+  "surplus_or_shortfall": "-300.00",
+  "completion_blockers": [
+    "Funds shortfall based on input amounts",
+    "Actual bank cleared funds not independently confirmed by authorised user",
+    "Lender conditions not confirmed by authorised user"
+  ],
+  "ready_to_send_funds": false,
+  "disclaimer": "No bank feed, lender authority or actual payment verified. Human-only completion release."
+}

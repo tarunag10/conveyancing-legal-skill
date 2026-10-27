@@ -1,0 +1,22 @@
+{
+  "matter_id": "historic-charge",
+  "test_case_description": "Unregistered historic further charge claimed vacated by correspondence",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "historic-charge-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [
+    {
+      "id": "22.01.1976 further charge",
+      "status": "vacated",
+      "evidence_type": "email",
+      "evidence_ref": "fictional seller email §4"
+    }
+  ],
+  "lender_requirements": []
+}

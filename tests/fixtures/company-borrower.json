@@ -1,0 +1,23 @@
+{
+  "matter_id": "company-borrower",
+  "test_case_description": "Corporate finance security needs documentary corporate authority",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "company-borrower-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [
+    {
+      "id": "CO-01",
+      "text": "Board resolution and current company identity evidence",
+      "status": "outstanding",
+      "source_ref": "fictional lender instruction schedule 3",
+      "blocking": true
+    }
+  ]
+}

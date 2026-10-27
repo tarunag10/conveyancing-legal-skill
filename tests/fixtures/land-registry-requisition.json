@@ -1,0 +1,23 @@
+{
+  "matter_id": "land-registry-requisition",
+  "test_case_description": "HMLR AP1 lacking evidence to satisfy restriction",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "land-registry-requisition-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [],
+  "restrictions": [
+    {
+      "required": true,
+      "wording": "Certificate of compliance condition",
+      "status": "not supplied",
+      "evidence_ref": "fictional register restriction"
+    }
+  ]
+}

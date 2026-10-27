@@ -1,0 +1,37 @@
+{
+  "matter_id": "DEMO-001",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "OC1-A",
+      "title_number": "AB123456",
+      "property_address": "1 Example Street, London",
+      "source": "fictional extract page 1"
+    }
+  ],
+  "charges": [
+    {
+      "id": "mortgage dated 01.01.1999",
+      "status": "vacated",
+      "evidence_type": "email",
+      "evidence_ref": "seller-email-demo paragraph 3"
+    }
+  ],
+  "restrictions": [
+    {
+      "required": true,
+      "wording": "No disposition without certificate",
+      "status": "unknown",
+      "evidence_ref": "OC1-A register B3"
+    }
+  ],
+  "lender_requirements": [
+    {
+      "id": "L1",
+      "text": "Proof of redemption in agreed form",
+      "status": "outstanding",
+      "blocking": true,
+      "source_ref": "lender-example schedule 1"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "matter_id": "public-highway",
+  "test_case_description": "Road shown adjacent on plan but adoption unverified",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "public-highway-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [],
+  "access": {
+    "public_highway_claimed": true,
+    "official_highways_confirmation": false,
+    "critical_to_lender": true,
+    "evidence_ref": "seller marked-up plan (fictional)"
+  }
+}

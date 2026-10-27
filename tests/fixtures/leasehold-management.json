@@ -1,0 +1,20 @@
+{
+  "matter_id": "leasehold-management",
+  "test_case_description": "Leasehold transfer, absent LPE1/management receipts",
+  "jurisdiction": "England",
+  "documents": [
+    {
+      "document_id": "leasehold-management-OC1",
+      "property_address": "Example Property, Test Town",
+      "title_number": "XX123456",
+      "source": "fictional case fixture"
+    }
+  ],
+  "charges": [],
+  "lender_requirements": [],
+  "missing_documents": [
+    "LPE1 replies",
+    "service-charge account statements",
+    "licence or notice evidence"
+  ]
+}

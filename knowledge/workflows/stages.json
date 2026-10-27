@@ -1,0 +1,605 @@
+[
+  {
+    "id": "intake",
+    "title": "Initial instructions",
+    "sequence": 1,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Record retainer/client role and title(s)",
+      "Confirm property jurisdiction and transaction type",
+      "Obtain contract and key dates",
+      "Identify proposed completion funding"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "instruction letter",
+      "sale memorandum",
+      "offer/auction notice"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "missing authority or conflicting client interests"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "scope confirmed; client and roles evidenced"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "cdd",
+    "title": "Client due diligence and conflicts",
+    "sequence": 2,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Complete client identity and beneficial ownership checks",
+      "Check authority/capacity and conflict position",
+      "Screen sanctions/PEP and financial crime risk in approved firm systems"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "ID/KYC documents",
+      "corporate register where relevant"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "intake"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "unresolved client/beneficial owner verification or conflict"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "supervisor confirms risk-based onboarding"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "aml",
+    "title": "AML and funds",
+    "sequence": 3,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Obtain verifiable source of funds and where required wealth",
+      "Reconcile bank chain/transfers to contribution",
+      "Flag third-party gifts, company accounts or unexplained cash"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "bank-issued statement evidence",
+      "funds/source of wealth documents"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "cdd"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "unexplained or incompatible source of funds"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "funding chain reviewed by firm compliance"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "contract",
+    "title": "Contract pack",
+    "sequence": 4,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Obtain and review draft contract and incorporated conditions",
+      "Identify price, property, tenure, deposit and VAT terms",
+      "Review standard and special conditions and completion mechanism"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "draft contract",
+      "special conditions",
+      "forms and supporting contract pack"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "aml"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "onerous unapproved contract default or uncertain property extent"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "all material terms understood and instructions obtained"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "title",
+    "title": "Title investigation",
+    "sequence": 5,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Examine all relevant property/proprietorship/charges entries or unregistered epitome",
+      "Check title plan/deeds against physical extent and contract",
+      "Investigate adverse interests, charges, rights, restrictions and missing instruments"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "official copies/register",
+      "filed deeds",
+      "title plan",
+      "epitome where applicable"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "contract"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "material defect, defective root, unresolved charge or third-party right"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "title findings supported by source evidence"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "searches",
+    "title": "Searches and enquiries",
+    "sequence": 6,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Decide searches appropriate to purchase, lender, locality and tenure",
+      "Order/review searches and identify limitations",
+      "Raise precise enquiries with source references"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "local authority",
+      "drainage and water",
+      "environmental",
+      "highways and other specialist searches"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "title"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "search defect not resolved or required lender approval absent"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "results assessed and material issues resolved or formally accepted"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "leasehold",
+    "title": "Leasehold/estate management",
+    "sequence": 7,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Assess lease term, rent, alienation, repair and forfeiture",
+      "Obtain management pack, accounts, planned works, insurance",
+      "Identify landlord/RTM certificates, notices, consents and building safety status"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "lease",
+      "TA7/LPE1 or relevant pack",
+      "management company docs"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "searches"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "registration restriction or missing essential landlord certificate"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "consents and conditions mapped"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "mortgage",
+    "title": "Mortgage and lender compliance",
+    "sequence": 8,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Identify lender instruction source and version",
+      "Compare offer against security, valuation assumptions and title facts",
+      "Track each lender requirement with evidence and reporting/approval"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "mortgage offer",
+      "specific instructions",
+      "applicable handbook Part 1/2/3",
+      "report-on-title issues"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "leasehold"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "unreported disclosable issue or unmet mortgage completion condition"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "all lender conditions verified/waived by authorised lender"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "client-report",
+    "title": "Reports and instructions",
+    "sequence": 9,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Issue client title and financial report",
+      "Explain mortgage restrictions, searches, defects, risks and tax assumptions",
+      "Obtain specific informed instructions and sign-off"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "title report",
+      "search summary",
+      "financial statement",
+      "mortgage report"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "mortgage"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "informed consent absent for material risk"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "client instructions evidenced"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "exchange",
+    "title": "Exchange",
+    "sequence": 10,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Verify contract agreed, title/searches/lender approvals and agreed deposit",
+      "Check chain position, property insurance responsibility and authority",
+      "Obtain authorised exchange instruction and record exchange particulars"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "signed contract",
+      "deposit confirmation",
+      "exchange authority"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "client-report"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "material outstanding prerequisite or no authority"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "exchange only with authorised conveyancer decision"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "precompletion",
+    "title": "Pre-completion",
+    "sequence": 11,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Raise requisitions, review TA13 or equivalent replies",
+      "Obtain redemption figures, completion statement and undertakings",
+      "Complete OS1/OS2 as applicable, bankruptcy search, finance and restrictions"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "seller completion statement",
+      "mortgage redemption",
+      "priority and bankruptcy results"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "exchange"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "search priority expired, uncertain redemption or completion funds gap"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "title priority and completion mechanics validated"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "completion",
+    "title": "Completion",
+    "sequence": 12,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Reconcile funds and execute completion statement",
+      "Review conditions, payment verification and completion undertakings",
+      "Check dated documents, release/possession and completion confirmations"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "ledger reconciliation",
+      "completion statement",
+      "executed deeds",
+      "completion authorisation"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "precompletion"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "no cleared funds, no bank-verification or missing essential documents"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "lawyer confirms cleared funds, conditions and completion"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "tax",
+    "title": "Tax compliance",
+    "sequence": 13,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Determine England SDLT versus Wales LTT and tax effective date",
+      "Check consideration, reliefs, surcharge, VAT and exemption",
+      "Prepare return/payment where notifiable and obtain certificate"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "tax return",
+      "calculation with legal basis",
+      "certificate/receipt"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "completion"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "unverified rate, inconsistent facts or tax deadline missed"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "authorised return filed and tax paid where due"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "registration",
+    "title": "Registration",
+    "sequence": 14,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Select accurate application forms and edition",
+      "Comply with restrictions and fees, prepare certified supporting evidence",
+      "Lodge within priority period; manage requisitions and receipt"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "AP1/FR1 and deed(s)",
+      "SDLT5/WRA evidence",
+      "discharge/identity/certificates"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "tax"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "missing discharge, consent, evidence or deadline"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "application acceptance monitored and registration confirmed"
+    ],
+    "default_status": "outstanding"
+  },
+  {
+    "id": "closure",
+    "title": "Post-completion and file closure",
+    "sequence": 15,
+    "applies": "unless expressly not applicable on documented review",
+    "mandatory_tasks": [
+      "Check updated title and lender charge entries",
+      "Serve landlord/management notices; confirm any Companies House filing",
+      "Issue final title report to client and lender; reconcile file balances"
+    ],
+    "conditional_tasks": [
+      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+    ],
+    "documents_required": [
+      "updated official copies",
+      "closing statement",
+      "notice receipts",
+      "final lender report"
+    ],
+    "responsible_parties": [
+      "conducting conveyancer",
+      "supervisor as applicable"
+    ],
+    "dependencies": [
+      "registration"
+    ],
+    "deadlines": "Calculate from relevant contract, statute, lender offer and documentary dates",
+    "professional_obligations": [
+      "SRA/CLC professional duties as applicable",
+      "confidentiality and evidence accuracy"
+    ],
+    "risks": [
+      "unregistered lender security or outstanding undertaking"
+    ],
+    "client_confirmation": "Document express instructions when risks, cost or irrevocable steps arise",
+    "lender_reporting": "Use actual lender instructions; not automatically required for every transaction",
+    "completion_criteria": [
+      "all required entries and notices evidenced; residual tasks allocated"
+    ],
+    "default_status": "outstanding"
+  }
+]

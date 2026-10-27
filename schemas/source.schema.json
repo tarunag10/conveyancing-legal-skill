@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Authoritative legal source registry entry",
+  "type": "object",
+  "required": ["id", "title", "url", "authority_type", "jurisdiction", "last_verified_date", "verification_status", "scope_note", "monitor"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "pattern": "^https://"},
+    "authority_type": {"type": "string"},
+    "jurisdiction": {"type": "string"},
+    "effective_date": {"type": ["string", "null"], "format": "date"},
+    "last_verified_date": {"type": "string", "format": "date"},
+    "verification_status": {"type": "string"},
+    "scope_note": {"type": "string"},
+    "licence": {"type": "string"},
+    "monitor": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}
