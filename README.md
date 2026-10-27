@@ -14,6 +14,13 @@ A portable, evidence-gated conveyancing knowledge and workflow package for the l
 - Python standard-library completion statement, deadline and restricted tax calculation functions; optional PDF/DOCX extraction and evidence-controlled DOCX changes with exact logs.
 - GitHub Actions unit tests and a **proposed** weekly read-only source watch. Workflow jobs do not run until the user enables them in their GitHub repository. A source change always enters a human review queue.
 
+## Prerequisites
+
+- Python 3.10 or newer and `pip`. Git is needed to clone the repository; a ZIP download also works.
+- The core CLI uses Python's standard library and needs no API keys or external services. Internet access is needed to install packages and only when you explicitly check current public sources.
+- PDF/DOCX extraction requires the optional `documents` extra (`pypdf` and `python-docx`); install it with the command below.
+- Use this as supervised support for qualified conveyancing practitioners. Check current law, lender instructions and firm requirements at the point of use.
+
 ## Quick start (Python 3.10+)
 
 ```bash
