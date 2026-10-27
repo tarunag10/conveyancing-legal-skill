@@ -1,0 +1,20 @@
+{
+  "name": "conveyancing-legal-skill",
+  "interface": {
+    "displayName": "Conveyancing Legal Skill"
+  },
+  "plugins": [
+    {
+      "name": "ew-conveyancing-legal",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
