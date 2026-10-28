@@ -38,6 +38,16 @@ def fmt(v):
     return f'£{v:,.2f}'
 
 
+def _tax_snapshot_cutoff(data):
+    """Return the last date usable under both the verification and review limits."""
+    try:
+        verified=date.fromisoformat(data['last_verified_date'])
+        review_by=date.fromisoformat(data['review_by'])
+    except (KeyError, TypeError, ValueError) as e:
+        raise LegalReviewRequired('Tax snapshot has invalid verification dates; verify the source data') from e
+    return min(verified,review_by)
+
+
 def forms(query:str):
     q=query.lower().strip()
     return [x for x in load('knowledge/forms/catalogue.json') if q in x['code'].lower() or q in x['official_title'].lower()]
@@ -58,11 +68,13 @@ def tax_estimate(jurisdiction: str, price, as_of: str, additional=False, *, ackn
     if complexity_flags:
         raise LegalReviewRequired('Complex tax issue requires specialist review: '+', '.join(complexity_flags))
     data=load('knowledge/legislation/tax-rates.json')
-    d=date.fromisoformat(as_of)
-    if d>date.fromisoformat(data['review_by']):
-        raise LegalReviewRequired('Tax snapshot past review-by date; verify latest rates from official authority')
-    if d>date.fromisoformat(data['last_verified_date']):
-        raise LegalReviewRequired('Tax snapshot not verified for a future date; live confirmation required')
+    try:
+        d=date.fromisoformat(as_of)
+    except (TypeError, ValueError) as e:
+        raise LegalReviewRequired('Invalid calculation date; use YYYY-MM-DD') from e
+    cutoff=_tax_snapshot_cutoff(data)
+    if d>cutoff:
+        raise LegalReviewRequired(f'Tax snapshot verified only through {cutoff}; verify current official rates for this date')
     rate = next((r for r in data['regimes'] if r['jurisdiction']==jurisdiction.lower() and r['additional']==additional),None)
     if rate is None: raise LegalReviewRequired('Unknown jurisdiction/regime')
     if d<date.fromisoformat(rate['effective_from']): raise LegalReviewRequired('No historical rates included for requested date')

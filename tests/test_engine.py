@@ -7,7 +7,7 @@ from decimal import Decimal
 
 from conveyancing_skill.engine import (
     ROOT, LegalReviewRequired, completion, forms, money, load, review_matter,
-    statutory_deadline, tax_estimate, workflow,
+    statutory_deadline, tax_estimate, workflow, _tax_snapshot_cutoff,
 )
 from conveyancing_skill.cli import validate, main
 from conveyancing_skill.source_watch import is_official_url, watch
@@ -160,28 +160,33 @@ class MoneyTests(unittest.TestCase):
 
 class TaxDeadlineTests(unittest.TestCase):
     def test_england_standard_as_of(self):
-        r=tax_estimate('england','295000','2026-10-27',acknowledge_simple=True)
+        r=tax_estimate('england','295000','2026-10-28',acknowledge_simple=True)
         self.assertEqual('4750.00',r['tax'])
         self.assertIn('ILLUSTRATIVE',r['legal_status'])
 
     def test_england_higher(self):
-        r=tax_estimate('england',300000,'2026-10-27',True,acknowledge_simple=True)
+        r=tax_estimate('england',300000,'2026-10-28',True,acknowledge_simple=True)
         self.assertEqual('20000.00',r['tax'])
 
     def test_wales_standard(self):
-        r=tax_estimate('wales','295000','2026-10-27',acknowledge_simple=True)
+        r=tax_estimate('wales','295000','2026-10-28',acknowledge_simple=True)
         self.assertEqual('4200.00',r['tax'])
 
     def test_wales_higher(self):
-        r=tax_estimate('wales','250000','2026-10-27',True,acknowledge_simple=True)
+        r=tax_estimate('wales','250000','2026-10-28',True,acknowledge_simple=True)
         self.assertEqual('14950.00',r['tax'])
 
     def test_tax_refusals_no_reliefs_or_prospective_claims(self):
         with self.assertRaises(LegalReviewRequired):tax_estimate('england',300000,'2026-10-27')
-        with self.assertRaises(LegalReviewRequired):tax_estimate('england',300000,'2026-10-28',acknowledge_simple=True)
+        with self.assertRaises(LegalReviewRequired):tax_estimate('england',300000,'2026-10-29',acknowledge_simple=True)
         with self.assertRaises(LegalReviewRequired):tax_estimate('wales',300000,'2026-11-04',acknowledge_simple=True)
-        with self.assertRaises(LegalReviewRequired):tax_estimate('wales',300000,'2026-10-27',acknowledge_simple=True,complexity_flags=['TOGC'])
-        with self.assertRaises(LegalReviewRequired):tax_estimate('england',-12,'2026-10-27',acknowledge_simple=True)
+        with self.assertRaises(LegalReviewRequired):tax_estimate('wales',300000,'2026-10-28',acknowledge_simple=True,complexity_flags=['TOGC'])
+        with self.assertRaises(LegalReviewRequired):tax_estimate('england',-12,'2026-10-28',acknowledge_simple=True)
+        with self.assertRaises(LegalReviewRequired):tax_estimate('england',300000,'not-a-date',acknowledge_simple=True)
+
+    def test_snapshot_cutoff_uses_the_stricter_metadata_date(self):
+        self.assertEqual('2026-10-28',str(_tax_snapshot_cutoff({'last_verified_date':'2026-10-28','review_by':'2026-11-04'})))
+        self.assertEqual('2026-10-27',str(_tax_snapshot_cutoff({'last_verified_date':'2026-10-28','review_by':'2026-10-27'})))
 
     def test_sdlt_ltt_mr01_calendar_days_distinct(self):
         self.assertEqual('2026-11-10',statutory_deadline('sdlt','2026-10-27')['due_date'])

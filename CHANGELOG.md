@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — 28 October 2026
+
+- Rechecked the four residential SDLT/LTT rate tables against official guidance and legislation; updated the verification and review dates.
+- Allowed calculations through the verified date using the stricter metadata cutoff, with regression coverage for the boundary and representative calculations.
+- Documented statutory transitions, rate eligibility and remaining calculator exclusions.
+
 ## 0.1.0 — 27 October 2026
 
 - Initial research-backed, supervised England and Wales conveyancing skill foundation.

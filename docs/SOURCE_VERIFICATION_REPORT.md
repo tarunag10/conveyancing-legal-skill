@@ -1,6 +1,6 @@
 # Source verification register
 
-Research reference date: **27 October 2026**. Each listed site was selected as an official or profession-authorised primary source for a particular proposition and the page was checked on the recorded date; this does not validate all page sections, current revisions of downloadable forms, or later changes.
+Initial research reference date: **27 October 2026**. The SDLT/LTT rate sources listed below were rechecked on **28 October 2026** as recorded. Each site was selected as an official or profession-authorised primary source for a particular proposition and the page was checked on the recorded date; this does not validate all page sections, current revisions of downloadable forms, or later changes.
 
 A **separate practising property lawyer** must review applicability, commencement, amendments and transitional effects before a matter is certified. The legal rule registry also marks `legal_reviewer_approved: false` for each rule.
 
@@ -28,11 +28,11 @@ A **separate practising property lawyer** must review applicability, commencemen
 | `ls-ta6` | [TA6 sixth edition and TA7 fifth edition guidance](https://www.lawsociety.org.uk/topics/property/ta6-6th-edition) | England and Wales | 2026-10-27 | New CQS matters 30 March 2026; TA6 not designed for new-build or unmodified auctions |
 | `uk-finance` | [UK Finance Mortgage Lenders Handbook](https://lendershandbook.ukfinance.org.uk/) | England and Wales | 2026-10-27 | Parts 1, 2 lender-specific, and 3 where lender-only; voluntary; newer platform from 29 June 2026 |
 | `uk-finance-update` | [UK Finance Handbook platform changes](https://www.ukfinance.org.uk/mortgage-lenders-handbook-update) | England and Wales | 2026-10-27 | Platform launched 29 June 2026; cannot reproduce proprietary lender content |
-| `sdlt-res` | [HMRC SDLT residential rates](https://www.gov.uk/stamp-duty-land-tax/residential-property-rates) | England | 2026-10-27 | Base rates from 1 Apr 2025; check current date and surcharges |
-| `sdlt-higher` | [HMRC higher SDLT rates](https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property) | England | 2026-10-27 | 5 percentage point surcharge qualifying additional dwellings from 1 Apr 2025 |
+| `sdlt-res` | [HMRC SDLT residential rates](https://www.gov.uk/stamp-duty-land-tax/residential-property-rates) | England | 2026-10-28 | Current table: £125,000 / £250,000 / £925,000 / £1.5m; 0% / 2% / 5% / 10% / 12% from 1 Apr 2025; special cases excluded |
+| `sdlt-higher` | [HMRC higher SDLT rates](https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property) | England | 2026-10-28 | Current table: £125,000 / £250,000 / £925,000 / £1.5m; 5% / 7% / 10% / 15% / 17% from 1 Apr 2025; FA 2025 s51 transition and qualification not calculated |
 | `sdlt-returns` | [HMRC SDLT return](https://www.gov.uk/guidance/check-if-you-need-to-send-a-stamp-duty-land-tax-return) | England | 2026-10-27 | Usually within 14 days of effective transaction date |
 | `sdlt-pay` | [HMRC SDLT payment rules](https://www.gov.uk/guidance/pay-stamp-duty-land-tax) | England | 2026-10-27 | 14 days; payment deadline weekend/bank holiday guidance |
-| `wra-rates` | [WRA land transaction tax rates](https://www.gov.wales/land-transaction-tax-rates-and-bands) | Wales | 2026-10-27 | 2022 basic; 11 Dec 2024 higher residential rates |
+| `wra-rates` | [WRA land transaction tax rates](https://www.gov.wales/land-transaction-tax-rates-and-bands) | Wales | 2026-10-28 | Current main rates (£225,000 / £400,000 / £750,000 / £1.5m; 0% / 6% / 7.5% / 10% / 12%) from 10 Oct 2022; higher rates (£180,000 / £250,000 / £400,000 / £750,000 / £1.5m; 5% / 8.5% / 10% / 12.5% / 15% / 17%) from 11 Dec 2024; transitional cases excluded |
 | `wra-returns` | [WRA returns and payments technical guidance](https://www.gov.wales/land-transaction-tax-returns-and-payments-technical-guidance) | Wales | 2026-10-27 | Section 44: 30 calendar days beginning the day after effective date |
 | `vat-togc` | [HMRC VAT Notice 700/9 TOGC](https://www.gov.uk/guidance/transfer-a-business-as-a-going-concern-and-vat-notice-7009) | United Kingdom | 2026-10-27 | TOGC mandatory if conditions satisfied; property and option-to-tax requirements must be checked |
 | `co-mr01` | [Companies House filing MR01](https://www.gov.uk/government/publications/register-particulars-of-a-charge-mr01/how-to-complete-paper-form-mr01) | United Kingdom | 2026-10-27 | 21 days beginning day after charge creation; signed instrument certified copy |

@@ -219,8 +219,8 @@
     "jurisdiction": "England",
     "effective_date": "2025-04-01",
     "applicability": "published_as_applicable",
-    "transitional_or_scope_note": "Reliefs, surcharges, corporate and lease cases excluded from simple calculator",
-    "last_verified_date": "2026-10-27",
+    "transitional_or_scope_note": "Reliefs, surcharges, corporate and lease cases excluded from simple calculator. Rates rechecked against current official legislation and guidance on 2026-10-28; determine statutory eligibility, contract transition and all surcharges/reliefs separately.",
+    "last_verified_date": "2026-10-28",
     "verification_status": "checked_at_reference_date",
     "legal_reviewer_approved": false
   },
@@ -234,8 +234,8 @@
     "jurisdiction": "Wales",
     "effective_date": "2022-10-10",
     "applicability": "published_as_applicable",
-    "transitional_or_scope_note": "Wales has distinct higher rates, reliefs and transaction categories",
-    "last_verified_date": "2026-10-27",
+    "transitional_or_scope_note": "Wales has distinct higher rates, reliefs and transaction categories. Rates rechecked against current official legislation and guidance on 2026-10-28; determine statutory eligibility, contract transition and all surcharges/reliefs separately.",
+    "last_verified_date": "2026-10-28",
     "verification_status": "checked_at_reference_date",
     "legal_reviewer_approved": false
   },
