@@ -14,6 +14,30 @@ A portable, evidence-gated conveyancing knowledge and workflow package for the l
 - Python standard-library completion statement, deadline and restricted tax calculation functions; optional PDF/DOCX extraction and evidence-controlled DOCX changes with exact logs.
 - GitHub Actions unit tests and a **proposed** weekly read-only source watch. Workflow jobs do not run until the user enables them in their GitHub repository. A source change always enters a human review queue.
 
+## Download the complete package
+
+Download the versioned source ZIP from [GitHub Releases](https://github.com/tarunag10/conveyancing-legal-skill/releases). For version 0.1.0, the direct asset link is [conveyancing-legal-skill-v0.1.0.zip](https://github.com/tarunag10/conveyancing-legal-skill/releases/download/v0.1.0/conveyancing-legal-skill-v0.1.0.zip); the matching `.sha256` file is published alongside it. The ZIP contains the full tagged repository tree, including the canonical skill, knowledge modules, Python implementation, templates, tests, documentation, licence, and platform adapters. Extract it before installing; keep the directory structure intact.
+
+**Permission is required before any use.** The ZIP does not grant a licence. Read the included `LICENSE` and [`docs/USE_PERMISSION.md`](docs/USE_PERMISSION.md), and obtain prior written permission from the copyright holder for the intended use. Commercial use requires separate prior written permission. Platform installation does not amount to legal verification, professional approval, or permission to use the contents. Check current law, lender instructions, firm requirements, and the supplied research at the point of use.
+
+### Install from the extracted folder
+
+| Platform | Steps |
+|---|---|
+| **ChatGPT desktop plugin** | Open a terminal in the extracted `conveyancing-legal-skill-v0.1.0` folder and run `codex plugin marketplace add .`. In ChatGPT desktop, open the Plugins Directory, select the `conveyancing-legal-skill` marketplace, and install **Conveyancing Legal Skill**. Restart the app if it does not appear. This installs the local copy for the signed-in desktop app. See [OpenAI's plugin packaging and installation guide](https://developers.openai.com/plugins/build/plugins). |
+| **ChatGPT Projects** | Create a Project. Copy `adapters/chatgpt/PROJECT_INSTRUCTIONS.md` into the Project instructions, then upload the root `SKILL.md` and only the reference files needed for that Project. Keep related files together where possible because the instructions use relative paths. This is a manual, knowledge-file installation; the Python CLI is not available in ordinary Projects chat. |
+| **Claude Code** | Open the extracted repository folder as the project. Claude Code discovers `.claude/skills/conveyancing-legal` and `CLAUDE.md`. Alternatively, copy that skill folder into the project and keep the referenced repository files accessible. |
+| **OpenAI Codex** | Open the extracted repository root as the workspace. Codex discovers `.agents/skills/conveyancing-legal/SKILL.md` and `AGENTS.md` in supported versions. |
+| **Cursor** | Open the extracted repository root. Use `.cursor/` and `.agents/skills/` discovery supported by your Cursor version. |
+| **Gemini CLI** | Open the extracted repository root. The `.gemini/skills/` entrypoint and `GEMINI.md` provide the project instructions. |
+| **Claude Desktop and other supported agents** | Use the host's current Agent Skills or project-knowledge interface. Add the canonical root `SKILL.md` and the relevant linked repository files; retain the extracted directory layout when the host can access files. The repository ZIP is not a standalone skill-folder ZIP. Check the host's current documentation for its supported import method. |
+
+For the Python CLI, install from that folder with the Quick start commands below. Run `python -m conveyancing_skill.cli validate` (or `conveyancing validate` after installation) to check the local package. To run the test suite, use `PYTHONPATH=src python -m unittest discover -s tests -v`. These checks validate package structure and software behaviour only. They do not verify legal correctness for a live matter or provide professional sign-off.
+
+### Verify the downloaded ZIP
+
+Download the ZIP and its `.sha256` file from the same release. From the download directory, run `sha256sum -c conveyancing-legal-skill-v0.1.0.zip.sha256` on Linux/macOS, or compare the hash printed by `Get-FileHash .\conveyancing-legal-skill-v0.1.0.zip -Algorithm SHA256` on Windows with the value in the checksum file. Then extract the ZIP and confirm that the top-level folder contains `SKILL.md`, `LICENSE`, `README.md`, `src/`, `knowledge/`, `templates/`, and `adapters/`.
+
 ## Quick start (Python 3.10+)
 
 ```bash
@@ -45,7 +69,7 @@ conveyancing source-watch --allow-network --limit 6 --output reports/source-watc
 |---|---|---|
 | **Claude Code** | Open this repository as the project, or copy/link `.claude/skills/conveyancing-legal` into your project. Refer to `CLAUDE.md`. | Claude follows project skill conventions; local CLI commands require filesystem/shell permissions. See [official documentation](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview). |
 | **OpenAI Codex** | Open project root. Codex discovers `.agents/skills/conveyancing-legal/SKILL.md` and `AGENTS.md` in supported versions. | Allow local script execution only in a trusted workspace. [Official skills guide](https://developers.openai.com/codex/skills). |
-| **ChatGPT desktop plugin** | From the repository root, run `codex plugin marketplace add .`, then `codex plugin add ew-conveyancing-legal@conveyancing-legal-skill`. Restart ChatGPT desktop and confirm it appears under Plugins. | This installs the local copy in the signed-in desktop app; it does not publish the plugin. Other users must clone the repo and install their own local copy. A plugin install does not grant permission to use the skill: see `docs/USE_PERMISSION.md` and obtain written permission first. See [OpenAI plugin packaging and installation](https://developers.openai.com/plugins/build/plugins). |
+| **ChatGPT desktop plugin** | Run `codex plugin marketplace add .` from the repository root. In ChatGPT desktop, use Plugins Directory to select the repo marketplace and install **Conveyancing Legal Skill**. | This installs the local copy in the signed-in desktop app; it does not publish the plugin. Other users must obtain the ZIP or clone the repo and install their own local copy. A plugin install does not grant permission to use the skill: see `docs/USE_PERMISSION.md` and obtain written permission first. See [OpenAI plugin packaging and installation](https://developers.openai.com/plugins/build/plugins). |
 | **ChatGPT Projects** | Create a Project, paste `adapters/chatgpt/PROJECT_INSTRUCTIONS.md` into its instructions, upload canonical `SKILL.md`, and only the needed reference files (or knowledge as supported). | Markdown instructions can guide analysis; local CLI cannot be assumed available. The Projects fallback is a manual installation, not an automatically linked repository. [Projects](https://help.openai.com/en/articles/10169521-projects-in-chatgpt). |
 | **Cursor** | Open repo, enable project skill discovery from `.cursor/skills`/`.agents/skills` as supported; `.cursor/rules/conveyancing.mdc` also supplies short project rules. | Run CLI in integrated terminal. [Cursor skills](https://cursor.com/help/customization/skills). |
 | **Gemini CLI** | Open repo: `.gemini/skills/conveyancing-legal/SKILL.md` and root `GEMINI.md` instruct project-scope skill usage. | Check agent settings and filesystem permissions. [Gemini skills](https://geminicli.com/docs/cli/skills/). |
