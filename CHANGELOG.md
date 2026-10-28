@@ -1,5 +1,12 @@
 # Changelog
 
+## 28 October 2026 — distribution and documentation update (v0.1.0)
+
+- Published the versioned ZIP and SHA-256 checksum as the `v0.1.0` GitHub release.
+- Clarified download, installation, validation and app-use timeline guidance.
+- Hardened the release workflow against overlapping duplicate uploads.
+- This update records packaging and workflow changes; it does not claim a refresh of the legal research. The research baseline remains 27 October 2026.
+
 ## 0.1.0 — 27 October 2026
 
 - Initial research-backed, supervised England and Wales conveyancing skill foundation.
