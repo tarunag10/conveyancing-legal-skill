@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - "v*"
+  release:
+    types: [published]
 
 permissions:
   contents: write
@@ -45,8 +47,20 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" \
-            "dist/conveyancing-legal-skill-v${VERSION}.zip" \
-            "dist/conveyancing-legal-skill-v${VERSION}.zip.sha256" \
-            --title "Conveyancing Legal Skill v${VERSION}" \
-            --notes "Versioned source package for the England and Wales Conveyancing Legal Skill. The ZIP includes the repository licence and all platform adapters. Prior written permission is required for any use; commercial use requires separate prior written permission. Installation and software validation are not legal verification or professional approval. See README.md and docs/USE_PERMISSION.md."
+          if [[ "$GITHUB_EVENT_NAME" == "release" ]]; then
+            gh release upload "$GITHUB_REF_NAME" \
+              "dist/conveyancing-legal-skill-v${VERSION}.zip" \
+              "dist/conveyancing-legal-skill-v${VERSION}.zip.sha256" \
+              --clobber
+          elif gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" \
+              "dist/conveyancing-legal-skill-v${VERSION}.zip" \
+              "dist/conveyancing-legal-skill-v${VERSION}.zip.sha256" \
+              --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" \
+              "dist/conveyancing-legal-skill-v${VERSION}.zip" \
+              "dist/conveyancing-legal-skill-v${VERSION}.zip.sha256" \
+              --title "Conveyancing Legal Skill v${VERSION}" \
+              --notes "Versioned source package for the England and Wales Conveyancing Legal Skill. The ZIP includes the repository licence and all platform adapters. Prior written permission is required for any use; commercial use requires separate prior written permission. Installation and software validation are not legal verification or professional approval. See README.md and docs/USE_PERMISSION.md."
+          fi
