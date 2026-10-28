@@ -9,7 +9,7 @@
 - `publisher_listing_checked_only`: the form or directory was observed at its publisher. The embedded form's **binary version, PDF layout, signature panel, e-signature validity and applicable fees remain unverified**.
 - `edition_or_provenance_requires_verification`: even the edition requires separate provider verification. This is intentional, not a blank form.
 - Historical versions and effective dates are not reliably reconstructible from an updated web page alone. Consult revised legislation *and* original commencement/transitional instruments before applying rules retrospectively.
-- Tax rates are a time-limited illustration only; subsequent amendments can occur between source check and actual transaction effective date. Snapshot expires on 3 November 2026, and future dates past 27 October are not asserted as verified.
+- Tax rates are a time-limited illustration only; subsequent amendments can occur between source check and actual transaction effective date. Snapshot expires on 3 November 2026. Dates after 27 October are not asserted as verified: within the review window the CLI may still show an illustrative estimate, clearly marked as requiring live confirmation; dates past the review-by cutoff refuse calculation.
 
 ## Supported fully executable functions
 

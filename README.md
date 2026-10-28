@@ -61,7 +61,7 @@ conveyancing source-watch --limit 6               # dry-run, no HTTP calls
 conveyancing source-watch --allow-network --limit 6 --output reports/source-watch.json
 ```
 
-**Tax guardrail:** no relief, non-UK resident, linked transaction, mixed-use, special corporate rate, multiple dwellings, lease rent/NPV, lease premium complexities or anti-avoidance questions are calculated here. Dates after the stored verification date or snapshot review-by date **refuse** calculation. The rate snapshot has **review-by 3 November 2026**, meaning it must be researched again before later use.
+**Tax guardrail:** no relief, non-UK resident, linked transaction, mixed-use, special corporate rate, multiple dwellings, lease rent/NPV, lease premium complexities or anti-avoidance questions are calculated here. The snapshot review-by date is a hard cutoff; later dates refuse calculation. A missing verification date or requested date after the recorded check no longer blocks an in-window illustrative estimate, but the output is marked `live_confirmation_required` and official rates must be checked before reliance. The current rate snapshot has **review-by 3 November 2026**, meaning it must be researched again before later use.
 
 **Priority-period guardrail:** for OS1/OS2 the program requires a separately verified list of public holidays. It must not treat statutory deadlines, notice-to-complete deadlines and lender conditions as interchangeable.
 

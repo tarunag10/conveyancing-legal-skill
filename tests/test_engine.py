@@ -178,7 +178,8 @@ class TaxDeadlineTests(unittest.TestCase):
 
     def test_tax_refusals_no_reliefs_or_prospective_claims(self):
         with self.assertRaises(LegalReviewRequired):tax_estimate('england',300000,'2026-10-27')
-        with self.assertRaises(LegalReviewRequired):tax_estimate('england',300000,'2026-10-28',acknowledge_simple=True)
+        after_check=tax_estimate('england',300000,'2026-10-28',acknowledge_simple=True)
+        self.assertEqual('live_confirmation_required',after_check['verification_status'])
         with self.assertRaises(LegalReviewRequired):tax_estimate('wales',300000,'2026-11-04',acknowledge_simple=True)
         with self.assertRaises(LegalReviewRequired):tax_estimate('wales',300000,'2026-10-27',acknowledge_simple=True,complexity_flags=['TOGC'])
         with self.assertRaises(LegalReviewRequired):tax_estimate('england',-12,'2026-10-27',acknowledge_simple=True)
