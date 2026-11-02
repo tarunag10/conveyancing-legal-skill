@@ -1,8 +1,11 @@
 # App use and update timeline
 
 **Repository/package update:** 28 October 2026  
-**Current release:** 0.1.0 (`v0.1.0`)  
-**Legal research baseline:** 27 October 2026
+**Latest published release:** 0.1.0 (`v0.1.0`)
+
+**Current development package:** 0.1.1 (unreleased)
+
+**General legal research baseline:** 27 October 2026
 
 This is a sequence, not a promised number of days. The time each matter takes depends on its facts, documents, lender requirements and firm procedures.
 
@@ -25,6 +28,7 @@ For the detailed matter sequence, see [`PRACTICAL_MATTER_WORKFLOW.md`](PRACTICAL
 |---|---|
 | 27 October 2026 | Legal research reference date for the current source registry and rules. It is not an assurance that the material remains current after that date. |
 | 28 October 2026 | Version 0.1.0 published as a downloadable GitHub release; installation and distribution guidance recorded. No new legal research baseline is claimed by the packaging update. |
+| 2 November 2026 | Development package version advanced to 0.1.1 for post-release maintenance. This is not a new full legal research baseline. |
 | After 28 October 2026 | No automatic legal-content refresh is promised. Check primary sources at the point of use and follow the maintenance process when sources or rules change. |
 | 2030 and later | The package has no general 2030 expiry date. It may remain usable as software, subject to host compatibility and permission. Its stored legal material must not be assumed current through 2030. Date-sensitive features may refuse calculations after their declared review-by date until their data is researched, refreshed and checked. |
 

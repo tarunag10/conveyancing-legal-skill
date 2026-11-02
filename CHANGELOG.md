@@ -1,11 +1,11 @@
 # Changelog
 
-## 2 November 2026 — tax estimate and plugin status clarification
+## 2 November 2026 — unreleased 0.1.1 maintenance
 
 - Removed the hard stop tied solely to the snapshot verification date; estimates within the `review_by` window now carry an explicit `live_confirmation_required` status when the requested date is later than the check or the check date is missing.
 - Kept the review-by cutoff and specialist-complexity refusals in place.
 - Recorded the local ChatGPT desktop plugin marketplace and installation status without claiming workspace or public-directory publication.
-- No new legal research or rate refresh is claimed; the research baseline remains 27 October 2026.
+- Bumped development package metadata to 0.1.1. Latest published ZIP remains v0.1.0 pending a release.
 
 ## 28 October 2026 — distribution and documentation update (v0.1.0)
 

@@ -1,6 +1,6 @@
 # England and Wales Conveyancing Legal Skill
 
-**Release:** 0.1.0 | **Research baseline:** 27 October 2026 | **Repository/package update:** 28 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** tested, usable foundation; **not** a certified autonomous legal practice system.
+**Development package:** 0.1.1 (unreleased) | **Latest published release:** 0.1.0 | **General legal research baseline:** 27 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** usable foundation; **not** a certified autonomous legal practice system.
 
 A portable, evidence-gated conveyancing knowledge and workflow package for the law of England and Wales, focused on purchase/borrower/lender work. A single canonical `SKILL.md` selects independently maintainable practice modules and rules. A Python CLI supplies deterministic quality gates and calculations. **Human legal verification and lender-specific sign-off remain mandatory.**
 
@@ -61,7 +61,7 @@ conveyancing source-watch --limit 6               # dry-run, no HTTP calls
 conveyancing source-watch --allow-network --limit 6 --output reports/source-watch.json
 ```
 
-**Tax guardrail:** no relief, non-UK resident, linked transaction, mixed-use, special corporate rate, multiple dwellings, lease rent/NPV, lease premium complexities or anti-avoidance questions are calculated here. The snapshot review-by date is a hard cutoff; later dates refuse calculation. A missing verification date or requested date after the recorded check no longer blocks an in-window illustrative estimate, but the output is marked `live_confirmation_required` and official rates must be checked before reliance. The current rate snapshot has **review-by 3 November 2026**, meaning it must be researched again before later use.
+**Tax guardrail:** no relief, non-UK resident, linked transaction, mixed-use, special corporate rate, multiple dwellings, lease rent/NPV, lease premium complexities or anti-avoidance questions are calculated here. The snapshot review-by date is a hard cutoff; later dates refuse calculation. A missing verification date or requested date after the recorded check no longer blocks an in-window illustrative estimate, but the output is marked `live_confirmation_required` and official rates must be checked before reliance. The current snapshot has **review-by 3 November 2026** and must be researched again before later use.
 
 **Priority-period guardrail:** for OS1/OS2 the program requires a separately verified list of public holidays. It must not treat statutory deadlines, notice-to-complete deadlines and lender conditions as interchangeable.
 
