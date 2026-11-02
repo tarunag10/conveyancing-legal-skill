@@ -19,7 +19,7 @@
 ## Special change types
 
 - Land Registry form edits: download genuinely official current form, record filename, published date, SHA256, guidance and whether old editions accepted; do not redistribute restricted binaries.
-- SDLT/LTT: confirm actual effective date, chargeable consideration, special rates and user jurisdiction. Snapshot must be dated with expiry/review-by and tests recalculated against government examples. No implicit rate rollover.
+- SDLT/LTT: confirm actual effective date, chargeable consideration, special rates and user jurisdiction. Keep check/review reminder dates as advisory metadata; missing or passed dates trigger a live-confirmation warning, never a date-only stop. Recheck calculations against official examples when rates are deliberately updated. No implicit rate rollover.
 - UK Finance Handbook: record lender name, handbook platform/edition and relevant Part 1/2/3 section reference and date. Lender-specific terms are **not** republished here unless licensing permits.
 - Cases/judgments: establish official citation, court, precedential status, pending appeal, geographical scope and relevance before adding to rules; do not invent holdings.
 - Leasehold reforms: distinguish provisions enacted, commenced, scheduled, repealed or stayed; carry transitional cases separately.

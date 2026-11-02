@@ -1,11 +1,11 @@
 # Changelog
 
-## 2 November 2026 — unreleased 0.1.1 maintenance
+## 2 November 2026 — unreleased 0.1.2 maintenance
 
-- Removed the hard stop tied solely to the snapshot verification date; estimates within the `review_by` window now carry an explicit `live_confirmation_required` status when the requested date is later than the check or the check date is missing.
-- Kept the review-by cutoff and specialist-complexity refusals in place.
+- Removed all date-only refusals from tax illustrations. Missing, stale or passed verification/review reminder dates and dates outside the stored schedule now carry an explicit `live_confirmation_required` warning.
+- Kept substantive specialist-complexity refusals and input validation in place.
 - Recorded the local ChatGPT desktop plugin marketplace and installation status without claiming workspace or public-directory publication.
-- Bumped development package metadata to 0.1.1. Latest published ZIP remains v0.1.0 pending a release.
+- Bumped development package metadata to 0.1.2. Latest published ZIP remains v0.1.0 pending a release.
 
 ## 28 October 2026 — distribution and documentation update (v0.1.0)
 

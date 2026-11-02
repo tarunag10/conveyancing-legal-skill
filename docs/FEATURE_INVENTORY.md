@@ -14,7 +14,7 @@
 | Forms library (98 entries) | Yes (index) | Zero original form binary revisions independently hash-validated; individual panel coverage selective |
 | Dated source registry (51) | Yes | Source pages checked 27 Oct 2026; 33 rule records await legal sign-off |
 | Buyer-side completion money reconciliation | Yes, executable | Input-only; actual client account/lender evidence not confirmed |
-| Narrow basic residential SDLT/LTT calculator | Yes, executable | Time-gated illustrative bands; complex cases refused |
+| Narrow basic residential SDLT/LTT calculator | Yes, executable | Illustrative bands with freshness warnings; complex cases refused |
 | Selected statutory days / OS priority date | Yes, executable | Holiday list required; contractual notice analysis manual |
 | PDF/Word evidence text extraction | Yes, optional dependencies | Text only; OCR/visual signature or plan checks not provided |
 | Editable original Word and replacement change logs | Yes, optional dependency | Only literal same-run placeholders; no protected form mutation or guaranteed preservation of layout |

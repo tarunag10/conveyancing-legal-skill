@@ -52,31 +52,28 @@ def workflow(profile: str):
 
 
 def tax_estimate(jurisdiction: str, price, as_of: str, additional=False, *, acknowledge_simple=False, complexity_flags=()):
-    """Constrained illustrative snapshot calculation, refused outside review window or scope."""
+    """Constrained illustrative snapshot calculation; freshness dates warn, not block."""
     if not acknowledge_simple:
         raise LegalReviewRequired('Must explicitly acknowledge this is a simple residential illustrative case')
     if complexity_flags:
         raise LegalReviewRequired('Complex tax issue requires specialist review: '+', '.join(complexity_flags))
     data=load('knowledge/legislation/tax-rates.json')
     d=date.fromisoformat(as_of)
-    review_by=data.get('review_by')
-    if not review_by:
-        raise LegalReviewRequired('Tax snapshot has no review-by date; cannot establish its permitted use window')
-    if d>date.fromisoformat(review_by):
-        raise LegalReviewRequired('Tax snapshot past review-by date; verify latest rates from official authority')
+    review_reminder=data.get('review_reminder_date')
     verified_date=data.get('last_verified_date')
-    verification_status='dated_snapshot'
+    verification_notes=[]
     if not verified_date:
-        verification_status='live_confirmation_required'
-        verification_note='No snapshot verification date is recorded; confirm current rates with the official authority.'
+        verification_notes.append('No snapshot verification date is recorded; confirm current rates with the official authority.')
     elif d>date.fromisoformat(verified_date):
-        verification_status='live_confirmation_required'
-        verification_note=f'Requested date is after the snapshot check on {verified_date}; confirm current rates with the official authority.'
-    else:
-        verification_note=f'Snapshot last checked {verified_date}; confirm rates for the actual effective date.'
+        verification_notes.append(f'Requested date is after the snapshot check on {verified_date}; confirm current rates with the official authority.')
+    if not review_reminder:
+        verification_notes.append('No snapshot review reminder date is recorded; confirm current rates with the official authority.')
+    elif d>date.fromisoformat(review_reminder):
+        verification_notes.append(f'Snapshot review reminder date {review_reminder} has passed; confirm current rates with the official authority.')
     rate = next((r for r in data['regimes'] if r['jurisdiction']==jurisdiction.lower() and r['additional']==additional),None)
     if rate is None: raise LegalReviewRequired('Unknown jurisdiction/regime')
-    if d<date.fromisoformat(rate['effective_from']): raise LegalReviewRequired('No historical rates included for requested date')
+    if d<date.fromisoformat(rate['effective_from']):
+        verification_notes.append(f'Requested date predates the available rate schedule effective {rate["effective_from"]}; this illustration may not represent tax due. Check the historical schedule.')
     value=money(price)
     if value < 0: raise LegalReviewRequired('Purchase price must not be negative')
     tax=Decimal('0'); lower=Decimal('0'); breakdown=[]
@@ -88,7 +85,9 @@ def tax_estimate(jurisdiction: str, price, as_of: str, additional=False, *, ackn
         tax+=portion
         if value<=upper: break
         lower=upper
-    return {'jurisdiction':jurisdiction,'regime':rate['id'],'price':str(value),'tax':str(tax),'breakdown':breakdown,'source_url':rate['source'],'snapshot_verified':verified_date,'verification_status':verification_status,'verification_note':verification_note,'effective_from':rate['effective_from'],'review_by':review_by,'legal_status':'ILLUSTRATIVE ONLY; '+verification_note+' Validate reliefs, surcharges, chargeable consideration and rates at actual effective date.'}
+    verification_status='live_confirmation_required' if verification_notes else 'dated_snapshot'
+    verification_note=' '.join(verification_notes) if verification_notes else f'Snapshot last checked {verified_date}; confirm rates for the actual effective date.'
+    return {'jurisdiction':jurisdiction,'regime':rate['id'],'price':str(value),'tax':str(tax),'breakdown':breakdown,'source_url':rate['source'],'snapshot_verified':verified_date,'verification_status':verification_status,'verification_note':verification_note,'effective_from':rate['effective_from'],'review_reminder_date':review_reminder,'legal_status':'ILLUSTRATIVE ONLY; '+verification_note+' Validate reliefs, surcharges, chargeable consideration and rates at actual effective date.'}
 
 
 def statutory_deadline(event: str, on: str, holidays=None):

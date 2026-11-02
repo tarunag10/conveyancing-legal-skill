@@ -9,7 +9,7 @@
 - `publisher_listing_checked_only`: the form or directory was observed at its publisher. The embedded form's **binary version, PDF layout, signature panel, e-signature validity and applicable fees remain unverified**.
 - `edition_or_provenance_requires_verification`: even the edition requires separate provider verification. This is intentional, not a blank form.
 - Historical versions and effective dates are not reliably reconstructible from an updated web page alone. Consult revised legislation *and* original commencement/transitional instruments before applying rules retrospectively.
-- Tax rates are a time-limited illustration only; subsequent amendments can occur between source check and actual transaction effective date. Snapshot expires on 3 November 2026. Dates after 27 October are not asserted as verified: within the review window the CLI may still show an illustrative estimate, clearly marked as requiring live confirmation; dates past the review-by cutoff refuse calculation.
+- Tax rates are an illustration only; subsequent amendments can occur between source check and actual transaction effective date. Missing, stale or passed verification/review reminder dates never by themselves refuse an estimate: the CLI marks it `live_confirmation_required`. Dates outside the stored rate schedule also return a limited illustration and warn that it may not represent tax due; check the applicable schedule. Actual statutory, contractual and legal effective dates remain part of the work and are not freshness gates.
 
 ## Supported fully executable functions
 
@@ -17,7 +17,7 @@
 - Flag unproved historic mortgage release, unsatisfied restrictions, unverified highway status, reported document contradictions, open lender requirements and potentially applicable building-safety rules from **explicit JSON inputs**.
 - Reconcile buyer-side completion inputs with `Decimal` accounting; always refuse automated funds release and maintain evidence/condition blockers unless humans attest to checks. Input is not live bank evidence.
 - Calculate selected purely arithmetic due dates with explicit assumptions. No contractual notice analysis and no inferred holiday calendar.
-- Calculate narrow illustrative residential SDLT/LTT band estimates with dated gates and complexity refusal.
+- Calculate narrow illustrative residential SDLT/LTT band estimates with freshness warnings and complexity refusal.
 - Extract selectable PDF/Word text with source paragraph/page pointers, identify candidate references, record empty scan pages, and warn that execution cannot be authenticated.
 - Create editable **original** report Word documents, and replace explicit placeholders in a user-provided template while preserving unrelated runs and logging every change. Does not verify visual/layout fidelity or process tracked changes safely.
 - Check reference integrity, duplicate IDs, mandatory fields and skill architecture; run automated fictional scenario tests.

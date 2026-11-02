@@ -8,7 +8,7 @@ The project provides professional support tooling, not unattended legal advice. 
 2. Attach or link relevant authoritative material. Never commit privileged matter files or copyright-restricted form content.
 3. For a substantive change, add a legal reviewer sign-off field and tests including a negative or counterexample case.
 4. Run `python -m unittest discover -s tests -v` and `conveyancing validate` from an installed editable checkout.
-5. Update `knowledge/legislation/source-index.json` or `rules.json`, `docs/SOURCE_VERIFICATION_REPORT.md`, the relevant workflow, `CHANGELOG.md` and the review-by date for fiscal schedules if appropriate.
+5. Update `knowledge/legislation/source-index.json` or `rules.json`, `docs/SOURCE_VERIFICATION_REPORT.md`, the relevant workflow and `CHANGELOG.md`. Keep fiscal schedule check/review dates advisory; never add a date-only use cutoff.
 6. Request independent professional legal approval and a separate technical/code review before release. Avoid silently overwriting previously recorded historical propositions.
 
 `tools/seed_sources_forms.py` and `tools/seed_workflows.py` generate the **initial** curated reference datasets. Re-running them will overwrite the corresponding JSON registries: do so only on a controlled branch with a reviewed diff. Do not run the seeding scripts on real matter files.

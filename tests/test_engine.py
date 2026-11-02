@@ -180,7 +180,8 @@ class TaxDeadlineTests(unittest.TestCase):
         with self.assertRaises(LegalReviewRequired):tax_estimate('england',300000,'2026-10-27')
         after_check=tax_estimate('england',300000,'2026-10-28',acknowledge_simple=True)
         self.assertEqual('live_confirmation_required',after_check['verification_status'])
-        with self.assertRaises(LegalReviewRequired):tax_estimate('wales',300000,'2026-11-04',acknowledge_simple=True)
+        after_reminder=tax_estimate('wales',300000,'2026-11-04',acknowledge_simple=True)
+        self.assertEqual('live_confirmation_required',after_reminder['verification_status'])
         with self.assertRaises(LegalReviewRequired):tax_estimate('wales',300000,'2026-10-27',acknowledge_simple=True,complexity_flags=['TOGC'])
         with self.assertRaises(LegalReviewRequired):tax_estimate('england',-12,'2026-10-27',acknowledge_simple=True)
 
