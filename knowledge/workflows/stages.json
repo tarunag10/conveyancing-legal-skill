@@ -8,7 +8,10 @@
       "Record retainer/client role and title(s)",
       "Confirm property jurisdiction and transaction type",
       "Obtain contract and key dates",
-      "Identify proposed completion funding"
+      "Identify proposed completion funding",
+      "Confirm role, scope, authority and any proposed separate representation against instructions",
+      "Reconcile identities, property, title numbers, transaction type, jurisdiction and key dates with documents",
+      "Record proposed funding, dependencies, urgency and any missing instruction or engagement evidence"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -42,6 +45,14 @@
       "Property, jurisdiction and transaction summary",
       "Key date and deadline register",
       "Proposed funding summary"
+    ],
+    "review_prompts": [
+      "Are the parties, property and scope consistent across instructions and documents?",
+      "Which dates are actual deadlines and what evidence establishes them?"
+    ],
+    "escalation_triggers": [
+      "Unclear authority, conflict, property identity or jurisdiction",
+      "A deadline precedes necessary instructions or checks"
     ]
   },
   {
@@ -52,7 +63,10 @@
     "mandatory_tasks": [
       "Complete client identity and beneficial ownership checks",
       "Check authority/capacity and conflict position",
-      "Screen sanctions/PEP and financial crime risk in approved firm systems"
+      "Screen sanctions/PEP and financial crime risk in approved firm systems",
+      "Record the firm-approved identity and beneficial ownership checks and their evidence references",
+      "Record capacity, authority, conflict assessment and screening outcome in approved systems",
+      "Refer discrepancies and unresolved risk to the responsible compliance officer"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -87,6 +101,14 @@
       "Authority and capacity record",
       "Conflict check outcome",
       "Sanctions/PEP screening reference and escalation status"
+    ],
+    "review_prompts": [
+      "Who is the client, who controls the client, and who has authority to instruct?",
+      "Are identity, conflicts and screening results recorded without treating AI output as clearance?"
+    ],
+    "escalation_triggers": [
+      "Identity or ownership discrepancy, lack of authority or potential conflict",
+      "Unresolved sanctions, PEP or compliance escalation"
     ]
   },
   {
@@ -97,7 +119,10 @@
     "mandatory_tasks": [
       "Obtain verifiable source of funds and where required wealth",
       "Reconcile bank chain/transfers to contribution",
-      "Flag third-party gifts, company accounts or unexplained cash"
+      "Flag third-party gifts, company accounts or unexplained cash",
+      "Map each contribution to evidence and reconcile transfers, lender funds and third-party gifts",
+      "Record source of wealth assessment where required by the firm’s risk assessment",
+      "Refer unexplained gaps or changes to the firm’s compliance process; record the decision reference"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -132,6 +157,14 @@
       "Source-of-wealth rationale where required",
       "Gift/third-party/company-funds assessment",
       "Compliance escalation or clearance reference"
+    ],
+    "review_prompts": [
+      "Does evidence support the entire funds trail and the timing and amount of contributions?",
+      "Are third-party funds, changed payment details and unexplained gaps independently investigated?"
+    ],
+    "escalation_triggers": [
+      "Unexplained funds, inconsistent evidence or unapproved third-party contribution",
+      "Payment diversion warning or unresolved compliance referral"
     ]
   },
   {
@@ -420,7 +453,10 @@
     "mandatory_tasks": [
       "Identify lender instruction source and version",
       "Compare offer against security, valuation assumptions and title facts",
-      "Track each lender requirement with evidence and reporting/approval"
+      "Track each lender requirement with evidence and reporting/approval",
+      "Reconcile the offer, borrower, property, loan amount, validity and special conditions to the matter",
+      "Review applicable lender instructions and current lender-specific requirements; track each condition and evidence",
+      "Record any required report, consent or waiver from the actual lender and its decision"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -457,6 +493,14 @@
       "Condition-by-condition evidence and status register",
       "Disclosure, referral and lender decision log",
       "Outstanding conditions to completion"
+    ],
+    "review_prompts": [
+      "Are offer conditions and title/contract details consistent with the evidence?",
+      "What must be disclosed to the lender and has its decision been received?"
+    ],
+    "escalation_triggers": [
+      "Offer expiry, discrepancy, unmet condition or unauthorised change",
+      "Unanswered lender referral or unverified lender waiver"
     ]
   },
   {
@@ -467,7 +511,10 @@
     "mandatory_tasks": [
       "Issue client title and financial report",
       "Explain mortgage restrictions, searches, defects, risks and tax assumptions",
-      "Obtain specific informed instructions and sign-off"
+      "Obtain specific informed instructions and sign-off",
+      "Prepare an evidence-linked report of title, search results, costs and material risks",
+      "Record advice, outstanding enquiries, decisions and express client instructions",
+      "Identify lender disclosures and any specialist referral without assuming acceptance"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -504,6 +551,14 @@
       "Risks, assumptions and options explained",
       "Client instructions and informed decisions",
       "Outstanding client actions"
+    ],
+    "review_prompts": [
+      "Can every material conclusion be traced to evidence?",
+      "Has the client been advised of remaining risk and actually instructed on it?"
+    ],
+    "escalation_triggers": [
+      "Material risk or exception not explained or unresolved",
+      "Missing instructions, uncertainty or conflict with lender requirements"
     ]
   },
   {
@@ -514,7 +569,10 @@
     "mandatory_tasks": [
       "Verify contract agreed, title/searches/lender approvals and agreed deposit",
       "Check chain position, property insurance responsibility and authority",
-      "Obtain authorised exchange instruction and record exchange particulars"
+      "Obtain authorised exchange instruction and record exchange particulars",
+      "Check agreed contract, deposit, completion date and outstanding conditions against evidence",
+      "Record express authority and professional confirmation that all relevant matters have been reviewed",
+      "Track unresolved title, funds, searches, lender and client instruction issues for human decision"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -550,6 +608,14 @@
       "Deposit and chain position",
       "Insurance responsibility and authority record",
       "Exchange particulars recorded by authorised conveyancer"
+    ],
+    "review_prompts": [
+      "Are the final contractual terms and completion date agreed and evidenced?",
+      "Are all material blockers resolved or referred for a documented authorised decision?"
+    ],
+    "escalation_triggers": [
+      "Missing client authority or unreviewed contract",
+      "Unresolved material issue, funds uncertainty or lender condition"
     ]
   },
   {
@@ -560,7 +626,10 @@
     "mandatory_tasks": [
       "Raise requisitions, review TA13 or equivalent replies",
       "Obtain redemption figures, completion statement and undertakings",
-      "Complete OS1/OS2 as applicable, bankruptcy search, finance and restrictions"
+      "Complete OS1/OS2 as applicable, bankruptcy search, finance and restrictions",
+      "Record priority and bankruptcy search details where applicable, validity and adverse entries",
+      "Reconcile completion statement, redemption figures, lender funds, client funds and undertakings",
+      "Verify payment instructions through the firm’s independently approved process and record authority"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -596,6 +665,14 @@
       "Priority/bankruptcy search and expiry tracking",
       "Redemption, undertakings and completion funds reconciliation",
       "Outstanding pre-completion actions and owner"
+    ],
+    "review_prompts": [
+      "Are search results, expiry dates, redemption figures and completion funds supported by current evidence?",
+      "Are changed bank details independently verified through an approved channel?"
+    ],
+    "escalation_triggers": [
+      "Adverse search, expired protection or unverified priority deadline",
+      "Funds shortfall, disputed redemption or suspicious payment instruction"
     ]
   },
   {
@@ -606,7 +683,10 @@
     "mandatory_tasks": [
       "Reconcile funds and execute completion statement",
       "Review conditions, payment verification and completion undertakings",
-      "Check dated documents, release/possession and completion confirmations"
+      "Check dated documents, release/possession and completion confirmations",
+      "Prepare the completion ledger, payment schedule and conditions for human review",
+      "Record actual completion confirmation, date, payment evidence and key release arrangements",
+      "Track redemption, undertakings and notices with responsible person and evidence"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -643,6 +723,14 @@
       "Completion conditions and payment verification record",
       "Completion confirmation and time",
       "Deeds, keys/possession and undertakings follow-up"
+    ],
+    "review_prompts": [
+      "Do reconciled funds and actual authority cover the intended payments?",
+      "Is completion supported by actual confirmation rather than an anticipated date?"
+    ],
+    "escalation_triggers": [
+      "Unverified payment instructions, shortfall or unauthorised payment",
+      "Unconfirmed completion, discharge or outstanding undertaking"
     ]
   },
   {
@@ -653,7 +741,10 @@
     "mandatory_tasks": [
       "Determine England SDLT versus Wales LTT and tax effective date",
       "Check consideration, reliefs, surcharge, VAT and exemption",
-      "Prepare return/payment where notifiable and obtain certificate"
+      "Prepare return/payment where notifiable and obtain certificate",
+      "Determine jurisdiction, effective date, consideration, transaction features and return requirements from evidence",
+      "Record the tax analysis, applicable rates and reliefs, calculation, approval and filing deadline for human review",
+      "Track return submission, payment and the actual certificate where required"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -689,6 +780,14 @@
       "Consideration, relief and surcharge assumptions for review",
       "Return/payment responsibility and deadline",
       "Filed return, payment and certificate/receipt references"
+    ],
+    "review_prompts": [
+      "Have linked transactions, reliefs and unusual consideration been assessed by the appropriate specialist?",
+      "Is the tax result expressly unverified if current rules or facts cannot be confirmed?"
+    ],
+    "escalation_triggers": [
+      "Uncertain jurisdiction, effective date, consideration or relief",
+      "Tax calculation or return cannot be independently verified before deadline"
     ]
   },
   {
@@ -699,7 +798,10 @@
     "mandatory_tasks": [
       "Select accurate application forms and edition",
       "Comply with restrictions and fees, prepare certified supporting evidence",
-      "Lodge within priority period; manage requisitions and receipt"
+      "Lodge within priority period; manage requisitions and receipt",
+      "Record title, disposition, application documents, restriction compliance, fee and supporting evidence",
+      "Track application submission, official reference, priority expiry and requisition deadlines",
+      "Reconcile completed register and title plan with application, charges and lender requirements"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -735,6 +837,14 @@
       "Restriction/consent/discharge satisfaction evidence",
       "Priority expiry and lodgement tracking",
       "Requisition owner, response and registration outcome"
+    ],
+    "review_prompts": [
+      "Is each document, signature, identity requirement and consent supported and checked?",
+      "Has the final register actually been received and compared against the application?"
+    ],
+    "escalation_triggers": [
+      "Missing or defective execution, identity, consent, fee or certificate",
+      "Priority expiry, requisition deadline, cancellation risk or final register discrepancy"
     ]
   },
   {
@@ -745,7 +855,10 @@
     "mandatory_tasks": [
       "Check updated title and lender charge entries",
       "Serve landlord/management notices; confirm any Companies House filing",
-      "Issue final title report to client and lender; reconcile file balances"
+      "Issue final title report to client and lender; reconcile file balances",
+      "Confirm registration outcome and review final register, plan and charge entries",
+      "Track completion of notices, undertakings, lender reporting, client reporting and documents",
+      "Record residual actions, ownership and retention in the firm’s approved system"
     ],
     "conditional_tasks": [
       "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
@@ -782,6 +895,14 @@
       "Landlord/management notices and receipts",
       "Client/lender final report references",
       "Final account, undertakings and residual task closure"
+    ],
+    "review_prompts": [
+      "Is registration complete rather than merely lodged?",
+      "Are outstanding undertakings, notices and lender reporting evidenced?"
+    ],
+    "escalation_triggers": [
+      "Registration incomplete, cancelled or materially inconsistent",
+      "Outstanding undertaking or unresolved post-completion obligation"
     ]
   }
 ]

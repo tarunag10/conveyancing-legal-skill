@@ -1,5 +1,12 @@
 # Changelog
 
+## 2 November 2026 — development 0.1.5
+
+- Expanded the remaining workflow stages with evidence-led tasks, review prompts and escalation triggers.
+- Added a document matrix, matter and source review records, and priority form navigation; these do not certify forms or approve legal rules.
+- No new general legal research baseline or form binary validation is claimed.
+
+
 ## 2 November 2026 — unreleased 0.1.4 stages 4–7
 
 - Expanded contract-pack, title-investigation, searches/enquiries, and leasehold/estate-management stages with targeted task lists, review prompts, escalation triggers and stage-specific deliverables.

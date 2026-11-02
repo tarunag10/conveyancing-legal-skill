@@ -30,3 +30,7 @@
 2. Exhaustive legal sign-off for operative, transitional and jurisdictional status; live lender conditions.
 3. Adversarial document parsing and OCR validation, scanned plans and boundary interpretation.
 4. Independent legal and QA review, platform-by-platform acceptance, secure file storage and live CI deployment.
+
+## Development additions in 0.1.5
+
+All 15 stages now have stage-specific review prompts and escalation triggers. The document matrix, combined matter review record, source review record and priority forms navigation support supervised work; they are blank aids, not validated form binaries, legal sign-off, live integrations, secure storage or production certification. The source/form links are point-in-time pointers and require rechecking.

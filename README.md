@@ -1,6 +1,6 @@
 # England and Wales Conveyancing Legal Skill
 
-**Development package:** 0.1.4 (unreleased) | **Latest published release:** 0.1.0 | **General legal research baseline:** 27 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** usable foundation; **not** a certified autonomous legal practice system.
+**Development package:** 0.1.5 (unreleased) | **Latest published release:** 0.1.0 | **General legal research baseline:** 27 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** usable foundation; **not** a certified autonomous legal practice system.
 
 A portable, evidence-gated conveyancing knowledge and workflow package for the law of England and Wales, focused on purchase/borrower/lender work. A single canonical `SKILL.md` selects independently maintainable practice modules and rules. A Python CLI supplies deterministic quality gates and calculations. **Human legal verification and lender-specific sign-off remain mandatory.**
 
