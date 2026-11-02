@@ -36,7 +36,13 @@
     "completion_criteria": [
       "scope confirmed; client and roles evidenced"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Matter scope and client role summary",
+      "Property, jurisdiction and transaction summary",
+      "Key date and deadline register",
+      "Proposed funding summary"
+    ]
   },
   {
     "id": "cdd",
@@ -75,7 +81,13 @@
     "completion_criteria": [
       "supervisor confirms risk-based onboarding"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Identity and beneficial ownership check record",
+      "Authority and capacity record",
+      "Conflict check outcome",
+      "Sanctions/PEP screening reference and escalation status"
+    ]
   },
   {
     "id": "aml",
@@ -114,7 +126,13 @@
     "completion_criteria": [
       "funding chain reviewed by firm compliance"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Source-of-funds trail and reconciliation",
+      "Source-of-wealth rationale where required",
+      "Gift/third-party/company-funds assessment",
+      "Compliance escalation or clearance reference"
+    ]
   },
   {
     "id": "contract",
@@ -154,7 +172,13 @@
     "completion_criteria": [
       "all material terms understood and instructions obtained"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Contract terms and special-condition summary",
+      "Material deviations and risks",
+      "Agreed amendments and client instructions",
+      "Exchange/completion mechanics"
+    ]
   },
   {
     "id": "title",
@@ -195,7 +219,13 @@
     "completion_criteria": [
       "title findings supported by source evidence"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Title and extent summary with register/deed references",
+      "Rights, restrictions, charges and defects schedule",
+      "Unresolved title enquiries and proposed cures",
+      "Title report conclusions for human review"
+    ]
   },
   {
     "id": "searches",
@@ -236,7 +266,13 @@
     "completion_criteria": [
       "results assessed and material issues resolved or formally accepted"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Searches ordered and reviewed with dates/scope",
+      "Search limitations and adverse findings",
+      "Enquiries, replies and unresolved points",
+      "Risk treatment and any required lender referral"
+    ]
   },
   {
     "id": "leasehold",
@@ -276,7 +312,13 @@
     "completion_criteria": [
       "consents and conditions mapped"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Lease terms and liabilities summary",
+      "Management pack, service charge and planned works summary",
+      "Consents, certificates, notices and fees tracker",
+      "Building safety evidence and unresolved items where applicable"
+    ]
   },
   {
     "id": "mortgage",
@@ -317,7 +359,13 @@
     "completion_criteria": [
       "all lender conditions verified/waived by authorised lender"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Applicable lender instruction sources and versions",
+      "Condition-by-condition evidence and status register",
+      "Disclosure, referral and lender decision log",
+      "Outstanding conditions to completion"
+    ]
   },
   {
     "id": "client-report",
@@ -358,7 +406,13 @@
     "completion_criteria": [
       "client instructions evidenced"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Client report and financial summary reference",
+      "Risks, assumptions and options explained",
+      "Client instructions and informed decisions",
+      "Outstanding client actions"
+    ]
   },
   {
     "id": "exchange",
@@ -398,7 +452,13 @@
     "completion_criteria": [
       "exchange only with authorised conveyancer decision"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Pre-exchange conditions checklist and evidence references",
+      "Deposit and chain position",
+      "Insurance responsibility and authority record",
+      "Exchange particulars recorded by authorised conveyancer"
+    ]
   },
   {
     "id": "precompletion",
@@ -438,7 +498,13 @@
     "completion_criteria": [
       "title priority and completion mechanics validated"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Requisitions and replies status",
+      "Priority/bankruptcy search and expiry tracking",
+      "Redemption, undertakings and completion funds reconciliation",
+      "Outstanding pre-completion actions and owner"
+    ]
   },
   {
     "id": "completion",
@@ -479,7 +545,13 @@
     "completion_criteria": [
       "lawyer confirms cleared funds, conditions and completion"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Completion funds and ledger reconciliation",
+      "Completion conditions and payment verification record",
+      "Completion confirmation and time",
+      "Deeds, keys/possession and undertakings follow-up"
+    ]
   },
   {
     "id": "tax",
@@ -519,7 +591,13 @@
     "completion_criteria": [
       "authorised return filed and tax paid where due"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Jurisdiction and effective-date basis",
+      "Consideration, relief and surcharge assumptions for review",
+      "Return/payment responsibility and deadline",
+      "Filed return, payment and certificate/receipt references"
+    ]
   },
   {
     "id": "registration",
@@ -559,7 +637,13 @@
     "completion_criteria": [
       "application acceptance monitored and registration confirmed"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Application type, forms and supporting evidence checklist",
+      "Restriction/consent/discharge satisfaction evidence",
+      "Priority expiry and lodgement tracking",
+      "Requisition owner, response and registration outcome"
+    ]
   },
   {
     "id": "closure",
@@ -600,6 +684,12 @@
     "completion_criteria": [
       "all required entries and notices evidenced; residual tasks allocated"
     ],
-    "default_status": "outstanding"
+    "default_status": "outstanding",
+    "expected_outputs": [
+      "Updated title and lender charge evidence",
+      "Landlord/management notices and receipts",
+      "Client/lender final report references",
+      "Final account, undertakings and residual task closure"
+    ]
   }
 ]

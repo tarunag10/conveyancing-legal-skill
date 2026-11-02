@@ -49,6 +49,8 @@ class RegistryTests(unittest.TestCase):
         w=workflow('registered-freehold-purchase')
         self.assertEqual(15,len(w['stages']))
         self.assertTrue(all(s['default_status']=='outstanding' for s in w['stages']))
+        self.assertTrue(all(s['expected_outputs'] and s['work_record']['status']=='outstanding' for s in w['stages']))
+        self.assertTrue(all(s['work_record']['human_review']['decision']=='pending' for s in w['stages']))
         self.assertTrue(w['profile']['human_approval_required'])
         with self.assertRaises(LegalReviewRequired):workflow('does-not-exist')
 

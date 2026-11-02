@@ -1,5 +1,12 @@
 # Changelog
 
+## 2 November 2026 — unreleased 0.1.3 workflow outputs
+
+- Added stage-specific expected deliverables and a fillable work record to each of the 15 workflow stages.
+- Outputs include evidence references, findings, outstanding actions and owner/deadline fields, client instructions, lender reporting and a pending human-review record.
+- All stages remain outstanding until a human reviewer records supported work; no client or lender approvals are inferred.
+- Bumped development package metadata to 0.1.3. Latest published ZIP remains v0.1.0 pending a release.
+
 ## 2 November 2026 — unreleased 0.1.2 maintenance
 
 - Removed all date-only refusals from tax illustrations. Missing, stale or passed verification/review reminder dates and dates outside the stored schedule now carry an explicit `live_confirmation_required` warning.

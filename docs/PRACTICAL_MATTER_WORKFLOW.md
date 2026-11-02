@@ -12,6 +12,8 @@ This workflow shows how to use the current CLI as a supervised evidence organise
 
 From an installed project environment, list profiles with `conveyancing workflow --list`, then inspect a relevant one, for example `conveyancing workflow registered-freehold-purchase`. The workflow's stages start outstanding; they are a checklist, not proof that work is done.
 
+The workflow result now gives all 15 stages stage-specific expected outputs and a fillable `work_record`: deliverable status and evidence references, reviewed evidence, findings, open actions with owner/deadline fields, client instructions, lender reports, and a pending human-review record. Fill these from matter evidence only. Leave unknowns outstanding; record the actual responsible person and applicable deadline rather than allowing the tool to infer them. Keep the matter record in the firm's approved case system.
+
 Copy `templates/matter-intake.template.json` into the private matter workspace. Record each document once in `documents` with a stable `document_id`, type, title/address where relevant, and a locator such as `official copy register, Charges Register, entry C2, page 3`. In issue records (`charges`, `restrictions`, `access`, and `lender_requirements`), use the same document ID and a precise page/clause locator. Record assertions as assertions; do not turn them into verified facts.
 
 ## 3. Record lender conditions separately

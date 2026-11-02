@@ -9,4 +9,6 @@ description: Evidence-gated conveyancing for qualified practitioners in England 
 
 **Progressive disclosure:** read `knowledge/workflows/ROUTER.md`, then *only* the relevant `knowledge/practice/*.md`, form catalogue entry, actual matter source documents and applicable rule records. Every stage initially remains outstanding; no automatic funds release, legal sign-off or filing.
 
+For a 15-stage workflow, return a record for every applicable stage with status, expected deliverables, evidence references, findings, open actions (owner and actual deadline when known), client instructions, lender reports/decisions, and human reviewer/decision. Leave unknown fields empty and keep unsupported work outstanding or pending. Link findings to document IDs and page/clause locators. Never infer completion, approval, or satisfaction from a blank field.
+
 If the root is not available (for example a standalone installed folder), tell the user the skill is incompletely installed and ask that the whole repository or an accessible copy of canonical core and modules be connected. Do not replace unavailable legal modules with remembered rules.

@@ -48,6 +48,7 @@ def validate() -> dict:
         for stage in profile.get('additional_stages',[]):
             if stage not in stids:warnings.append(f'Profile {profile["id"]} has external stage: {stage}')
     for s in stages:
+        if not s.get('expected_outputs'):errors.append(f'Stage has no expected outputs: {s["id"]}')
         for dep in s['dependencies']:
             if dep not in stids:errors.append(f'Unknown stage dependency: {s["id"]}: {dep}')
         if s['default_status']!='outstanding':errors.append(f'Unproven stage is marked complete: {s["id"]}')

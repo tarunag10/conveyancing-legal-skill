@@ -6,7 +6,7 @@
 | Claude Code, Codex, Cursor, Gemini CLI folder adapters | Yes | Installed directories and short launchers; host discovery not tested |
 | ChatGPT Projects fallback | Yes | Copy-ready instructions; manual upload required |
 | ChatGPT desktop plugin package | Yes; repo marketplace configured and local CLI reports installed/enabled | ChatGPT UI visibility, workspace publication and public directory listing have not been verified |
-| 15 end-to-end conveyancing stages | Yes | Stage definitions include tasks, conditional tasks, responsibilities, evidence, dependencies and unproven default status |
+| 15 end-to-end conveyancing stages | Yes | Stage-specific expected deliverables plus fillable evidence, findings, action, client/lender and human-review records; all start outstanding |
 | 28 matter-specific profiles | Yes | Detailed variation tasks; workflow approval remains manual |
 | Registered/unregistered title, deeds, charges, access | Yes (reference and risk triage) | No automatic title opinion or visually verified plan interpretation |
 | Auction, buy-to-let, bridging, corporate borrowers, ILA | Yes (reference and checklist) | No lender-specific Part 2 content, approved security package or lawyer certification |

@@ -1,6 +1,6 @@
 # England and Wales Conveyancing Legal Skill
 
-**Development package:** 0.1.2 (unreleased) | **Latest published release:** 0.1.0 | **General legal research baseline:** 27 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** usable foundation; **not** a certified autonomous legal practice system.
+**Development package:** 0.1.3 (unreleased) | **Latest published release:** 0.1.0 | **General legal research baseline:** 27 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** usable foundation; **not** a certified autonomous legal practice system.
 
 A portable, evidence-gated conveyancing knowledge and workflow package for the law of England and Wales, focused on purchase/borrower/lender work. A single canonical `SKILL.md` selects independently maintainable practice modules and rules. A Python CLI supplies deterministic quality gates and calculations. **Human legal verification and lender-specific sign-off remain mandatory.**
 
@@ -8,7 +8,7 @@ For a step-by-step use sequence, recorded update dates and the 2030-and-later po
 
 ## What is included
 
-- 15 stages for intake, CDD/AML, title, searches, enquiries, finance, reporting, exchange, completion, tax, registration and closing. **28 transaction profiles**, including commercial, auction, unregistered, bridging, corporate, transfers, shared ownership and development.
+- 15 stages for intake, CDD/AML, title, searches, enquiries, finance, reporting, exchange, completion, tax, registration and closing. Each workflow output includes stage-specific deliverables and fillable evidence, findings, actions, client/lender decisions and human-review records. **28 transaction profiles**, including commercial, auction, unregistered, bridging, corporate, transfers, shared ownership and development.
 - 9 substantial practice modules and a registered/unregistered title risk-review protocol. An explicit risk scheme R0–R4 and evidence trace requirements.
 - **98 indexed forms**, their official provider page or directory, verification status, general execution/filing considerations and specific first-priority panel guides. The binary versions and numerous individual form paragraphs remain **unverified**: no PDF/Word facsimiles are included.
 - **51 authoritative source records** and **33 indexed legal rules** with a 27 October 2026 check baseline and explicit commissioning/commencement caveats. The source directory is **not** an assurance that all legislation is current at the later point of use.

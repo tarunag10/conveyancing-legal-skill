@@ -10,6 +10,7 @@
 - `edition_or_provenance_requires_verification`: even the edition requires separate provider verification. This is intentional, not a blank form.
 - Historical versions and effective dates are not reliably reconstructible from an updated web page alone. Consult revised legislation *and* original commencement/transitional instruments before applying rules retrospectively.
 - Tax rates are an illustration only; subsequent amendments can occur between source check and actual transaction effective date. Missing, stale or passed verification/review reminder dates never by themselves refuse an estimate: the CLI marks it `live_confirmation_required`. Dates outside the stored rate schedule also return a limited illustration and warn that it may not represent tax due; check the applicable schedule. Actual statutory, contractual and legal effective dates remain part of the work and are not freshness gates.
+- Workflow stage records are editable templates, not a case-management system or evidence store. Empty deliverables, action and review fields do not imply that a task is satisfied or approved.
 
 ## Supported fully executable functions
 

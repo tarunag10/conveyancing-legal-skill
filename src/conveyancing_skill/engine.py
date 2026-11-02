@@ -48,6 +48,18 @@ def workflow(profile: str):
     matches=[x for x in load('knowledge/workflows/profiles.json') if x['id']==profile]
     if not matches:
         raise LegalReviewRequired(f'Unknown profile {profile}; use workflow --list')
+    for stage in stages:
+        stage['work_record']={
+            'status':'outstanding',
+            'deliverables':[{'item':item,'status':'outstanding','evidence_refs':[],'notes':None} for item in stage['expected_outputs']],
+            'evidence_reviewed':[],
+            'findings':[],
+            'open_actions':[{'action':task,'status':'outstanding','owner':None,'due_date':None} for task in stage['mandatory_tasks']],
+            'completion_evidence':[],
+            'client_instructions':[],
+            'lender_reports':[],
+            'human_review':{'reviewer':None,'decision':'pending','reviewed_at':None},
+        }
     return {'profile': matches[0], 'stages': stages, 'approval_state':'none; all evidence gates remain outstanding'}
 
 
