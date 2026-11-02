@@ -51,6 +51,8 @@ class RegistryTests(unittest.TestCase):
         self.assertTrue(all(s['default_status']=='outstanding' for s in w['stages']))
         self.assertTrue(all(s['expected_outputs'] and s['work_record']['status']=='outstanding' for s in w['stages']))
         self.assertTrue(all(s['work_record']['human_review']['decision']=='pending' for s in w['stages']))
+        self.assertTrue(all(s['review_prompts'] and s['escalation_triggers'] for s in w['stages'][3:7]))
+        self.assertTrue(all(s['work_record']['conditional_review'] for s in w['stages'][3:7]))
         self.assertTrue(w['profile']['human_approval_required'])
         with self.assertRaises(LegalReviewRequired):workflow('does-not-exist')
 

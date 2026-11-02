@@ -55,6 +55,7 @@ def workflow(profile: str):
             'evidence_reviewed':[],
             'findings':[],
             'open_actions':[{'action':task,'status':'outstanding','owner':None,'due_date':None} for task in stage['mandatory_tasks']],
+            'conditional_review':[{'task':task,'applicability':'unassessed','rationale':None} for task in stage['conditional_tasks']],
             'completion_evidence':[],
             'client_instructions':[],
             'lender_reports':[],

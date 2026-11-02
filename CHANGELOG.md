@@ -1,5 +1,11 @@
 # Changelog
 
+## 2 November 2026 — unreleased 0.1.4 stages 4–7
+
+- Expanded contract-pack, title-investigation, searches/enquiries, and leasehold/estate-management stages with targeted task lists, review prompts, escalation triggers and stage-specific deliverables.
+- Added conditional-task applicability records so irrelevant work is explicitly assessed with a rationale rather than silently skipped.
+- Bumped development package metadata to 0.1.4. No legal rules or source research were updated; the latest published ZIP remains v0.1.0.
+
 ## 2 November 2026 — unreleased 0.1.3 workflow outputs
 
 - Added stage-specific expected deliverables and a fillable work record to each of the 15 workflow stages.

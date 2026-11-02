@@ -140,17 +140,24 @@
     "sequence": 4,
     "applies": "unless expressly not applicable on documented review",
     "mandatory_tasks": [
-      "Obtain and review draft contract and incorporated conditions",
-      "Identify price, property, tenure, deposit and VAT terms",
-      "Review standard and special conditions and completion mechanism"
+      "Compare the draft contract, sale memorandum, property particulars and title identifiers for consistency",
+      "Record parties, price, deposit, tenure, property extent, included items, VAT wording and vacant-possession/occupation terms where relevant",
+      "Review incorporated standard conditions, every special condition, completion mechanics, default consequences and any notice provisions",
+      "Identify missing papers, non-standard obligations, amendments needed and points requiring client or lender instructions",
+      "Prepare a clause-referenced contract issues and amendments schedule for lawyer review"
     ],
     "conditional_tasks": [
-      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+      "For auction or deadline-led transactions, extract the actual completion date, notice mechanics, deposit terms and any accelerated obligations from the pack",
+      "For new build, leasehold, company, mixed-use or VAT-sensitive transactions, add the relevant profile and specialist module review",
+      "Where the borrower has lender representation, check contractual terms against the actual offer and lender instructions and record any referral"
     ],
     "documents_required": [
-      "draft contract",
-      "special conditions",
-      "forms and supporting contract pack"
+      "draft contract and incorporated conditions",
+      "sale memorandum or auction particulars",
+      "title documents and plan",
+      "seller property forms and replies",
+      "special conditions and referenced documents",
+      "amendments, side letters or incentives where supplied"
     ],
     "responsible_parties": [
       "conducting conveyancer",
@@ -174,10 +181,27 @@
     ],
     "default_status": "outstanding",
     "expected_outputs": [
-      "Contract terms and special-condition summary",
-      "Material deviations and risks",
-      "Agreed amendments and client instructions",
-      "Exchange/completion mechanics"
+      "Parties, property, title, tenure, price and deposit cross-check",
+      "Clause-referenced terms and special-condition summary",
+      "Material deviations, liabilities, deadlines and default consequences",
+      "Missing/referenced documents and targeted questions",
+      "Agreed amendments and client instructions record",
+      "Lender referral/decision record where required",
+      "Exchange and completion mechanics summary for lawyer review"
+    ],
+    "review_prompts": [
+      "Does the contract identify the same parties, title/property extent and tenure as the instructions and evidence?",
+      "Which incorporated, varied or special terms depart from the expected transaction or create unusual cost, risk or timing?",
+      "Are all referenced documents available and reviewed, or explicitly listed as missing?",
+      "What must the client understand or decide before an irreversible step?",
+      "What lender approval or disclosure is required by the actual instructions?"
+    ],
+    "escalation_triggers": [
+      "Property, party, title or price mismatch",
+      "Unreviewed incorporated document or material non-standard obligation",
+      "Unclear deposit, completion, default, notice or vacant-possession arrangement",
+      "Possible VAT, incentive, linked transaction or lender-security issue",
+      "Contract deadline that may expire before required advice, evidence or approval"
     ]
   },
   {
@@ -186,18 +210,23 @@
     "sequence": 5,
     "applies": "unless expressly not applicable on documented review",
     "mandatory_tasks": [
-      "Examine all relevant property/proprietorship/charges entries or unregistered epitome",
-      "Check title plan/deeds against physical extent and contract",
-      "Investigate adverse interests, charges, rights, restrictions and missing instruments"
+      "Identify and review the correct current register and title plan, or establish the unregistered title evidence chain",
+      "Reconcile registered proprietor/seller, title number, class, extent and tenure against the contract and physical/property evidence",
+      "Analyse relevant property, proprietorship and charges entries and each referenced or filed instrument",
+      "Map rights, reservations, covenants, easements, leases, charges, restrictions, notices and other interests to their evidence and practical effect",
+      "Track each title defect, missing deed, consent, discharge or third-party dependency with a proposed evidence-based cure"
     ],
     "conditional_tasks": [
-      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+      "For unregistered title, build the epitome and assess root, land charges and evidence gaps under the unregistered title module",
+      "For leasehold, estate, shared ownership, development or auction matters, add the relevant specialist module and profile checks",
+      "For lender representation, assess title against actual lender requirements and record report/approval status"
     ],
     "documents_required": [
-      "official copies/register",
-      "filed deeds",
-      "title plan",
-      "epitome where applicable"
+      "current official register and title plan or complete unregistered epitome",
+      "all relevant filed deeds and referenced instruments",
+      "contract plan and sale particulars",
+      "evidence addressing charges, restrictions, rights and consents",
+      "relevant leases, transfers, variations and prior conveyances as applicable"
     ],
     "responsible_parties": [
       "conducting conveyancer",
@@ -221,10 +250,27 @@
     ],
     "default_status": "outstanding",
     "expected_outputs": [
-      "Title and extent summary with register/deed references",
-      "Rights, restrictions, charges and defects schedule",
-      "Unresolved title enquiries and proposed cures",
-      "Title report conclusions for human review"
+      "Title identity, class, tenure and extent reconciliation with source locators",
+      "Property, proprietorship and charges register analysis or unregistered evidence-chain summary",
+      "Rights, covenants, easements, restrictions, charges and notices schedule",
+      "Plan/physical extent and access discrepancies requiring investigation",
+      "Missing instruments and defect/cure tracker with responsible party",
+      "Lender title-reporting and approval items where applicable",
+      "Draft title conclusions and residual assumptions for human review"
+    ],
+    "review_prompts": [
+      "Does each title conclusion trace to the current register, filed instrument or other identified evidence?",
+      "Are plans and descriptions consistent, and what cannot be verified from supplied material?",
+      "What third-party rights, restrictions or obligations affect use, access, transfer, mortgage or registration?",
+      "Is there evidence for discharge, consent or compliance, rather than an unsupported assertion?",
+      "What remains uncertain and what document or enquiry could resolve it?"
+    ],
+    "escalation_triggers": [
+      "Uncertain ownership, title extent, class or root",
+      "Unresolved charge, restriction, adverse right or missing instrument",
+      "Material plan, access, boundary or contract discrepancy",
+      "Evidence does not establish required discharge, consent or compliance",
+      "Potential title defect affecting use, marketability, lender security or registration"
     ]
   },
   {
@@ -233,18 +279,23 @@
     "sequence": 6,
     "applies": "unless expressly not applicable on documented review",
     "mandatory_tasks": [
-      "Decide searches appropriate to purchase, lender, locality and tenure",
-      "Order/review searches and identify limitations",
-      "Raise precise enquiries with source references"
+      "Create a search plan based on jurisdiction, property, transaction profile, tenure, client instructions and actual lender requirements",
+      "Record each search as not considered, not required with rationale, ordered, received, reviewed or superseded; capture provider, scope, result date and limitations",
+      "Compare search results with title, contract, property forms, inspection information and other supplied evidence",
+      "Raise precise, numbered enquiries tied to the search/document source and track response, evidence and unresolved status",
+      "Assess whether a result requires client advice, specialist input, insurance consideration or lender referral without treating any as automatic clearance"
     ],
     "conditional_tasks": [
-      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+      "Add local, drainage, environmental, highways, planning, mining, flood, commons/village green, chancel or other enquiries only where relevant to the location, property and risk assessment",
+      "For leasehold, new build, commercial, rural or development matters, use the applicable profile and specialist module to identify additional searches and enquiries",
+      "Where a search is not obtained, record who made that decision, the stated rationale, client instruction and any lender position"
     ],
     "documents_required": [
-      "local authority",
-      "drainage and water",
-      "environmental",
-      "highways and other specialist searches"
+      "search plan and search order/receipt records",
+      "search results with scope, date and limitations",
+      "title and contract documents used for cross-checking",
+      "enquiry schedule and replies with source attachments",
+      "client/lender decisions or specialist reports where relevant"
     ],
     "responsible_parties": [
       "conducting conveyancer",
@@ -268,10 +319,26 @@
     ],
     "default_status": "outstanding",
     "expected_outputs": [
-      "Searches ordered and reviewed with dates/scope",
-      "Search limitations and adverse findings",
-      "Enquiries, replies and unresolved points",
-      "Risk treatment and any required lender referral"
+      "Search plan with each search status, rationale, provider/scope and result date",
+      "Search limitation and adverse-result register with source locators",
+      "Cross-check findings against title, contract and other evidence",
+      "Numbered enquiry log with response/evidence and unresolved status",
+      "Client advice, specialist referral and lender referral/decision records",
+      "Outstanding actions with owner and relevant transaction deadline"
+    ],
+    "review_prompts": [
+      "Which searches are appropriate for this property and transaction, and what is the recorded basis?",
+      "What is outside the search provider’s scope or date coverage?",
+      "Do search results conflict with title, contract or other evidence?",
+      "Does each material result have a response, advice path, or expressly documented unresolved status?",
+      "Has an omitted search or accepted risk been documented with client and lender implications?"
+    ],
+    "escalation_triggers": [
+      "Adverse or inconsistent result affecting access, use, value, safety, planning or security",
+      "Search missing, out of scope, stale for the transaction, or subject to material limitation",
+      "No adequate response/evidence for a material enquiry",
+      "Client proposes to proceed with an unresolved risk or waived search",
+      "Lender approval or specialist advice may be required but is not evidenced"
     ]
   },
   {
@@ -280,17 +347,25 @@
     "sequence": 7,
     "applies": "unless expressly not applicable on documented review",
     "mandatory_tasks": [
-      "Assess lease term, rent, alienation, repair and forfeiture",
-      "Obtain management pack, accounts, planned works, insurance",
-      "Identify landlord/RTM certificates, notices, consents and building safety status"
+      "Review the lease and variations for term, rent/review, repair, insurance, use, alienation, alterations, service and enforcement provisions",
+      "Reconcile the lease plan, demise, rights, reservations and obligations against title and contract evidence",
+      "Review the management information for service charges, reserve funds, accounts, budgets, planned works, insurance, arrears and disputes where provided",
+      "Identify required notices, certificates, consents, licences, deeds, certificates of compliance and fees from the lease, title and actual lender requirements",
+      "Identify relevant building-safety status and evidence questions; do not infer status from building type or a single certificate",
+      "Track missing management, landlord, resident-management or building-safety evidence and the party responsible for obtaining it"
     ],
     "conditional_tasks": [
-      "Add requirements from the selected matter profile, lender instructions, tenancy and local searches"
+      "For a flat, block, estate, shared ownership or managed development, assess the relevant management structure and transaction-profile checks",
+      "Where works, major charges, disputes, insurance claims, arrears or building-safety matters are indicated, request the underlying evidence and seek specialist review as appropriate",
+      "Where lender security is involved, check the actual lease requirements and lender instructions and record any referral or approval"
     ],
     "documents_required": [
-      "lease",
-      "TA7/LPE1 or relevant pack",
-      "management company docs"
+      "lease and all variations, deeds and plans",
+      "official register and filed lease/instruments",
+      "LPE1/TA7 or current management pack and supporting accounts/budgets",
+      "insurance schedule and relevant claims information",
+      "licences, consents, certificates, notices and fee schedule as applicable",
+      "building-safety material and correspondence relevant to the property where applicable"
     ],
     "responsible_parties": [
       "conducting conveyancer",
@@ -314,10 +389,27 @@
     ],
     "default_status": "outstanding",
     "expected_outputs": [
-      "Lease terms and liabilities summary",
-      "Management pack, service charge and planned works summary",
-      "Consents, certificates, notices and fees tracker",
-      "Building safety evidence and unresolved items where applicable"
+      "Lease term, rent, review, repair, use, alienation and enforcement summary with clause references",
+      "Demise, rights, reservations and lease/title/contract consistency check",
+      "Service-charge, reserve, budget, planned-works, insurance, arrears and dispute summary",
+      "Consents, notices, certificates, deeds, compliance steps, fees and responsible-party tracker",
+      "Building-safety evidence/status questions and unresolved items where relevant",
+      "Client/lender advice and referral records tied to evidence",
+      "Outstanding management-pack items and actions with owner/deadline"
+    ],
+    "review_prompts": [
+      "Which lease provisions affect ownership, occupation, transfer, mortgage, costs or future use?",
+      "Are the lease, plan, register and contract consistent about the property and rights?",
+      "What do the management documents show, and which periods or documents are missing?",
+      "Which post-completion or registration steps require a landlord, manager, resident body or other third party?",
+      "What building-safety evidence is available, what does it actually establish, and what remains unanswered?"
+    ],
+    "escalation_triggers": [
+      "Unclear or short lease term, rent review, use, repair, insurance or alienation position",
+      "Material inconsistency between lease, plan, register and contract",
+      "Unquantified major works, substantial disputed charges, material arrears or insurance concerns",
+      "Required consent, certificate, deed or notice path unclear or unavailable",
+      "Building-safety evidence incomplete, inconsistent or potentially material to occupation, value or lender security"
     ]
   },
   {

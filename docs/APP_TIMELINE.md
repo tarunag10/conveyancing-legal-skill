@@ -3,7 +3,7 @@
 **Repository/package update:** 28 October 2026  
 **Latest published release:** 0.1.0 (`v0.1.0`)
 
-**Current development package:** 0.1.3 (unreleased)
+**Current development package:** 0.1.4 (unreleased)
 
 **General legal research baseline:** 27 October 2026
 
@@ -30,6 +30,7 @@ For the detailed matter sequence, see [`PRACTICAL_MATTER_WORKFLOW.md`](PRACTICAL
 | 28 October 2026 | Version 0.1.0 published as a downloadable GitHub release; installation and distribution guidance recorded. No new legal research baseline is claimed by the packaging update. |
 | 2 November 2026 | Development package version advanced to 0.1.2 for post-release maintenance. This is not a new full legal research baseline. |
 | 2 November 2026 | Workflow output records added for all 15 stages in development package 0.1.3. No new legal research baseline is claimed. |
+| 2 November 2026 | Stages 4–7 expanded with stage-specific review prompts, deliverables and escalation triggers in development package 0.1.4. No legal research update is claimed. |
 | After 28 October 2026 | No automatic legal-content refresh is promised. Check primary sources at the point of use and follow the maintenance process when sources or rules change. |
 | 2030 and later | The package has no general expiry date. It may remain usable as software, subject to host compatibility and permission. Its stored legal material must not be assumed current. Missing, stale or passed review reminders produce confirmation warnings; they do not stop an illustration. |
 
