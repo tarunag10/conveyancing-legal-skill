@@ -3,7 +3,7 @@
 **Repository/package update:** 28 October 2026  
 **Latest published release:** 0.1.0 (`v0.1.0`)
 
-**Current development package:** 0.1.8 (unreleased)
+**Current development package:** 0.1.9 (unreleased)
 
 **General legal research baseline:** 27 October 2026
 

@@ -4,6 +4,7 @@ Load the profile in `knowledge/workflows/profiles.json` matching the matter type
 
 | Trigger | Read |
 |---|---|
+| Buyer/seller pack, lease/management pack, auction or facility review | `knowledge/practice/MATTER_PACKS.md` |
 | Register, charges, right of way, title plans, defects | `knowledge/practice/TITLE_REGISTERED.md` |
 | Epitome, root, Land Charges, old mortgage, FR1 | `knowledge/practice/TITLE_UNREGISTERED.md` |
 | Auction legal pack, special conditions, notice to complete | `knowledge/practice/AUCTIONS.md` |

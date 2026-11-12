@@ -1,3 +1,7 @@
+# 0.1.9 (12 November 2026)
+
+Add practical sale, purchase, lease/management, auction, facility and declaration fact schedules with role-specific routing. Templates are working review aids, not certified instruments; no new blanket legal approval is claimed.
+
 # 0.1.8 (12 November 2026)
 
 Add opt-in local OCR, human plan-review record and safe CSV action handoff. Record preliminary tax-source comparison; solicitor approval remains pending. No direct case-system connection or legal-source promotion is claimed.
