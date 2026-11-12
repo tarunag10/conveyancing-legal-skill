@@ -94,6 +94,9 @@ def tax_estimate(jurisdiction: str, price, as_of: str, additional=False, *, ackn
     if rate is None: raise LegalReviewRequired('Unknown jurisdiction/regime')
     if d<date.fromisoformat(rate['effective_from']):
         verification_notes.append(f'Requested date predates the available rate schedule effective {rate["effective_from"]}; this illustration may not represent tax due. Check the historical schedule.')
+    verification_notes.append('Check effective date, contract exchange and transitional provisions, eligibility, chargeable consideration, reliefs and the applicable official schedule; bands alone do not establish liability.')
+    if additional:
+        verification_notes.append('Higher-rate eligibility and any relevant transaction threshold must be checked separately; the selected flag does not establish that higher rates apply.')
     value=money(price)
     if value < 0: raise LegalReviewRequired('Purchase price must not be negative')
     tax=Decimal('0'); lower=Decimal('0'); breakdown=[]

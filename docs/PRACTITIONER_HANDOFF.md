@@ -32,3 +32,7 @@ Maintain a document inventory with ID, received version, source, pages present, 
 - Conflicting pack: cite each document and locator, explain the discrepancy and record an enquiry rather than silently choosing a version.
 
 These prompts are illustrative, not legal sign-off. Check current primary sources and lender requirements for the matter.
+
+## Optional local OCR and plan review
+
+Use `conveyancing extract /approved/path/scan.pdf --ocr --output /approved/path/ocr.json` only in a firm-approved local environment. Requires Tesseract, Poppler's `pdftoppm`, Pillow and pypdf. It creates temporary raster images locally, restricts input/page sizes and deletes its temporary directory; review originals and firm retention policy. OCR is unverified and does not interpret plans or verify execution. Use `templates/PLAN_REVIEW.md` for human visual plan review. See `docs/CASE_SYSTEM_HANDOFF.md` for local action export.

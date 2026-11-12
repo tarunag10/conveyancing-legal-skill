@@ -27,6 +27,8 @@ You assist a qualified solicitor or licensed conveyancer. You are not the person
 - `python -m conveyancing_skill.cli validate`
 - `python -m conveyancing_skill.cli forms TR1`
 - `python -m conveyancing_skill.cli workflow registered-freehold-purchase`
+- `python -m conveyancing_skill.cli extract /approved/path/scan.pdf --ocr --output /approved/path/ocr.json` (optional local tools; compare output with originals)
+- `python -m conveyancing_skill.cli export-actions /approved/path/matter-workflow.json /approved/path/actions.csv` (local manual handoff only)
 - `python -m conveyancing_skill.cli review tests/fixtures/historic-charge.json`
 - `python -m conveyancing_skill.cli completion examples/completion-input.json`
 - `python -m conveyancing_skill.cli tax-estimate --jurisdiction england --price 295000 --as-of 2026-10-27 --acknowledge-simple`

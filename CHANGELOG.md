@@ -1,3 +1,7 @@
+# 0.1.8 (12 November 2026)
+
+Add opt-in local OCR, human plan-review record and safe CSV action handoff. Record preliminary tax-source comparison; solicitor approval remains pending. No direct case-system connection or legal-source promotion is claimed.
+
 # 0.1.7 (12 November 2026)
 
 Reconciles 0.1.6 plugin hardening with the repository while preserving existing fictional fixtures. Changed source fingerprints stay pending until explicitly reviewed. Adds practice handoff, onboarding and acceptance guidance plus evidence, gift and loan review aids; no legal or tax source approval is implied.

@@ -84,11 +84,12 @@ def main(argv=None):
     sub.add_parser('validate')
     p=sub.add_parser('forms');p.add_argument('query')
     p=sub.add_parser('workflow');p.add_argument('profile',nargs='?');p.add_argument('--list',action='store_true')
+    p=sub.add_parser('export-actions');p.add_argument('file');p.add_argument('output')
     p=sub.add_parser('review');p.add_argument('file')
     p=sub.add_parser('completion');p.add_argument('file')
     p=sub.add_parser('tax-estimate');p.add_argument('--jurisdiction',choices=['england','wales'],required=True);p.add_argument('--price',required=True);p.add_argument('--as-of',required=True);p.add_argument('--additional',action='store_true');p.add_argument('--acknowledge-simple',action='store_true');p.add_argument('--complexity',action='append',default=[])
     p=sub.add_parser('deadline');p.add_argument('type');p.add_argument('event_date');p.add_argument('--holidays')
-    p=sub.add_parser('extract');p.add_argument('file');p.add_argument('--output')
+    p=sub.add_parser('extract');p.add_argument('file');p.add_argument('--output');p.add_argument('--ocr',action='store_true',help='Run optional local OCR instead of text extraction')
     p=sub.add_parser('lender-checklist');p.add_argument('file')
     p=sub.add_parser('compare-documents');p.add_argument('files',nargs='+')
     p=sub.add_parser('source-watch');p.add_argument('--allow-network',action='store_true');p.add_argument('--limit',type=int,default=12);p.add_argument('--baseline');p.add_argument('--baseline-out');p.add_argument('--fail-on-change',action='store_true');p.add_argument('--output')
@@ -99,6 +100,9 @@ def main(argv=None):
         if args.command=='validate':result=validate()
         elif args.command=='forms':result=forms(args.query)
         elif args.command=='workflow':result=load('knowledge/workflows/profiles.json') if args.list else workflow(args.profile or '')
+        elif args.command=='export-actions':
+            from .handoff import export_actions
+            result=export_actions(json.loads(Path(args.file).read_text(encoding='utf-8')),args.output)
         elif args.command in ('review','completion'):
             j=json.loads(Path(args.file).read_text(encoding='utf-8'))
             result=review_matter(j) if args.command=='review' else completion(j)
@@ -106,7 +110,11 @@ def main(argv=None):
         elif args.command=='deadline':
             holidays=json.loads(Path(args.holidays).read_text(encoding='utf-8')) if args.holidays else None
             result=statutory_deadline(args.type,args.event_date,holidays)
-        elif args.command=='extract':result=extract_document(args.file)
+        elif args.command=='extract':
+            if args.ocr:
+                from .ocr import ocr_document
+                result=ocr_document(args.file)
+            else:result=extract_document(args.file)
         elif args.command=='lender-checklist':
             from .intelligence import lender_candidates
             result=lender_candidates(args.file)

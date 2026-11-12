@@ -20,6 +20,7 @@
 - Calculate selected purely arithmetic due dates with explicit assumptions. No contractual notice analysis and no inferred holiday calendar.
 - Calculate narrow illustrative residential SDLT/LTT band estimates with freshness warnings and complexity refusal.
 - Extract selectable PDF/Word text with source paragraph/page pointers, identify candidate references, record empty scan pages, and warn that execution cannot be authenticated.
+- Run explicitly requested local OCR on bounded PDF or image input using installed Tesseract, Poppler and Pillow; results are unverified and must be compared against originals. Export action rows as a local CSV for manual case-system mapping; this does not connect to a vendor system.
 - Create editable **original** report Word documents, and replace explicit placeholders in a user-provided template while preserving unrelated runs and logging every change. Does not verify visual/layout fidelity or process tracked changes safely.
 - Check reference integrity, duplicate IDs, mandatory fields and skill architecture; run automated fictional scenario tests.
 - Network watcher, when explicitly enabled, checks **allowed public domains only** and stores byte hashes/HTTP metadata; does not determine legally material change or approve any new rule.
