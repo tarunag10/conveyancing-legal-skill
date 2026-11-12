@@ -10,6 +10,8 @@ from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+if not (ROOT/'knowledge').is_dir():
+    ROOT=Path(__file__).resolve().parent/'data'
 
 class LegalReviewRequired(ValueError):
     """Refuse to assume a fact, tax category, legal source or deadline."""
@@ -31,7 +33,10 @@ def money(value) -> Decimal:
         raise LegalReviewRequired(f'Invalid monetary amount: {value!r}') from e
     if not n.is_finite():
         raise LegalReviewRequired('Non-finite amount is invalid')
-    return n.quantize(Decimal('0.01'),rounding=ROUND_HALF_UP)
+    try:
+        return n.quantize(Decimal('0.01'),rounding=ROUND_HALF_UP)
+    except InvalidOperation as exc:
+        raise LegalReviewRequired('Monetary amount exceeds supported precision') from exc
 
 
 def fmt(v):
@@ -83,6 +88,8 @@ def tax_estimate(jurisdiction: str, price, as_of: str, additional=False, *, ackn
         verification_notes.append('No snapshot review reminder date is recorded; confirm current rates with the official authority.')
     elif d>date.fromisoformat(review_reminder):
         verification_notes.append(f'Snapshot review reminder date {review_reminder} has passed; confirm current rates with the official authority.')
+    if review_reminder and date.today()>date.fromisoformat(review_reminder) and d<=date.fromisoformat(review_reminder):
+        verification_notes.append(f'Snapshot review reminder {review_reminder} is overdue as at the calculation date {date.today()}; requested historical date does not establish source freshness.')
     rate = next((r for r in data['regimes'] if r['jurisdiction']==jurisdiction.lower() and r['additional']==additional),None)
     if rate is None: raise LegalReviewRequired('Unknown jurisdiction/regime')
     if d<date.fromisoformat(rate['effective_from']):
@@ -121,12 +128,18 @@ def statutory_deadline(event: str, on: str, holidays=None):
         while n<days:
             due+=timedelta(days=1)
             if due.weekday()<5 and due not in hs: n+=1
-        comment='Provisional expiry by HMLR PG12: midnight end of 30th working day after receipt. Confirm actual day-list and official HMLR calculation.'
-    return {'type':e,'event_date':str(start),'due_date':str(due),'period_days':days,'day_type':typ,'warning':comment}
+        comment='Provisional expiry by HMLR PG12 section 5.2: midnight end of 30th working day after receipt. Deliver the protected application by noon on the expiry date to ensure day-list entry in time; it must ultimately complete by registration. Check the actual search certificate, day-list rules, holidays and any extension for interruption of services.'
+    return {'type':e,'event_date':str(start),'due_date':str(due),'period_days':days,'day_type':typ,'warning':comment,'legal_status':'PROVISIONAL CALCULATION; confirm current rule and triggering event','delivery_by_noon_date':str(due) if typ=='working' else None}
 
 
 def completion(statement:dict):
     """Buyer-side reconciliation. All amounts are input figures, NOT verified bank balances."""
+    if not isinstance(statement,dict):
+        raise LegalReviewRequired('Completion input must be an object')
+    for key in ('seller_debits','seller_credits','other_payments'):
+        rows=statement.get(key,[])
+        if not isinstance(rows,list) or any(not isinstance(row,dict) or 'amount' not in row for row in rows):
+            raise LegalReviewRequired(f'{key}: provide a list of items with monetary amounts')
     if statement.get('side')!='buyer':
         raise LegalReviewRequired('This deterministic statement currently supports buyer-side only')
     needed=['purchase_price','deposit_paid','cleared_client_funds','cleared_lender_funds']
@@ -148,12 +161,13 @@ def completion(statement:dict):
     gap=(cleared-spending).quantize(Decimal('0.01'))
     blockers=[]
     if gap<0: blockers.append('Funds shortfall based on input amounts')
-    if not statement.get('bank_evidence_confirmed_by_human',False):blockers.append('Actual bank cleared funds not independently confirmed by authorised user')
-    if not statement.get('lender_conditions_satisfied_by_human',False):blockers.append('Lender conditions not confirmed by authorised user')
+    if statement.get('bank_evidence_confirmed_by_human') is not True:blockers.append('Actual bank cleared funds not independently confirmed by authorised user')
+    if statement.get('lender_conditions_satisfied_by_human') is not True:blockers.append('Lender conditions not confirmed by authorised user')
     return {'purchase_price':str(price),'deposit_credit':str(deposit),'seller_debits':str(seller_debits),'seller_credits':str(seller_credits),'balance_due_to_seller':str(due_seller),'other_payments':str(other),'total_required_at_completion':str(spending),'input_cleared_funds':str(cleared),'surplus_or_shortfall':str(gap),'completion_blockers':blockers,'ready_to_send_funds':False,'disclaimer':'No bank feed, lender authority or actual payment verified. Human-only completion release.'}
 
 # Detect issues from structured, explicit case assertions: never claim to have parsed an unsupplied deed.
 def review_matter(m:dict):
+    validate_observations(m)
     issues=[]
     def add(code,levels,fact,missing,action,source=None,blocker=False,document_id=None,locator=None,requirement_ref=None):
         issue={'code':code,'risk_levels':levels,'recorded_fact':fact,'missing_evidence':missing,'next_action':action,'evidence_ref':source or 'No satisfactory primary evidence supplied','completion_blocker':blocker}
@@ -174,16 +188,16 @@ def review_matter(m:dict):
         evidence=c.get('evidence_type','').lower()
         if state in ('vacated','discharged','redeemed','released') and (evidence not in ('registered_discharge','executed_release','accepted_e-ds1','accepted_eds1','official_register_updated','acceptable_endorsed_receipt') or not c.get('evidence_ref')):
             add('UNPROVEN_CHARGE_DISCHARGE',['R2','R3','R4'],f'Claimed {state} for charge {c.get("id","unknown")}','Satisfactory executed/recorded discharge and full scope of release','Obtain discharge evidence and verify registration / lender acceptance',c.get('evidence_ref'),blocker=True,document_id=c.get('evidence_document_id'),locator=c.get('evidence_locator'))
-        elif state in ('outstanding','unknown'):
+        elif state not in ('vacated','discharged','redeemed','released'):
             add('OUTSTANDING_CHARGE',['R2','R3','R4'],f'Charge {c.get("id","unknown")} not proven discharged','Redemption and release mechanism','Seek documentary release and assess lender priority',c.get('evidence_ref'),blocker=True,document_id=c.get('evidence_document_id'),locator=c.get('evidence_locator'))
     for r in m.get('restrictions',[]):
-        if r.get('required') and (r.get('status') not in ('verified','authorised_waiver') or not r.get('evidence_ref') or not r.get('checked_by_human')):
+        if r.get('required') and (r.get('status') not in ('verified','authorised_waiver') or not r.get('evidence_ref') or r.get('checked_by_human') is not True):
             add('UNSATISFIED_RESTRICTION',['R2','R4'],r.get('wording','Restriction recorded'),'Correct certificate/consent or registrar-acceptable removal','Request evidence satisfying the exact restriction',r.get('evidence_ref'),blocker=True,document_id=r.get('evidence_document_id'),locator=r.get('evidence_locator'))
     access=m.get('access',{})
-    if access.get('public_highway_claimed') and not (access.get('official_highways_confirmation') and access.get('evidence_ref') and access.get('checked_by_human')):
+    if access.get('public_highway_claimed') and not (access.get('official_highways_confirmation') is True and access.get('evidence_ref') and access.get('checked_by_human') is True):
         add('HIGHWAY_STATUS_UNVERIFIED',['R1','R3'],'Property stated to abut or have access to a public highway','Highway authority confirmation and legal access route','Verify adoption/public highway extent and deed rights',access.get('evidence_ref'),blocker=bool(access.get('critical_to_lender',False)),document_id=access.get('evidence_document_id'),locator=access.get('evidence_locator'))
     for x in m.get('lender_requirements',[]):
-        if (x.get('status') not in ('verified','waived_by_lender','not_applicable') or not x.get('source_ref') or not x.get('evidence_ref') or not x.get('checked_by_human')):
+        if (x.get('status') not in ('verified','waived_by_lender','not_applicable') or not x.get('source_ref') or not x.get('evidence_ref') or x.get('checked_by_human') is not True):
             add('LENDER_CONDITION_OPEN',['R3','R4'] if x.get('blocking') else ['R1','R3'],f'Lender requirement {x.get("id","unknown")}: {x.get("text","not transcribed")}','Evidence or written lender waiver','Obtain and verify precisely required document/approval',x.get('evidence_ref'),blocker=bool(x.get('blocking')),document_id=x.get('evidence_document_id'),locator=x.get('evidence_locator'),requirement_ref=x.get('source_ref'))
     if m.get('building_safety',{}).get('potentially_applicable') and not m.get('building_safety',{}).get('documented_assessment'):
         add('BUILDING_SAFETY_UNASSESSED',['R2','R3'],'Building Safety Act protections may apply (not yet evidenced)','Building and lease status, landlord/leaseholder certificates as applicable','Evaluate England-specific rules and lender evidence',blocker=True)
@@ -191,3 +205,25 @@ def review_matter(m:dict):
         add('MISSING_DOCUMENT',['R1'],f'Missing: {req}','Required document','Obtain and assess before sign-off')
     doc_register=[{'document_id':d.get('document_id'),'document_type':d.get('document_type')} for d in docs]
     return {'matter_id':m.get('matter_id','UNSPECIFIED'),'jurisdiction':m.get('jurisdiction','UNKNOWN'),'transaction_type':m.get('transaction_type'),'observed_document_count':len(docs),'document_register':doc_register,'issues':issues,'completion_blockers':[i['code'] for i in issues if i['completion_blocker']],'completion_readiness':'NOT ASSESSED / NO AUTOMATED SIGN-OFF','notices':['Findings use only structured facts provided to the CLI; no underlying signatures or legal instruments authenticated.','Evidence locations are user-entered references, not verified citations; check every reference against the original.','Underlying lender and statutory source instructions need current use-point verification.']}
+
+
+def validate_observations(value, schema=None, path='matter'):
+    """Validate supplied fields against the bundled observation schema.
+
+    Partial observations remain permitted; omitted evidence never implies approval.
+    This is deliberately a shape check, not full JSON Schema validation.
+    """
+    if schema is None:schema=load('schemas/matter.schema.json')
+    kind=schema.get('type')
+    valid={'object':isinstance(value,dict),'array':isinstance(value,list),
+           'string':isinstance(value,str),'boolean':type(value) is bool}
+    if kind in valid and not valid[kind]:
+        raise LegalReviewRequired(f'{path}: expected {kind}')
+    if 'enum' in schema and value not in schema['enum']:
+        raise LegalReviewRequired(f'{path}: unsupported value')
+    if kind=='object':
+        for key,child in schema.get('properties',{}).items():
+            if key in value:validate_observations(value[key],child,f'{path}.{key}')
+    elif kind=='array':
+        for index,child in enumerate(value):validate_observations(child,schema.get('items',{}),f'{path}[{index}]')
+

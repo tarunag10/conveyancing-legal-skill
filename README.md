@@ -1,6 +1,12 @@
+# Conveyancing skill
+
+The 9 November 2026 review and limitations are recorded in `docs/REVIEW_2026-11-09.md`. The package includes 98 form entries, 51 source records, 33 rule records, 28 workflow profiles and 15 stages. Counts describe inventory, not live legal verification. Source-check dates have not been refreshed wholesale.
+
+Use `PYTHONPATH=src python -m unittest discover -s tests -v` from the source root. Python wheels also include the reference bundle. GitHub has verification and scheduled source-watch workflows; the installed plugin does not itself run those workflows. Host adapters are provided for convenience; their presence does not prove host integration testing. See `docs/PRACTITIONER_HANDOFF.md` for matter records, source review and host acceptance.
+
 # England and Wales Conveyancing Legal Skill
 
-**Development package:** 0.1.5 (unreleased) | **Latest published release:** 0.1.0 | **General legal research baseline:** 27 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** usable foundation; **not** a certified autonomous legal practice system.
+**Development package:** 0.1.7 (unreleased) | **Latest published release:** 0.1.0 | **General legal research baseline:** 27 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** usable foundation; **not** a certified autonomous legal practice system.
 
 A portable, evidence-gated conveyancing knowledge and workflow package for the law of England and Wales, focused on purchase/borrower/lender work. A single canonical `SKILL.md` selects independently maintainable practice modules and rules. A Python CLI supplies deterministic quality gates and calculations. **Human legal verification and lender-specific sign-off remain mandatory.**
 
@@ -136,3 +142,4 @@ conveyancing compare-documents /path/to/title-register.pdf /path/to/transfer.doc
 ```
 
 These are deliberately **candidate** extractors, not exhaustive document readers: text-only pages and key phrases may be missed and every extracted sentence remains unverified until the solicitor checks the original. The lender-checklist command will never mark a requirement satisfied.
+

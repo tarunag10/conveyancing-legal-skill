@@ -54,11 +54,15 @@ def to_docx(source: str, target: str) -> dict:
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
     src=Path(source)
+    if src.resolve()==Path(target).resolve():
+        raise LegalReviewRequired('Never overwrite the source document')
+    if Path(target).suffix.lower()!='.docx':
+        raise LegalReviewRequired('Word output must use .docx extension')
     if not src.is_file() or src.suffix.lower() not in ('.md','.txt'):
         raise LegalReviewRequired('Provide existing Markdown/TXT for original, non-prescribed report output')
     doc=Document()
     doc.styles['Normal'].font.name='Aptos'
-    doc.styles['Normal'].font.size=Pt(12)
+    doc.styles['Normal'].font.size=Pt(16)
     doc.styles['Normal'].paragraph_format.space_after=Pt(8)
     lines=src.read_text(encoding='utf-8').splitlines()
     index=0
@@ -79,6 +83,8 @@ def to_docx(source: str, target: str) -> dict:
             tbl_pr=table.rows[0]._tr.get_or_add_trPr()
             el=OxmlElement('w:tblHeader');el.set(qn('w:val'),'true');tbl_pr.append(el)
             for values in rows:
+                if len(values)!=len(header):
+                    raise LegalReviewRequired('Table row width differs from header; resolve before conversion to avoid losing text')
                 cells=table.add_row().cells
                 for col,value in enumerate(values[:len(header)]):
                     cells[col].text='';_add_inline(cells[col].paragraphs[0],value)
@@ -108,6 +114,12 @@ def fill_placeholders(src: str, target: str, replacements: dict, *, allowed: lis
         raise LegalReviewRequired('Never overwrite supplied original: supply a distinct target path')
     if not isinstance(replacements,dict) or not isinstance(source_refs,dict):
         raise LegalReviewRequired('Replacements and source refs must be dictionaries')
+    if any(not isinstance(k,str) or not k for k in replacements):
+        raise LegalReviewRequired('Replacement field names must be nonempty strings')
+    if any(not isinstance(v,str) for v in replacements.values()):
+        raise LegalReviewRequired('Replacement values must be strings')
+    if Path(target).suffix.lower()!='.docx':
+        raise LegalReviewRequired('Word output must use .docx extension')
     doc=Document(src)
     change_log=[]
     refs=set(allowed)
@@ -120,17 +132,29 @@ def fill_placeholders(src: str, target: str, replacements: dict, *, allowed: lis
         for row in table.rows:
             for cell in row.cells:paragraphs.extend(cell.paragraphs)
     counts={key:0 for key in replacements}
+    # Inspect every requested occurrence before editing. A whole occurrence must
+    # not conceal another occurrence split across runs in the same document.
+    for p in paragraphs:
+        for field in replacements:
+            token='{{'+field+'}}'
+            if p.text.count(token)!=sum(run.text.count(token) for run in p.runs):
+                raise LegalReviewRequired('Placeholder split across runs or unsupported inline content: '+field)
+    # A single simultaneous substitution prevents replacement text being edited
+    # again when it happens to contain another field's literal token.
+    tokens={'{{'+field+'}}':field for field in replacements}
+    pattern=re.compile('|'.join(re.escape(t) for t in tokens)) if tokens else None
     for i,p in enumerate(paragraphs,1):
         for run_idx,run in enumerate(p.runs,1):
-            for field,value in replacements.items():
-                token='{{'+field+'}}'
-                if token in run.text:
-                    if not isinstance(value,str):raise LegalReviewRequired(f'{field}: value must be a string')
-                    occurrences=run.text.count(token)
-                    run.text=run.text.replace(token,value)
-                    counts[field]+=occurrences
-                    change_log.append({'field':field,'old_text':token,'new_text':value,'source_ref':source_refs[field], 'location':f'paragraph {i}, run {run_idx}', 'occurrences':occurrences})
+            original=run.text
+            if pattern and pattern.search(original):
+                for token,field in tokens.items():
+                    occurrences=original.count(token)
+                    if occurrences:
+                        counts[field]+=occurrences
+                        change_log.append({'field':field,'old_text':token,'new_text':replacements[field],'source_ref':source_refs[field], 'location':f'paragraph {i}, run {run_idx}', 'occurrences':occurrences})
+                run.text=pattern.sub(lambda match:replacements[tokens[match.group()]],original)
     if any(counts[key]==0 for key in replacements):
         raise LegalReviewRequired('One or more placeholders not found wholly within a run: '+', '.join(k for k,v in counts.items() if v==0))
     out=Path(target);out.parent.mkdir(parents=True,exist_ok=True);doc.save(out)
-    return {'output':str(out),'change_log':change_log,'note':'Unchanged text is preserved at run level; inspect source and output page-by-page before use; not a substitute for statutory form verification.'}
+    return {'output':str(out),'change_log':change_log,'note':'Only body paragraphs and direct table-cell paragraphs are processed. Headers, footers, nested tables, text boxes and tracked changes require manual review. Unchanged text is preserved at run level; inspect source and output page-by-page before use; not a substitute for statutory form verification.'}
+

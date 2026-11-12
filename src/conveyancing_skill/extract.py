@@ -17,6 +17,10 @@ def extract_document(path: str, *, max_chars: int = 2_000_000) -> dict:
     suffix = p.suffix.lower()
     if suffix not in ('.txt', '.md', '.pdf', '.docx'):
         raise LegalReviewRequired('Unsupported type: use TXT, Markdown, PDF or DOCX')
+    if p.stat().st_size > 40_000_000:
+        raise LegalReviewRequired('Large files require controlled manual processing (40 MB limit)')
+    if type(max_chars) is not int or max_chars < 1:
+        raise LegalReviewRequired('Text limit must be a positive integer')
     binary = p.read_bytes()
     if len(binary) > 40_000_000:
         raise LegalReviewRequired('Large files require controlled manual processing (40 MB limit)')
@@ -74,3 +78,4 @@ def extract_document(path: str, *, max_chars: int = 2_000_000) -> dict:
         warnings.append('Execution/signature wording detected; not proof of valid execution or authentic signatures')
     if not elements:warnings.append('No readable text extracted; do not infer document content')
     return {'file_name':p.name, 'document_id':doc_id,'format':suffix[1:], 'elements':elements,'potential_title_numbers_NOT_VERIFIED':title_candidates,'warnings':warnings,'legal_status':'EXTRACTED UNVERIFIED DATA; inspect original page/plan and confirm provenance'}
+

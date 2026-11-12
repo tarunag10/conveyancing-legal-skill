@@ -11,9 +11,12 @@ Load the profile in `knowledge/workflows/profiles.json` matching the matter type
 | Leaseholds, LPE1, management pack, BSA, enfranchisement | `knowledge/practice/LEASEHOLD_AND_BUILDING_SAFETY.md` |
 | VAT, option to tax, SDLT/LTT, commercial tenure | `knowledge/practice/COMMERCIAL_AND_TAX.md` |
 | Completion funds, undertakings, redemption, notices | `knowledge/practice/COMPLETION.md` |
+| Rejected/late company charge, s859F application | `knowledge/practice/COMPANY_CHARGE_REMEDIES.md` |
+| Declarations, statements of truth, gifts, family or bridging loans | `knowledge/practice/EVIDENCE_GIFTS_AND_LOANS.md` |
 | Form AP1/FR1/TR1/TP1, company charge filings | `knowledge/practice/REGISTRATION.md` |
 | New build, shared ownership, overseas owner, probate, trusts | `knowledge/practice/DEVELOPMENT_AND_SPECIAL.md` |
 
 The generic stages apply to **every** matter, but can be marked not applicable only with recorded rationale and legal review. For a lender-only matter, check third-party borrower solicitor instructions and the UK Finance Part 3 if incorporated into that lender's instructions.
 
 For document applicability use `knowledge/workflows/DOCUMENT_MATRIX.md`; for matter evidence, decisions and registration tracking use `templates/MATTER_REVIEW_RECORD.md`. For prescribed form triage use `knowledge/forms/PRIORITY_FORMS.md` and the live official source. For source review use `templates/SOURCE_REVIEW_RECORD.md`.
+

@@ -34,12 +34,13 @@ Never describe 'evidence received' as 'lender requirement satisfied' without che
 
 ## Drafting
 
-Use British English, precise defined terms where needed, conventional solicitor correspondence and neutral polite requests. Quote disputed contractual text only from uploaded agreements; do not invent clauses. For document amendments preserve all uninstructed text, including warnings, schedules, prescribed execution and signatures. Generate diff/change log and separately request approval to finalise.
+Use British English, precise defined terms where needed, conventional solicitor correspondence and neutral polite requests. Quote disputed contractual text only from uploaded agreements; do not invent clauses. For document amendments preserve all uninstructed text, including warnings, schedules, prescribed execution and signatures. Generate a diff/change log. Complete authorised reversible drafting without repeated approval requests; obtain specific authority for sending, signing, filing or other external action when it has not already been given.
 
 ## Quality gates
 
 - No authority without a direct URL, jurisdiction, section/paragraph, last-checked date and applicability.
 - No definitive title or building-safety conclusion without underlying deeds/plans/evidence.
 - No exchange where an unresolved material title risk, occupation issue, lender condition or funding uncertainty would compromise the client; lawyer decides exceptions.
-- No monetary, date, relief or court fee calculation from an out-of-date unapproved schedule.
+- Use only verified applicable schedules for reliance calculations. A requested illustrative estimate may use a dated snapshot with explicit limitations and a live-confirmation warning, as specified in the canonical instructions. Never label that illustration verified or fit for filing, payment or legal reliance.
 - No sending, signing, transmitting, filing or releasing money without specific authorisation and verified connected capability.
+

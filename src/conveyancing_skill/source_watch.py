@@ -14,7 +14,12 @@ HOSTS={'www.gov.uk','gov.uk','www.legislation.gov.uk','legislation.gov.uk','www.
 
 def is_official_url(url: str) -> bool:
     parsed=urlparse(url)
-    return parsed.scheme=='https' and parsed.hostname in HOSTS
+    try:
+        return (parsed.scheme=='https' and parsed.hostname in HOSTS
+                and parsed.username is None and parsed.password is None
+                and parsed.port in (None,443))
+    except ValueError:
+        return False
 
 
 class SafeRedirect(HTTPRedirectHandler):
@@ -24,6 +29,8 @@ class SafeRedirect(HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 def watch(*, allow_network=False, baseline=None, limit=12):
+    if type(limit) is not int or limit < 1:
+        raise LegalReviewRequired('Source limit must be a positive integer')
     sources=[s for s in load('knowledge/legislation/source-index.json') if s.get('monitor')]
     now=datetime.now(timezone.utc).isoformat()
     previous=baseline if isinstance(baseline,dict) else {}
@@ -38,7 +45,7 @@ def watch(*, allow_network=False, baseline=None, limit=12):
             try:
                 req=Request(s['url'],headers={'User-Agent':'ConveyancingLegalSkill/0.1 (+human review required)','Accept':'text/html,application/pdf,text/plain'})
                 with build_opener(SafeRedirect).open(req,timeout=8) as resp:
-                    if urlparse(resp.geturl()).hostname not in HOSTS:
+                    if not is_official_url(resp.geturl()):
                         raise LegalReviewRequired('Redirected to unapproved host')
                     raw=resp.read(2_000_001)
                     if len(raw)>2_000_000: raise LegalReviewRequired('Source too large to safely snapshot')
@@ -46,9 +53,10 @@ def watch(*, allow_network=False, baseline=None, limit=12):
                     entry.update(status='fetched',http_status=resp.status,sha256=digest,last_modified=resp.headers.get('Last-Modified'),etag=resp.headers.get('ETag'))
                     if previous.get(s['id']) and previous[s['id']]!=digest:
                         entry['status']='change_detected_review_required'
-                        result['legal_review_queue'].append({'source_id':s['id'],'change':'HTTP content hash differs','action':'Compare official publication, amendments, commencement and affected rules; have solicitor approve; never auto-promote'})
+                        result['legal_review_queue'].append({'source_id':s['id'],'url':s['url'],'old_sha256':previous[s['id']],'new_sha256':digest,'detected_at_utc':now,'status':'awaiting_legal_review','affected_modules':'to be assessed','reviewer':None,'decision':None,'change':'HTTP content hash differs','action':'Compare official publication, amendments, commencement and affected rules; have solicitor approve; never auto-promote'})
             except Exception as exc:
                 entry.update(status='fetch_failed',error=str(exc)[:180])
         result['sources'].append(entry)
-    result['note']='Content hashes detect technical differences, not necessarily legislative changes. Baseline approval is a separate supervised step. Weekly workflow must be activated in GitHub after push.'
+    result['note']='Content hashes detect technical differences, not necessarily legislative changes. Changed fingerprints remain unadvanced until separately reviewed and updated; fetch failures are not detected changes.'
     return result
+

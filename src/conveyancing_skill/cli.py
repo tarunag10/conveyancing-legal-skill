@@ -13,7 +13,7 @@ from .source_watch import watch
 
 def validate() -> dict:
     errors=[]; warnings=[]
-    expected=['SKILL.md','core/OPERATING_STANDARD.md','core/EVIDENCE_AND_RISK.md','core/SOURCE_POLICY.md','knowledge/forms/catalogue.json','knowledge/legislation/source-index.json','knowledge/legislation/rules.json','knowledge/legislation/tax-rates.json','knowledge/workflows/stages.json','knowledge/workflows/profiles.json','plugin.json','AGENTS.md','CLAUDE.md','GEMINI.md','.cursor/rules/conveyancing.mdc','.agents/skills/conveyancing-legal/SKILL.md','.claude/skills/conveyancing-legal/SKILL.md','.gemini/skills/conveyancing-legal/SKILL.md','skills/conveyancing-legal/SKILL.md','README.md','docs/VALIDATION_AND_LIMITATIONS.md']
+    expected=['SKILL.md','core/OPERATING_STANDARD.md','core/EVIDENCE_AND_RISK.md','core/SOURCE_POLICY.md','knowledge/forms/catalogue.json','knowledge/legislation/source-index.json','knowledge/legislation/rules.json','knowledge/legislation/tax-rates.json','knowledge/workflows/stages.json','knowledge/workflows/profiles.json','plugin.json','skills/conveyancing-legal/SKILL.md','README.md','docs/VALIDATION_AND_LIMITATIONS.md']
     for s in expected:
         path=ROOT/s
         if not path.is_file() or not path.stat().st_size:errors.append(f'Missing or empty: {s}')
@@ -26,6 +26,13 @@ def validate() -> dict:
             if not s.get(prop): errors.append(f'Incomplete source {s["id"]}: {prop}')
         try:date.fromisoformat(s['last_verified_date'])
         except ValueError:errors.append(f'Invalid source date: {s["id"]}')
+    today=date.today().isoformat()
+    stale=[s['id'] for s in sources if s.get('review_by') and s['review_by'] < today]
+    if stale:warnings.append('Source review dates have passed: '+', '.join(stale))
+    warnings.append('Registry validation checks structure only; no live legal-source or form-binary verification performed')
+    tax=load('knowledge/legislation/tax-rates.json')
+    if tax.get('review_reminder_date','9999-12-31') < today:
+        warnings.append('Tax snapshot review reminder has passed; confirm applicable rates before reliance')
     codes=[x['code'] for x in f]
     if len(codes)!=len(set(codes)):errors.append('Duplicate form codes')
     for x in f:
@@ -129,7 +136,7 @@ def main(argv=None):
             if args.baseline_out:
                 fresh=dict(base or {})
                 for row in result['sources']:
-                    if row.get('sha256') and row.get('status') in ('fetched','change_detected_review_required'):
+                    if row.get('sha256') and row.get('status') == 'fetched':
                         fresh[row['source_id']]=row['sha256']
                 output_path=Path(args.baseline_out);output_path.parent.mkdir(parents=True,exist_ok=True)
                 output_path.write_text(json.dumps(fresh,indent=2,sort_keys=True)+'\n',encoding='utf8')
@@ -142,3 +149,4 @@ def main(argv=None):
         return 2
 
 if __name__=='__main__':sys.exit(main())
+

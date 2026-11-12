@@ -1,3 +1,11 @@
+# 0.1.7 (12 November 2026)
+
+Reconciles 0.1.6 plugin hardening with the repository while preserving existing fictional fixtures. Changed source fingerprints stay pending until explicitly reviewed. Adds practice handoff, onboarding and acceptance guidance plus evidence, gift and loan review aids; no legal or tax source approval is implied.
+
+# 0.1.6 (9 November 2026)
+
+Repair installed-package validation and missing synthetic test inputs; harden evidence flags, malformed input, money, Word replacement and source watching; package reference data in wheels; clarify priority delivery guidance and source freshness; add company charge remedy triage. See docs/REVIEW_2026-11-09.md for scope and limitations.
+
 # Changelog
 
 ## 2 November 2026 — development 0.1.5
@@ -43,3 +51,4 @@
 - Added dated restricted tax calculation, deterministic completion reconciliation, selected deadlines and no automatic completion or legal sign-off.
 - Added fictional stress tests and GitHub Actions workflows; repository is public and connected to its GitHub remote.
 - Known restrictions are in `docs/VALIDATION_AND_LIMITATIONS.md`.
+
