@@ -6,11 +6,11 @@ Use `PYTHONPATH=src python -m unittest discover -s tests -v` from the source roo
 
 # England and Wales Conveyancing Legal Skill
 
-**Development package:** 0.1.9 (unreleased) | **Latest published release:** 0.1.0 | **General legal research baseline:** 27 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** usable foundation; **not** a certified autonomous legal practice system.
+**Development package:** 0.1.10 (unreleased) | **Latest published release:** 0.1.9 | **General legal research baseline:** 27 October 2026 | **Audience:** qualified solicitors, licensed conveyancers and supervised legal support staff | **Status:** usable foundation; **not** a certified autonomous legal practice system.
 
 A portable, evidence-gated conveyancing knowledge and workflow package for the law of England and Wales, focused on purchase/borrower/lender work. A single canonical `SKILL.md` selects independently maintainable practice modules and rules. A Python CLI supplies deterministic quality gates and calculations. **Human legal verification and lender-specific sign-off remain mandatory.**
 
-For a step-by-step use sequence, recorded update dates and the 2030-and-later position, see [the app use and update timeline](docs/APP_TIMELINE.md). There is no general 2030 expiry, but stored legal research is not guaranteed current through 2030; check current sources before relying on it.
+For the end-to-end setup pack, see [Conveyancing setup](docs/CONVEYANCING_SETUP.md). For a step-by-step use sequence, recorded update dates and the 2030-and-later position, see [the app use and update timeline](docs/APP_TIMELINE.md). There is no general 2030 expiry, but stored legal research is not guaranteed current through 2030; check current sources before relying on it.
 
 ## What is included
 
@@ -20,11 +20,11 @@ For a step-by-step use sequence, recorded update dates and the 2030-and-later po
 - **51 authoritative source records** and **33 indexed legal rules** with a 27 October 2026 check baseline and explicit commissioning/commencement caveats. The source directory is **not** an assurance that all legislation is current at the later point of use.
 - UK Finance Handbook checks, lender condition extractor workflow, conveyancing pre-completion/auction workflow and case-specific lender-reporting flags. Bank confirmations, actual Handbook Part 2 requirements and certificate sign-off cannot be automatically inferred.
 - Python standard-library completion statement, deadline and restricted tax calculation functions; optional PDF/DOCX extraction and evidence-controlled DOCX changes with exact logs.
-- GitHub Actions unit tests and a **proposed** weekly read-only source watch. Workflow jobs do not run until the user enables them in their GitHub repository. A source change always enters a human review queue.
+- GitHub Actions unit tests and a scheduled read-only source watch. A detected source change is a review item, not an automatic legal update.
 
 ## Download the complete package
 
-Download the versioned source ZIP from [GitHub Releases](https://github.com/tarunag10/conveyancing-legal-skill/releases). For version 0.1.0, the direct asset link is [conveyancing-legal-skill-v0.1.0.zip](https://github.com/tarunag10/conveyancing-legal-skill/releases/download/v0.1.0/conveyancing-legal-skill-v0.1.0.zip); the matching `.sha256` file is published alongside it. The ZIP contains the full tagged repository tree, including the canonical skill, knowledge modules, Python implementation, templates, tests, documentation, licence, and platform adapters. Extract it before installing; keep the directory structure intact.
+Download the versioned source ZIP from [GitHub Releases](https://github.com/tarunag10/conveyancing-legal-skill/releases). For version 0.1.9, the direct asset link is [conveyancing-legal-skill-v0.1.9.zip](https://github.com/tarunag10/conveyancing-legal-skill/releases/download/v0.1.9/conveyancing-legal-skill-v0.1.9.zip); the matching `.sha256` file is published alongside it. The ZIP contains the full tagged repository tree, including the canonical skill, knowledge modules, Python implementation, templates, tests, documentation, licence, and platform adapters. Extract it before installing; keep the directory structure intact.
 
 **Permission is required before any use.** The ZIP does not grant a licence. Read the included `LICENSE` and [`docs/USE_PERMISSION.md`](docs/USE_PERMISSION.md), and obtain prior written permission from the copyright holder for the intended use. Commercial use requires separate prior written permission. Platform installation does not amount to legal verification, professional approval, or permission to use the contents. Check current law, lender instructions, firm requirements, and the supplied research at the point of use.
 
@@ -32,7 +32,7 @@ Download the versioned source ZIP from [GitHub Releases](https://github.com/taru
 
 | Platform | Steps |
 |---|---|
-| **ChatGPT desktop plugin** | Open a terminal in the extracted `conveyancing-legal-skill-v0.1.0` folder and run `codex plugin marketplace add .`. In ChatGPT desktop, open the Plugins Directory, select the `conveyancing-legal-skill` marketplace, and install **Conveyancing Legal Skill**. Restart the app if it does not appear. This installs the local copy for the signed-in desktop app. See [OpenAI's plugin packaging and installation guide](https://developers.openai.com/plugins/build/plugins). |
+| **ChatGPT desktop plugin** | Open a terminal in the extracted `conveyancing-legal-skill-v0.1.9` folder and run `codex plugin marketplace add .`. In ChatGPT desktop, open the Plugins Directory, select the `conveyancing-legal-skill` marketplace, and install **Conveyancing Legal Skill**. Restart the app if it does not appear. This installs the local copy for the signed-in desktop app. See [OpenAI's plugin packaging and installation guide](https://developers.openai.com/plugins/build/plugins). |
 | **ChatGPT Projects** | Create a Project. Copy `adapters/chatgpt/PROJECT_INSTRUCTIONS.md` into the Project instructions, then upload the root `SKILL.md` and only the reference files needed for that Project. Keep related files together where possible because the instructions use relative paths. This is a manual, knowledge-file installation; the Python CLI is not available in ordinary Projects chat. |
 | **Claude Code** | Open the extracted repository folder as the project. Claude Code discovers `.claude/skills/conveyancing-legal` and `CLAUDE.md`. Alternatively, copy that skill folder into the project and keep the referenced repository files accessible. |
 | **OpenAI Codex** | Open the extracted repository root as the workspace. Codex discovers `.agents/skills/conveyancing-legal/SKILL.md` and `AGENTS.md` in supported versions. |
@@ -44,7 +44,7 @@ For the Python CLI, install from that folder with the Quick start commands below
 
 ### Verify the downloaded ZIP
 
-Download the ZIP and its `.sha256` file from the same release. From the download directory, run `sha256sum -c conveyancing-legal-skill-v0.1.0.zip.sha256` on Linux/macOS, or compare the hash printed by `Get-FileHash .\conveyancing-legal-skill-v0.1.0.zip -Algorithm SHA256` on Windows with the value in the checksum file. Then extract the ZIP and confirm that the top-level folder contains `SKILL.md`, `LICENSE`, `README.md`, `src/`, `knowledge/`, `templates/`, and `adapters/`.
+Download the ZIP and its `.sha256` file from the same release. From the download directory, run `sha256sum -c conveyancing-legal-skill-v0.1.9.zip.sha256` on Linux/macOS, or compare the hash printed by `Get-FileHash .\conveyancing-legal-skill-v0.1.9.zip -Algorithm SHA256` on Windows with the value in the checksum file. Then extract the ZIP and confirm that the top-level folder contains `SKILL.md`, `LICENSE`, `README.md`, `src/`, `knowledge/`, `templates/`, and `adapters/`.
 
 ## Quick start (Python 3.10+)
 

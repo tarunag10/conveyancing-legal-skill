@@ -1,9 +1,9 @@
 # App use and update timeline
 
 **Repository/package update:** 28 October 2026  
-**Latest published release:** 0.1.0 (`v0.1.0`)
+**Latest published release:** 0.1.9 (`v0.1.9`)
 
-**Current development package:** 0.1.9 (unreleased)
+**Current development package:** 0.1.10 (unreleased)
 
 **General legal research baseline:** 27 October 2026
 

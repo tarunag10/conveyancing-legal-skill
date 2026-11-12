@@ -1,3 +1,7 @@
+# 0.1.10 (12 November 2026)
+
+Add a structured end-to-end setup guide and matter intake, evidence, enquiry, dates, tax, registration and client-update templates. Clarify OCR limitations and the latest public release. These are working aids and do not constitute a legal-source refresh or professional approval.
+
 # 0.1.9 (12 November 2026)
 
 Add practical sale, purchase, lease/management, auction, facility and declaration fact schedules with role-specific routing. Templates are working review aids, not certified instruments; no new blanket legal approval is claimed.

@@ -40,6 +40,6 @@ The conveyancer checks current primary law, commencement and transitional rules,
 ## Practical limitations
 
 - The intake template is not a secure matter database; it contains no encryption, access control, audit retention, or case-management integration.
-- Document extraction is text-only unless a separately approved OCR workflow is supplied. It does not verify signatures, execution, plan scale, boundaries, or authenticity.
+- Local OCR is optional and requires separately installed tools and firm approval. Text extraction and OCR do not verify signatures, execution, plan scale, boundaries, or authenticity.
 - The legal source registry is dated research, not assurance of current law at the matter's effective date.
 - An empty issue list or blocker list does not certify title or establish readiness to exchange or complete.
