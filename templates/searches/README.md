@@ -1,0 +1,7 @@
+# Search request and adverse-result review pack
+
+These are provider-neutral blank Word worksheets, **not official HMLR or Law Society forms**. For OS1, OS2, OS3, SIM, OC1, OC2, K15 and K16 the actual current form or electronic HMLR service is mandatory. Check current official guidance before applying. For LLC1 check whether the relevant local authority area has moved to HM Land Registry's local charges service; CON29 and optional CON29O enquiries continue to require the appropriate authority/provider. Do not confuse HMLR official priority with simple title search. For environmental, drainage and highways requests select the correct factual provider, property location and report scope, and evaluate professional reliance rights.
+
+Order only on express authority. Never claim a search was submitted, received, paid for or clear from a worksheet. Record source date, result reference, title and party matching, adverse items, third-party replies, confirmed priority protection, exact expiry and lender-reporting decisions. Keep completed case records in approved private case storage and never in this plugin.
+
+See `SEARCH_ROUTING_CATALOGUE.json` for the official or provider-agnostic source links and the 14 distinct blank DOCX worksheets. The Law Society CON29/CON29O licensed form texts are **not bundled**. For official forms go to the licensed provider or local authority. Source checks 24 November 2026; verify at point of use.

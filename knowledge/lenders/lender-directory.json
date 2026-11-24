@@ -1,0 +1,3281 @@
+{
+  "title": "England and Wales lender Certificate of Title / Report on Title directory",
+  "research_as_of": "2026-11-20",
+  "disclaimer": "Research index and routing guidance only, NOT approval to certify title or release funds. Matter-specific mortgage instructions override directory; each entry must be live-checked immediately before use. An LMS document listing does not prove electronic CoT submission. Not exhaustive of UK mortgage lenders or all products. Do not reuse lender-branded forms across group brands.",
+  "schema_version": "1.0.0",
+  "status_meanings": {
+    "verified_submission": "Official source confirms a concrete delivery route within stated product/representation scope; live transaction verification still required.",
+    "verified_conditional": "Source confirms route only subject to case, product, representation or an independent update check.",
+    "verified_document_only": "Official portal/website lists a lender-specific CoT or documents; how to submit has NOT been verified.",
+    "verified_directory_or_panel": "Official source confirms lender has a document/panel presence, but no submission route confirmed.",
+    "lookup_only": "Lender coverage for prompt routing only; no lender-specific COT/RoT process verified."
+  },
+  "common_sources": {
+    "uk_finance_ew": "https://lendershandbook.ukfinance.org.uk/",
+    "lms_lender_documents": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+    "lms_case_login": "https://www.lms.com/conveyancerzone/account",
+    "lms_panel_application": "https://www.lms.com/ConveyancerZone/lenderpanels/apply",
+    "law_society_cot": "https://www.lawsociety.org.uk/topics/property/approved-certificate-of-title",
+    "lms_secure_link": "https://cloud.lms.com/secure-link/"
+  },
+  "lenders": [
+    {
+      "lender": "Accord Mortgages Ltd",
+      "aliases": [
+        "Accord",
+        "Accord Mortgages"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_conditional",
+      "document_location": "Part 2 directs CoT to the contact in §1.11a; lender’s case pack",
+      "submission": {
+        "method": "matter_instructions",
+        "instructions": "Look up England/Wales Part 2 §1.11a for the current sending address and confirm method. The Part 2 response to §4.5b says \"As 1.11a\"."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/accord-mortgages-ltd/?pdf=true",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "A live official source confirms only the stated scenario.",
+      "slug": "accord-mortgages-ltd"
+    },
+    {
+      "lender": "AIB (GB)",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "aib-gb"
+    },
+    {
+      "lender": "AIB (NI)",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "aib-ni"
+    },
+    {
+      "lender": "Aldermore Bank plc",
+      "aliases": [
+        "Aldermore",
+        "Aldermore Bank"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_conditional",
+      "document_location": "Lender conveyancing documents at Aldermore intermediary site; appointed solicitor supplied case documents",
+      "submission": {
+        "method": "matter_instructions",
+        "instructions": "Solicitor requests mortgage advance by submitting CoT after satisfying conditions; lender describes usually at least 3 working days. Confirm actual delivery channel from lender instructions and portal; Lender Exchange panel membership is not a CoT routing instruction."
+      },
+      "sources": [
+        {
+          "url": "https://www.aldermore.co.uk/intermediaries/mortgages/post-offer/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.aldermore.co.uk/intermediaries/mortgages/documents/conveyancing/",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": {
+        "minimum": 3,
+        "unit": "working_days",
+        "notes": "",
+        "requires_live_confirmation": true
+      },
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "A live official source confirms only the stated scenario.",
+      "slug": "aldermore-bank-plc"
+    },
+    {
+      "lender": "Allied Irish Bank (GB)",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "allied-irish-bank-gb"
+    },
+    {
+      "lender": "Atom Bank plc",
+      "aliases": [
+        "Atom Bank"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "LMS Conveyancer Zone Portal eCoT",
+      "submission": {
+        "method": "lms_ecot",
+        "instructions": "Only electronic LMS eCoT accepted. First establish most recent mortgage offer accepted in the Atom App and all pre-completion queries resolved."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/atom-bank-plc/?pdf=true",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": {
+        "minimum": 3,
+        "unit": "working_days",
+        "notes": "",
+        "requires_live_confirmation": true
+      },
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "atom-bank-plc"
+    },
+    {
+      "lender": "Bank of Ireland (UK) plc",
+      "aliases": [
+        "Bank of Ireland UK",
+        "BOI UK"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_conditional",
+      "document_location": "LMS Conveyancer Zone > Case Management > case-specific eCoT",
+      "submission": {
+        "method": "multiple_conditional",
+        "instructions": "LMS-managed cases: eCoT in LMS Case Management; online official solicitor page says it only accepts eCoTs in that managed process. For non-LMS-managed cases follow front of mortgage Offer for contact and route."
+      },
+      "sources": [
+        {
+          "url": "https://www.bankofirelanduk.com/mortgages/existing-customer/boim-for-solicitors/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/bank-of-ireland-uk-plc/?pdf=true",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [
+        "LMS panel is required to access offers and eCoTs; LMS Secure Link may be usable without LMS panel registration for queries."
+      ],
+      "evidence_note": "A live official source confirms only the stated scenario.",
+      "slug": "bank-of-ireland-uk-plc"
+    },
+    {
+      "lender": "Bank of Scotland",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "bank-of-scotland"
+    },
+    {
+      "lender": "Barclays Bank UK PLC",
+      "aliases": [
+        "Barclays residential",
+        "Barclays Bank UK"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "Case mortgage offer provides customer Lender Exchange link",
+      "submission": {
+        "method": "lender_exchange",
+        "instructions": "Residential Barclays Bank UK Part 2 question 4.5b: submit using the Lender Exchange link on customer offer. Do not use Barclays Business Report on Title automatically."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/barclays-bank-uk-plc/?pdf=true&srch=2024",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "barclays-bank-uk-plc"
+    },
+    {
+      "lender": "Barclays Business / Commercial Lending",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "Barclays Business, not ordinary Barclays Bank UK residential",
+      "research_status": "verified_conditional",
+      "document_location": "Barclays business solicitor instructions website > downloadable CoT (owner-occupied) or Report on Title (residential let/lease); transaction instruction letter",
+      "submission": {
+        "method": "multiple_conditional",
+        "instructions": "Follow the precise Barclays BUSINESS instruction letter; website says printed, signed return no less than 7 days before completion, with online Report on Title/Collateral Portal alternatives if instructed. Do not apply this commercial route to Barclays Bank UK residential offer."
+      },
+      "sources": [
+        {
+          "url": "https://www.barclays.co.uk/help/business/services/solicitor-instructions/",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": {
+        "minimum": 7,
+        "unit": "days_unspecified",
+        "notes": "Website says no less than seven days but does not identify a business/calendar-day convention in the public snippet; confirm offer.",
+        "requires_live_confirmation": true
+      },
+      "contacts": [],
+      "warnings": [
+        "Use the lender-issued unamended form; report unsuitable wording separately in covering letter.",
+        "Do not confuse Certificate of Title with Report on Title."
+      ],
+      "evidence_note": "A live official source confirms only the stated scenario.",
+      "slug": "barclays-business-commercial-lending"
+    },
+    {
+      "lender": "Bath Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: COT E W.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "bath-building-society"
+    },
+    {
+      "lender": "BHO Mortgages",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: BHO Certificate of Title - England & Wales August 2024.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "bho-mortgages"
+    },
+    {
+      "lender": "Birmingham Midshires",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "birmingham-midshires"
+    },
+    {
+      "lender": "Bluestone Mortgages Limited",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: BM2_Certificate_of_Title-(May-2025).pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "bluestone-mortgages-limited"
+    },
+    {
+      "lender": "Buckinghamshire Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title January 2020.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "buckinghamshire-building-society"
+    },
+    {
+      "lender": "Cambridge Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "cambridge-building-society"
+    },
+    {
+      "lender": "CHL Mortgages",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "chl-mortgages"
+    },
+    {
+      "lender": "Chorley Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title (E&W).pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "chorley-building-society"
+    },
+    {
+      "lender": "Clydesdale Bank plc",
+      "aliases": [
+        "Clydesdale",
+        "Yorkshire Bank (Clydesdale group)"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_conditional",
+      "document_location": "LMS instruction case or offer paperwork",
+      "submission": {
+        "method": "multiple_conditional",
+        "instructions": "If instructed through LMS, submit CoT through LMS. For other cases, Part 2 directs to Clydesdale completions team at Sunderland SR43 4JE; verify which channel the specific case accepts."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/clydesdale-bank-plc/?pdf=true",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [
+        {
+          "channel": "email",
+          "value": "cybg.completions@cybg.com",
+          "purpose": "Non-LMS completions"
+        },
+        {
+          "channel": "phone",
+          "value": "0800 121 4203",
+          "purpose": "Non-LMS completions"
+        }
+      ],
+      "warnings": [
+        "Do not assume every Clydesdale/Yorkshire Bank offer has an LMS case."
+      ],
+      "evidence_note": "A live official source confirms only the stated scenario.",
+      "slug": "clydesdale-bank-plc"
+    },
+    {
+      "lender": "Co-operative Bank plc",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "co-operative-bank-plc"
+    },
+    {
+      "lender": "Coutts",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "coutts"
+    },
+    {
+      "lender": "Coutts Finance Co",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "coutts-finance-co"
+    },
+    {
+      "lender": "Coventry Building Society",
+      "aliases": [
+        "Coventry BS"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "CoT per lender offer; official Part 2 postal completions department",
+      "submission": {
+        "method": "paper",
+        "instructions": "Part 2 4.5b currently names Completions Dept., Oakfield House, PO Box 600, Binley, Coventry CV3 9YR. Confirm offer and any electronic override; do not invent an email CoT route."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/coventry-building-society/?pdf=true",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "02476 839357",
+          "purpose": "Completions department"
+        }
+      ],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "coventry-building-society"
+    },
+    {
+      "lender": "Cynergy Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title Mortgage.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "cynergy-bank"
+    },
+    {
+      "lender": "Danske Bank UK",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "danske-bank-uk"
+    },
+    {
+      "lender": "Darlington Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title (England Wales).pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "darlington-building-society"
+    },
+    {
+      "lender": "DB UK Bank Ltd",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "db-uk-bank-ltd"
+    },
+    {
+      "lender": "Dudley Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title V2.2_Legal20.8.25 - Clean view_UPDATED_Legal29.8 Interactive Updated.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "dudley-building-society"
+    },
+    {
+      "lender": "Earl Shilton Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "earl-shilton-building-society"
+    },
+    {
+      "lender": "Ecology Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "ecology-building-society"
+    },
+    {
+      "lender": "First Direct",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "first-direct"
+    },
+    {
+      "lender": "Fleet Mortgages",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "https://www.fleetmortgages.co.uk/2026_legal_documents/",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.fleetmortgages.co.uk/2026_legal_documents/",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "fleet-mortgages"
+    },
+    {
+      "lender": "Foundation Home Loans",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "foundation-home-loans"
+    },
+    {
+      "lender": "Furness Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "furness-building-society"
+    },
+    {
+      "lender": "Gen H",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "gen-h"
+    },
+    {
+      "lender": "Halifax",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "Lender Exchange or lender-specified paper COT",
+      "submission": {
+        "method": "multiple_conditional",
+        "instructions": "England and Wales Part 2 4.5b lists Lender Exchange OR post to Halifax Plc PO Box 548, Leeds LS1 1WU. Prefer exact current instruction and any later lender update; distinguish Lloyds."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/halifax/?pdf=true&srch=2026",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [
+        {
+          "channel": "email",
+          "value": "ConveyancerSupportTeam@lloydsbanking.com",
+          "purpose": "Pre-completion/lender enquiries"
+        }
+      ],
+      "warnings": [
+        "Do not assume Lloyds November 2026 Lender Exchange-only change automatically applies to Halifax."
+      ],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "halifax"
+    },
+    {
+      "lender": "Hampden & Co",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "hampden-co"
+    },
+    {
+      "lender": "Handelsbanken",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "handelsbanken"
+    },
+    {
+      "lender": "Hanley Economic Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "hanley-economic-building-society"
+    },
+    {
+      "lender": "Harpenden Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: 33055_Certificate of Title Form.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "harpenden-building-society"
+    },
+    {
+      "lender": "Hinckley & Rugby Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: 1-17-Certificate-of-Title-02-22 (3).pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "hinckley-rugby-building-society"
+    },
+    {
+      "lender": "Hodge",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "hodge"
+    },
+    {
+      "lender": "Hodge Equity Release",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "hodge-equity-release"
+    },
+    {
+      "lender": "Holmesdale Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "holmesdale-building-society"
+    },
+    {
+      "lender": "HSBC Private Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS lender documents > HSBC Private Bank > HSBC Private Banking Certificate of Title.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Locate private-bank CoT on LMS document list; private-banking instructions and offer govern submission, not HSBC UK retail eCoT assumption."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [
+        "Separate HSBC Private Bank from HSBC UK Bank plc."
+      ],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "hsbc-private-bank"
+    },
+    {
+      "lender": "HSBC UK Bank plc",
+      "aliases": [
+        "HSBC UK",
+        "HSBC residential"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "HSBC UK residential mortgages; do not conflate HSBC Private Bank or first direct",
+      "research_status": "verified_submission",
+      "document_location": "LMS Panel Link / Conveyancer Zone case eCoT",
+      "submission": {
+        "method": "lms_ecot",
+        "instructions": "Submit eCoT through LMS Panel Link/Conveyancer Zone ONLY; no alternative submission method. Resolve outstanding matters first."
+      },
+      "sources": [
+        {
+          "url": "https://intermediaries.hsbc.co.uk/criteria/?p=access&tab=residential",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/hsbc-uk-bank-plc/?pdf=true",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": {
+        "minimum": 6,
+        "unit": "working_days",
+        "notes": "",
+        "requires_live_confirmation": true
+      },
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "0370 600 7722",
+          "purpose": "HSBC UK solicitor/conveyancer help desk; call validation may require prior written or LMS Secure Link request"
+        }
+      ],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "hsbc-uk-bank-plc"
+    },
+    {
+      "lender": "Intelligent Finance",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "intelligent-finance"
+    },
+    {
+      "lender": "InterBay Commercial",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "interbay-commercial"
+    },
+    {
+      "lender": "Investec Bank plc",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title- Residential Mortgages- March 23 (4).pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "investec-bank-plc"
+    },
+    {
+      "lender": "JPMorgan Chase Bank N.A.",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "jpmorgan-chase-bank-n-a"
+    },
+    {
+      "lender": "Kensington Mortgage Company Ltd",
+      "aliases": [
+        "Kensington",
+        "Kensington Mortgages"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "Current case legal pack; Kensington solicitor contact page",
+      "submission": {
+        "method": "email",
+        "instructions": "Submit Certificate of Title by email to completions@kensingtonmortgages.co.uk, using lender case reference in email subject and correspondence."
+      },
+      "sources": [
+        {
+          "url": "https://www.kensingtonmortgages.co.uk/intermediaries/solicitors/contact-us-for-solicitors",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [
+        {
+          "channel": "email",
+          "value": "completions@kensingtonmortgages.co.uk",
+          "purpose": "CoT submission"
+        },
+        {
+          "channel": "phone",
+          "value": "03444 99 00 11",
+          "purpose": "Existing case enquiries"
+        },
+        {
+          "channel": "email",
+          "value": "broker.queries@kensingtonmortgages.co.uk",
+          "purpose": "Existing case queries"
+        }
+      ],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "kensington-mortgage-company-ltd"
+    },
+    {
+      "lender": "Kent Reliance",
+      "aliases": [
+        "Kent Reliance for Intermediaries",
+        "KRBS"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "Kent Reliance intermediaries > Documents > Downloads for solicitors > Certificate of title",
+      "submission": {
+        "method": "email",
+        "instructions": "Current public CoT form directs email to Completions@krbs.com at least five working days before completion; check case and document versions. Form states funds sent one working day before completion with interest from date of release."
+      },
+      "sources": [
+        {
+          "url": "https://www.kentrelianceforintermediaries.co.uk/documents",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.kentrelianceforintermediaries.co.uk/media/zuoggek0/certificate-of-title.pdf",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": {
+        "minimum": 5,
+        "unit": "working_days",
+        "notes": "",
+        "requires_live_confirmation": true
+      },
+      "contacts": [
+        {
+          "channel": "email",
+          "value": "Completions@krbs.com",
+          "purpose": "CoT submission; form instructions"
+        }
+      ],
+      "warnings": [
+        "Different brand from Rely Mortgages despite OneSavings Bank group.",
+        "Form directs separate delivery of signed Personal Guarantee in applicable cases; check live version before relying on its timing."
+      ],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "kent-reliance"
+    },
+    {
+      "lender": "Keystone Property Finance",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "https://www.keystonepropertyfinance.co.uk/lms-links-documents/",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.keystonepropertyfinance.co.uk/lms-links-documents/",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "keystone-property-finance"
+    },
+    {
+      "lender": "Landbay",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://landbay.co.uk/intermediaries/conveyancing-panel/",
+          "checked_on": "2026-11-20",
+          "scope": "panel or firm information only; CoT route unverified"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "landbay"
+    },
+    {
+      "lender": "Leeds Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: England Wales manual COT vAug21.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "leeds-building-society"
+    },
+    {
+      "lender": "Leeds Building Society (NI)",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "leeds-building-society-ni"
+    },
+    {
+      "lender": "Leek Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "https://www.leekbs.co.uk/solicitor-legal-documents/",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.leekbs.co.uk/solicitor-legal-documents/",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "leek-building-society"
+    },
+    {
+      "lender": "LendInvest",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "lendinvest"
+    },
+    {
+      "lender": "LiveMore Capital",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: LMC Certificate of Title v2.0.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "livemore-capital"
+    },
+    {
+      "lender": "Lloyds Bank plc",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_conditional",
+      "document_location": "Lender Exchange (live current Part 2 must be rechecked)",
+      "submission": {
+        "method": "lender_exchange",
+        "instructions": "A dated 3 November 2026 change summary reports CoT via Lender Exchange only, with earlier postal option withdrawn. Confirm the actual current UK Finance Lloyds Part 2 4.5b and offer before action; third-party change feed is not itself authoritative."
+      },
+      "sources": [
+        {
+          "url": "https://home.lendermonitor.com/change/1d054f7e4290/cg20-lloyds-tsb/change-data",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [
+        "2026-11-03 change is secondary-source evidence pending live primary Part 2 validation."
+      ],
+      "evidence_note": "Secondary amendment alert checked 2026-11-20; route must be validated against live Lloyds instructions.",
+      "slug": "lloyds-bank-plc"
+    },
+    {
+      "lender": "Loughborough Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "https://cloud.theloughborough.co.uk/s/2zsSZn5J6aR5beB",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://cloud.theloughborough.co.uk/s/2zsSZn5J6aR5beB",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "loughborough-building-society"
+    },
+    {
+      "lender": "Mansfield Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "mansfield-building-society"
+    },
+    {
+      "lender": "Marsden Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate-of-Title-(2020).pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "marsden-building-society"
+    },
+    {
+      "lender": "Melton Mowbray Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title 0625.pdf; special Self-Build version 0625 v2",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [
+        "Use self-build CoT only for applicable self-build cases."
+      ],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "melton-mowbray-building-society"
+    },
+    {
+      "lender": "Metro Bank plc",
+      "aliases": [
+        "Metro Bank"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "Mortgage offer and lender instructions (email CoT)",
+      "submission": {
+        "method": "email",
+        "instructions": "Send completed CoT to mortgagecompletions@metrobank.plc.uk with at least five working days notice; the Part 2 states CoTs submitted inside that window will be rejected."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/metro-bank-plc/?pdf=true",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": {
+        "minimum": 5,
+        "unit": "working_days",
+        "notes": "",
+        "requires_live_confirmation": true
+      },
+      "contacts": [
+        {
+          "channel": "email",
+          "value": "mortgagecompletions@metrobank.plc.uk",
+          "purpose": "CoT submission"
+        }
+      ],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "metro-bank-plc"
+    },
+    {
+      "lender": "ModaMortgages",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "https://modamortgages.co.uk/intermediaries/documents",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://modamortgages.co.uk/intermediaries/documents",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "modamortgages"
+    },
+    {
+      "lender": "Molo",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: ColCap Certificate of Title V2.pdf (listed in recent LMS index; check live availability and current legal entity)",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "molo"
+    },
+    {
+      "lender": "Monmouthshire Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: BLANK COT 2021.pdf; special CoT only for accounts beginning MBS",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [
+        "The MBS-prefix CoT must not be used for non-MBS-prefix accounts."
+      ],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "monmouthshire-building-society"
+    },
+    {
+      "lender": "Mpowered Mortgages",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "mpowered-mortgages"
+    },
+    {
+      "lender": "National Counties and Family Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title - M117 0522.pdf; distinct additional OO-BTL/Limited Company forms",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "national-counties-and-family-building-society"
+    },
+    {
+      "lender": "Nationwide Building Society",
+      "aliases": [
+        "Nationwide"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_conditional",
+      "document_location": "Nationwide Information for Lawyers > forms and downloads > England and Wales CoT (M601)",
+      "submission": {
+        "method": "matter_instructions",
+        "instructions": "Obtain current Nationwide CoT from lender official forms page and follow submission instructions in that form/current offer; ensure full firm bank details. Nationwide public page confirms funds notice requirements but this entry does not assert a single universal portal."
+      },
+      "sources": [
+        {
+          "url": "https://www.nationwide.co.uk/about-us/information-for-lawyers/forms-and-downloads-for-lawyers",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.nationwide.co.uk/about-us/information-for-lawyers/cot-and-release-of-funds",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": {
+        "options": [
+          {
+            "method": "BACS",
+            "minimum": 5,
+            "unit": "working_days"
+          },
+          {
+            "method": "CHAPS",
+            "minimum": 48,
+            "unit": "hours",
+            "charge_gbp_from_public_page": 15
+          }
+        ],
+        "requires_live_confirmation": true
+      },
+      "contacts": [],
+      "warnings": [
+        "Lender Exchange panel administration is not proof that this CoT must be submitted via Lender Exchange."
+      ],
+      "evidence_note": "A live official source confirms only the stated scenario.",
+      "slug": "nationwide-building-society"
+    },
+    {
+      "lender": "NatWest Group Commercial / Panel Firms",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "NatWest Group commercial lending with panel firms only; not ordinary NatWest residential",
+      "research_status": "verified_conditional",
+      "document_location": "NatWest Group panel firm policies and Certificate of Title DOC template",
+      "submission": {
+        "method": "matter_instructions",
+        "instructions": "For commercial panel lending, use NatWest lending bank CoT template unless alternative explicitly agreed. In separate-representation circumstances borrower solicitor CoT may be accepted only on specified panel/tenure conditions and bank agreement. Not applicable automatically to NatWest retail."
+      },
+      "sources": [
+        {
+          "url": "https://www.natwestgroup.com/panel-firms/policies-and-guidance.html",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.natwestgroup.com/credit-docs/transactional-support/policies-and-guidance.html",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "A live official source confirms only the stated scenario.",
+      "slug": "natwest-group-commercial-panel-firms"
+    },
+    {
+      "lender": "NatWest personal mortgages",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "LMS Lender Documents: LMS lender directory links to NatWest conveyancer website; CoT method unverified",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "natwest-personal-mortgages"
+    },
+    {
+      "lender": "Newbury Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "newbury-building-society"
+    },
+    {
+      "lender": "Newcastle Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: NBS_02470_Certificate_of_Title_CJV2.pdf (verify current listing)",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "newcastle-building-society"
+    },
+    {
+      "lender": "Nottingham Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "nottingham-building-society"
+    },
+    {
+      "lender": "OakNorth Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "oaknorth-bank"
+    },
+    {
+      "lender": "Paragon Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "paragon-bank"
+    },
+    {
+      "lender": "Penrith Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "https://penrithbs.co.uk/downloads/",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://penrithbs.co.uk/downloads/",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "penrith-building-society"
+    },
+    {
+      "lender": "Pepper Money",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.pepper.money/broker/resources/solicitor-panel/",
+          "checked_on": "2026-11-20",
+          "scope": "panel or firm information only; CoT route unverified"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "pepper-money"
+    },
+    {
+      "lender": "Perenna Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "perenna-bank"
+    },
+    {
+      "lender": "Platform Home Loans",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "platform-home-loans"
+    },
+    {
+      "lender": "Precise Mortgages",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "LMS Lender Documents: LMS lender panel/pack; no universal static CoT verified",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "precise-mortgages"
+    },
+    {
+      "lender": "Principality Building Society",
+      "aliases": [
+        "Principality"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "Mortgage-offer CoT and Smoove portal",
+      "submission": {
+        "method": "smoove",
+        "instructions": "Use Smoove portal for CoT; enter loan and transfer amounts exactly as on the Certificate of Title supplied with offer. Portal status indicates “submitted to lender”. Resolve queries through MSCPostOfferPipeline@principality.co.uk; cancel/reschedule via 0330 333 4029."
+      },
+      "sources": [
+        {
+          "url": "https://www.principality.co.uk/home/contact-us/information-for-conveyancers",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [
+        {
+          "channel": "email",
+          "value": "MSCPostOfferPipeline@principality.co.uk",
+          "purpose": "Pre-completion queries"
+        },
+        {
+          "channel": "phone",
+          "value": "0330 333 4029",
+          "purpose": "CoT cancellation or completions"
+        },
+        {
+          "channel": "email",
+          "value": "PanelManager@hellosmoove.com",
+          "purpose": "Smoove panel/firm details"
+        }
+      ],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "principality-building-society"
+    },
+    {
+      "lender": "RBS / Royal Bank of Scotland",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "LMS Lender Documents: LMS panel directory; case route not independently confirmed",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "rbs-royal-bank-of-scotland"
+    },
+    {
+      "lender": "Reliance Bank Ltd",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "reliance-bank-ltd"
+    },
+    {
+      "lender": "Rely Mortgages",
+      "aliases": [
+        "Rely",
+        "OSB Rely"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "Rely buy-to-let cases instructed via LMS; verify exact offer/representative role",
+      "research_status": "verified_conditional",
+      "document_location": "Rely conveyancing page > LMS lender documents; pre-populated case eCoT where LMS instruction has been issued.",
+      "submission": {
+        "method": "lms_ecot",
+        "instructions": "Locate firm-linked live case in LMS Conveyancer Zone; use its case-specific eCoT, mortgage offer and current Rely solicitor instructions. If case/CoT inaccessible ask Rely underwriting to link/identify instruction and LMS panel or technical team for access."
+      },
+      "sources": [
+        {
+          "url": "https://www.relymortgages.co.uk/intermediaries/conveyancing",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.relymortgages.co.uk/intermediaries/contact-us",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "03300 581697",
+          "purpose": "Rely underwriting/case updates"
+        },
+        {
+          "channel": "email",
+          "value": "enquiries@relymortgages.co.uk",
+          "purpose": "Rely general enquiries"
+        },
+        {
+          "channel": "email",
+          "value": "lenderpanels@lms.com",
+          "purpose": "LMS panel access"
+        },
+        {
+          "channel": "email",
+          "value": "support@lms.com",
+          "purpose": "LMS technical access"
+        }
+      ],
+      "warnings": [
+        "Rely and Kent Reliance are distinct brands: do not submit the Kent Reliance CoT for Rely.",
+        "Public LMS lender document list does not mean a static Rely CoT is downloadable; inspect the live LMS case."
+      ],
+      "evidence_note": "A live official source confirms only the stated scenario.",
+      "slug": "rely-mortgages"
+    },
+    {
+      "lender": "Rooftop Mortgages",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "rooftop-mortgages"
+    },
+    {
+      "lender": "Royal Bank of Scotland",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "royal-bank-of-scotland"
+    },
+    {
+      "lender": "Saffron Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "LMS Lender Documents: Find current lender pack on LMS; exact CoT file/version must be confirmed",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "saffron-building-society"
+    },
+    {
+      "lender": "Sainsbury's Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "sainsbury-s-bank"
+    },
+    {
+      "lender": "Santander UK plc",
+      "aliases": [
+        "Santander"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "Current mortgage offer; electronic CoT submitted via Lender Exchange",
+      "submission": {
+        "method": "lender_exchange",
+        "instructions": "England and Wales Part 2 question 4.5b directs lender’s CoT to Lender Exchange. Verify exact offer, firm access and any exceptional product route."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/santander-uk-plc/question-list/?pdf=true",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.santanderforintermediaries.co.uk/submit-and-track-business/find-an-approved-solicitor",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "santander-uk-plc"
+    },
+    {
+      "lender": "Scottish Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "scottish-building-society"
+    },
+    {
+      "lender": "Scottish Widows Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "scottish-widows-bank"
+    },
+    {
+      "lender": "Secure Trust Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "secure-trust-bank"
+    },
+    {
+      "lender": "Shawbrook Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "shawbrook-bank"
+    },
+    {
+      "lender": "Skipton Building Society",
+      "aliases": [
+        "Skipton"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "LMS Panel Link / Conveyancer Zone eCoT",
+      "submission": {
+        "method": "lms_ecot",
+        "instructions": "Submit through LMS electronic COT; no original paper copy required. Call lender to amend completion date after sending."
+      },
+      "sources": [
+        {
+          "url": "https://www.skipton.co.uk/help-and-support/information-for-conveyancers/completions",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": {
+        "minimum": 7,
+        "unit": "business_days",
+        "notes": "",
+        "requires_live_confirmation": true
+      },
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "0345 607 9848",
+          "purpose": "Change completion date after CoT submitted"
+        }
+      ],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "skipton-building-society"
+    },
+    {
+      "lender": "Stafford Railway Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "stafford-railway-building-society"
+    },
+    {
+      "lender": "Standard Chartered Bank UK",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "standard-chartered-bank-uk"
+    },
+    {
+      "lender": "Suffolk Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "https://www.suffolkbuildingsociety.co.uk/mortgages/solicitors/",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.suffolkbuildingsociety.co.uk/mortgages/solicitors/",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "suffolk-building-society"
+    },
+    {
+      "lender": "Tandem Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "tandem-bank"
+    },
+    {
+      "lender": "Teachers Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "teachers-building-society"
+    },
+    {
+      "lender": "The Mortgage Lender Limited",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title EW - BTL V1.2.pdf or Certificate of Title EW Jul 2018.pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [
+        "Choose correct residential vs BTL and individual/company variant."
+      ],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "the-mortgage-lender-limited"
+    },
+    {
+      "lender": "The Mortgage Works",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [
+        "The Mortgage Works and Nationwide share a wider group but may require distinct product/legal forms; do not reuse Nationwide residential CoT."
+      ],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "the-mortgage-works"
+    },
+    {
+      "lender": "Tipton & Coseley Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "tipton-coseley-building-society"
+    },
+    {
+      "lender": "Together",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "Bridging/commercial and other Together facilities; separately represented or joint representation needs confirmation",
+      "research_status": "verified_conditional",
+      "document_location": "Lender/instructing solicitor RoT or drawdown instructions supplied for this facility; no universal borrower-side CoT assumed.",
+      "submission": {
+        "method": "specialist_rot",
+        "instructions": "For separate-representation/bridging cases: borrower solicitor returns requested title and security pack; Together’s own lender solicitor reviews it and provides Report on Title to Together. For other Together products, follow actual offer, lender instruction and reporting/drawdown channel."
+      },
+      "sources": [
+        {
+          "url": "https://togethermoney.com/-/media/files/cf-packaging-guide.pdf",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://togethermoney.com/intermediaries/bridging-loans/regulated-bridging-finance",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [
+        "The packaging guide is not a substitute for current transaction-specific instructions.",
+        "Do not assume the borrower solicitor signs Together’s lender solicitor Report on Title."
+      ],
+      "evidence_note": "A live official source confirms only the stated scenario.",
+      "slug": "together"
+    },
+    {
+      "lender": "TSB Bank plc",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "LMS Lender Documents: LMS lender documents, deeds/terms; case-specific CoT route not independently confirmed",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "The directory/panel is confirmed, but no lender CoT submission procedure is established.",
+      "slug": "tsb-bank-plc"
+    },
+    {
+      "lender": "UCB Home Loans",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "ucb-home-loans"
+    },
+    {
+      "lender": "Ulster Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "ulster-bank"
+    },
+    {
+      "lender": "United Trust Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "united-trust-bank"
+    },
+    {
+      "lender": "Vernon Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_document_only",
+      "document_location": "LMS Lender Documents: Certificate of Title (BTL).pdf or (Residential inc. B4U).pdf",
+      "submission": {
+        "method": "unknown",
+        "instructions": "Open the official lender document location. Check lender name, jurisdiction, product, issue/offer date, role, and current CoT version. No public source here establishes submission method."
+      },
+      "sources": [
+        {
+          "url": "https://www.lms.com/conveyancerzone/pages/documents.aspx",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Only the location of a lender-branded document is confirmed; submission method is not verified.",
+      "slug": "vernon-building-society"
+    },
+    {
+      "lender": "Virgin Money",
+      "aliases": [
+        "Virgin Money plc"
+      ],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_submission",
+      "document_location": "Use form required by mortgage instructions; CoT email in Part 2",
+      "submission": {
+        "method": "email",
+        "instructions": "Send CoT to cots@virginmoney.com; use postoffer@virginmoney.com for solicitor enquiries and verify case route."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/lenders-handbook/englandandwales/virgin-money/?pdf=true",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [
+        {
+          "channel": "email",
+          "value": "cots@virginmoney.com",
+          "purpose": "CoT submission"
+        },
+        {
+          "channel": "email",
+          "value": "postoffer@virginmoney.com",
+          "purpose": "Solicitor enquiries"
+        }
+      ],
+      "warnings": [],
+      "evidence_note": "A live public official lender/UK Finance source confirms at least part of this route; verify this particular case.",
+      "slug": "virgin-money"
+    },
+    {
+      "lender": "West Bromwich Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "west-bromwich-building-society"
+    },
+    {
+      "lender": "West One Loans",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "verified_directory_or_panel",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.westoneloans.co.uk/",
+          "checked_on": "2026-11-20",
+          "scope": "panel or firm information only; CoT route unverified"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "west-one-loans"
+    },
+    {
+      "lender": "Yorkshire Bank",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "yorkshire-bank"
+    },
+    {
+      "lender": "Yorkshire Building Society",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "yorkshire-building-society"
+    },
+    {
+      "lender": "Zephyr Homeloans",
+      "aliases": [],
+      "jurisdiction": "England and Wales",
+      "product_and_representation_scope": "England and Wales; exact product/role to be checked",
+      "research_status": "lookup_only",
+      "document_location": "Official UK Finance handbook (if participating), instruction/offer pack, lender-specific conveyancer page",
+      "submission": {
+        "method": "case_instructions",
+        "instructions": "Start with signed instruction letter and exact lender’s current England and Wales Part 2 §4.5b, §10.2b (and Part 3 if applicable). Ask lender case-handler for CoT/RoT form, delivery, case identifier and timescale. Do not submit via a guessed portal."
+      },
+      "sources": [
+        {
+          "url": "https://lendershandbook.ukfinance.org.uk/",
+          "checked_on": "2026-11-20"
+        },
+        {
+          "url": "https://www.ukfinance.org.uk/reachout",
+          "checked_on": "2026-11-20"
+        }
+      ],
+      "notice": null,
+      "contacts": [],
+      "warnings": [],
+      "evidence_note": "Lender name appears in a source directory; no individual CoT route confirmed.",
+      "slug": "zephyr-homeloans"
+    }
+  ]
+}

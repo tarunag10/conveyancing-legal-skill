@@ -1,0 +1,9 @@
+# England private assured tenancy notices from 1 May 2026 (and exceptions)
+
+**Mandatory before drafting:** classify England or Wales; private assured vs social housing, occupation contract, protected/regulated, agricultural occupancy, lodger/licence. This skill's 2026 England private-rented rules **do not apply** to Welsh occupation contracts or every social housing tenancy. Determine tenancy start, alleged grounds, notice service date, transitional regime and proceedings start.
+
+Official page current as checked 24 November 2026: https://www.gov.uk/guidance/assured-tenancy-forms . Regulations: https://www.legislation.gov.uk/uksi/2026/354/made . From 1 May 2026 in England private rented assured sector, old Section 21 no-fault route ended for new notices; landlord seeking possession uses **official Form 3A** (as published by Secretary of State, version can change) and correct current statutory ground(s)/period. Landlord rent increases use **official Form 4A**, subject to rule limits and validity checks. No unlicensed/invented replacement template; the plugin only supplies **worksheets** and links to current source forms/guidance. Do not paste form 3A grounds from memory. Check exceptions, transitional notices pre-1 May 2026 and application deadlines; dates are evidential not assumed.
+
+Separate LTA 1987 s47 demand particulars and s48 service address (where Part VI applies), including England/Wales address; check that Part VI applies and current Welsh occupation contract exclusions. Source: https://www.legislation.gov.uk/ukpga/1987/31/part/VI . Do not treat s47 information sheet as an entire service charge demand; verify any prescribed rights/obligations summaries (1985 Act s21B) and demands.
+
+Never represent notice served, rent increased, grounds proved or possession granted without appropriate evidence and authorised professional/court action.

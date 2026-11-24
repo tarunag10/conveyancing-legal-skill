@@ -1,0 +1,361 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ew-conveyancing/workbench-matter.schema.json",
+  "title": "Local evidence-led conveyancing matter workspace",
+  "description": "Structural validation only. Evidence status and human approvals require actual solicitor review. Never place client data in the plugin source repository.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "matter_id",
+    "jurisdiction",
+    "transaction_type",
+    "documents",
+    "fact_observations",
+    "requirements",
+    "securities",
+    "dates",
+    "review"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "matter_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{2,79}$"
+    },
+    "jurisdiction": {
+      "enum": [
+        "England",
+        "Wales"
+      ]
+    },
+    "transaction_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/document"
+      }
+    },
+    "fact_observations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/observation"
+        }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/requirement"
+      }
+    },
+    "securities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/security"
+      }
+    },
+    "dates": {
+      "type": "object",
+      "properties": {
+        "tax_effective_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "company_charge_created": {
+          "type": "string",
+          "format": "date"
+        },
+        "priority_search_receipt": {
+          "type": "string",
+          "format": "date"
+        },
+        "target_completion": {
+          "type": "string",
+          "format": "date"
+        },
+        "contractual_completion": {
+          "type": "string",
+          "format": "date"
+        },
+        "agreed_extended_completion": {
+          "type": "string",
+          "format": "date"
+        },
+        "bank_holidays": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "auction_notice": {
+          "type": "object",
+          "properties": {
+            "served_on": {
+              "type": "string",
+              "format": "date"
+            },
+            "days": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "unit": {
+              "enum": [
+                "calendar_days",
+                "working_days",
+                "business_days"
+              ]
+            }
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "financials": {
+      "type": "object",
+      "description": "GBP decimal strings only; no live bank verification",
+      "additionalProperties": true
+    },
+    "registration": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "execution": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "specialist": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "lender": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "live_instructions_checked": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "decision": {
+          "type": "string"
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "decision"
+      ],
+      "additionalProperties": true
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "external_actions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "post_completion": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "lender_condition_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "source_document_id",
+          "source_locator",
+          "text"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "$defs": {
+    "document": {
+      "type": "object",
+      "required": [
+        "document_id"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string"
+        },
+        "document_type": {
+          "type": "string"
+        },
+        "review_state": {
+          "type": "string"
+        },
+        "file_name": {
+          "type": "string"
+        },
+        "local_path": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "observation": {
+      "type": "object",
+      "required": [
+        "value",
+        "document_id",
+        "locator"
+      ],
+      "properties": {
+        "value": {},
+        "document_id": {
+          "type": "string"
+        },
+        "locator": {
+          "type": "string"
+        },
+        "verification": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "requirement": {
+      "type": "object",
+      "required": [
+        "id",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "outstanding",
+            "evidence_received",
+            "verified",
+            "waived_by_lender",
+            "not_applicable",
+            "rejected",
+            "disputed",
+            "pending"
+          ]
+        },
+        "blocking": {
+          "type": "boolean"
+        },
+        "source_document_id": {
+          "type": "string"
+        },
+        "source_locator": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reviewed_by": {
+          "type": "string"
+        },
+        "reviewed_at": {
+          "type": "string"
+        },
+        "lender_written_approval_ref": {
+          "type": "string"
+        },
+        "lender_decision_date": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "security": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "property_id": {
+          "type": "string"
+        },
+        "title_number": {
+          "type": "string"
+        },
+        "intended_rank": {
+          "enum": [
+            "first",
+            "second",
+            "third",
+            "subsequent",
+            "unknown"
+          ]
+        },
+        "existing_charge_review": {
+          "type": "string"
+        },
+        "prior_mortgagee_consent": {
+          "type": "string"
+        },
+        "charge_instrument_ref": {
+          "type": "string"
+        },
+        "third_party_owner": {
+          "type": "boolean"
+        },
+        "third_party_advice": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

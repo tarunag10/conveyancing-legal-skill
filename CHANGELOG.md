@@ -1,18 +1,21 @@
-# 0.1.10 (12 November 2026)
+# 0.2.0 — 20 November 2026 (matter workbench supervised beta)
 
-Add a structured end-to-end setup guide and matter intake, evidence, enquiry, dates, tax, registration and client-update templates. Clarify OCR limitations and the latest public release. These are working aids and do not constitute a legal-source refresh or professional approval.
+- Added standalone, importable evidence-led matter record and tamper-evident local event history; a firm-controlled database, encryption or real legal approval is **not** provided.
+- Added conservative PDF/Word/text candidate extraction, cross-document inconsistency detection and old/new text comparison with source locators.
+- Added lender condition/waiver audit, security and second-charge triage, specialist leasehold/tenancy/Company/unregistered/commercial/probate checks and execution and HMLR registration preflight.
+- Added exact-decimal provisional completion reconciler, controlled auction extension and lender notice dates, SDLT/LTT/MR01/priority deadline helpers; linked dated official sources and explicit legal exceptions.
+- Added 12 solicitor draft types (not sent), accessible offline HTML, Markdown review and CSV/JSON manual work-item exports.
+- Added `conveyancing-workbench` separate CLI and package entry point, matter JSON schema, anonymised examples, skill routing, reference documentation and regression tests.
+- Kept existing lender directory, gift deed and legacy CLI unchanged; no actual live Microsoft/HMLR/lender/case software integrations, filings, client-money access or lawyer sign-off were implemented.
+- This is a **working supervised beta**, not a production-certified all-in-one conveyancing or autonomous legal practice system. Existing reference law and lender conditions require live point-of-use confirmation.
 
-# 0.1.9 (12 November 2026)
+# 0.1.12 (20 November 2026) - Lender CoT / RoT directory and workflow
 
-Add practical sale, purchase, lease/management, auction, facility and declaration fact schedules with role-specific routing. Templates are working review aids, not certified instruments; no new blanket legal approval is claimed.
-
-# 0.1.8 (12 November 2026)
-
-Add opt-in local OCR, human plan-review record and safe CSV action handoff. Record preliminary tax-source comparison; solicitor approval remains pending. No direct case-system connection or legal-source promotion is claimed.
-
-# 0.1.7 (12 November 2026)
-
-Reconciles 0.1.6 plugin hardening with the repository while preserving existing fictional fixtures. Changed source fingerprints stay pending until explicitly reviewed. Adds practice handoff, onboarding and acceptance guidance plus evidence, gift and loan review aids; no legal or tax source approval is implied.
+- Added the `lender-certificates` specialist skill and linked it into the existing supervised conveyancing and lender modules.
+- Added 117 England and Wales lender/brand lookup records with dated official URLs, evidence level, portal/document route, lender contacts and a notice period only when sourced. Entries explicitly distinguish verified delivery method from a downloadable document or panel presence.
+- Added common UK Finance (new 2026 site), LMS, Lender Exchange, Smoove, lender-site and Together separate-representation workflow, including key brand/product distinctions and late-2026 Lloyds source-change alert marked pending live confirmation.
+- Added an editable lawyer-only CoT/RoT routing/submission checklist and source-reverification instructions; no automated legal certification, signing, submission, funds movement or lender conditions approval.
+- Existing core, tax, form and title rules unchanged; do not construe 117 records as exhaustive of all lenders/loan products or ever-present current instructions. Primary evidence baseline checked 20 November 2026.
 
 # 0.1.6 (9 November 2026)
 
@@ -29,7 +32,7 @@ Repair installed-package validation and missing synthetic test inputs; harden ev
 
 ## 2 November 2026 — unreleased 0.1.4 stages 4–7
 
-- Expanded contract-pack, title-investigation, searches/enquiries, and leasehold/estate-management stages with targeted task lists, review prompts, escalation triggers and stage-specific deliverables.
+- Expanded contract-pack, title-investigation, searches/enquiries, and leasehold/estate-management stages with targeted task lists, review prompts and escalation triggers and stage-specific deliverables.
 - Added conditional-task applicability records so irrelevant work is explicitly assessed with a rationale rather than silently skipped.
 - Bumped development package metadata to 0.1.4. No legal rules or source research were updated; the latest published ZIP remains v0.1.0.
 
@@ -63,4 +66,3 @@ Repair installed-package validation and missing synthetic test inputs; harden ev
 - Added dated restricted tax calculation, deterministic completion reconciliation, selected deadlines and no automatic completion or legal sign-off.
 - Added fictional stress tests and GitHub Actions workflows; repository is public and connected to its GitHub remote.
 - Known restrictions are in `docs/VALIDATION_AND_LIMITATIONS.md`.
-

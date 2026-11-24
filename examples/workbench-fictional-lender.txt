@@ -1,0 +1,6 @@
+FICTIONAL LENDER OFFER
+Borrower: Example Property Investment Ltd
+Lender: Together
+Title Number: EX123456
+Loan Amount: £65,000.00
+Completion Date: 27/11/2026

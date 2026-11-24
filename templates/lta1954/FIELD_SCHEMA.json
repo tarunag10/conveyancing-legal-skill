@@ -1,0 +1,20 @@
+{
+  "workflow": "lta1954-new-tenancy-contracting-out",
+  "jurisdiction": ["England", "Wales"],
+  "legal_source": "SI 2003/3096, Sch 1 and Sch 2 paras 2-8; LTA 1954 s38A",
+  "verified_on": "2026-11-24",
+  "branch": {
+    "required_facts": ["effective_notice_service_date", "earliest_binding_date", "landlord_identity", "tenant_identity", "new_tenancy_proposal"],
+    "simple_declaration_if": "evidenced warning notice served at least 14 days before earliest binding date; Sch 2 para 7",
+    "statutory_declaration_if": "evidenced warning notice served before earliest binding date but fewer than 14 days beforehand; Sch 2 para 8",
+    "unknown_dates": "do not select route as complete; mark pending and obtain evidence",
+    "otherwise": "STOP: cannot assert contracting out has been validly completed"
+  },
+  "form_fields": {
+    "schedule_1_notice": ["tenant_full_name", "tenant_service_address", "landlord_full_name_or_names", "landlord_service_address"],
+    "schedule_2_declaration": ["declarant_full_name", "declarant_address", "tenant_full_name", "premises_description", "term_commencement_date", "landlord_full_name_or_names", "notice_to_from_details", "declaration_actual_date"],
+    "statutory_jurat_only": ["declaration_place", "oath_taker_name", "oath_taker_capacity", "oath_taker_signature", "declarant_signature"],
+    "internal_evidence_not_notice": ["effective_notice_service_date", "method_and_proof_of_service", "earliest_binding_date", "signed_declaration_original", "solicitor_approval"]
+  },
+  "rules": ["Do not insert unsupported fields", "No client identifiers in plugin templates", "No retrospective execution/backdating", "Preserve prescribed warning text", "Use Schedules 3-4 rather than 1-2 for surrender agreement"]
+}

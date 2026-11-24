@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "matter_id": "DEMO-204",
+  "jurisdiction": "England",
+  "transaction_type": "auction_purchase",
+  "created_at": "2026-11-20T12:00:00+00:00",
+  "roles": ["buyer", "borrower", "lender"],
+  "documents": [
+    {"document_id":"D-AUCTION","document_type":"auction_memorandum","review_state":"unreviewed","file_name":"fictional-auction.txt","sha256":"not-available-demo"},
+    {"document_id":"D-LOAN","document_type":"lender_offer","review_state":"unreviewed","file_name":"fictional-loan.txt","sha256":"not-available-demo"}
+  ],
+  "fact_observations": {
+    "buyer_name": [
+      {"value":"Example Property Investments Ltd","document_id":"D-AUCTION","locator":"p.1 buyer field","verification":"unverified_extraction_candidate"},
+      {"value":"Example Property Investment Ltd","document_id":"D-LOAN","locator":"p.2 borrower field","verification":"unverified_extraction_candidate"}
+    ],
+    "property_address":[{"value":"100 Example Street, London","document_id":"D-AUCTION","locator":"p.1","verification":"unverified_extraction_candidate"}],
+    "title_number":[{"value":"EX123456","document_id":"D-AUCTION","locator":"p.2","verification":"unverified_extraction_candidate"}]
+  },
+  "requirements": [
+    {"id":"R1","description":"Building insurance evidence","status":"outstanding","blocking":true,"source_document_id":"D-LOAN","source_locator":"p.5 clause 2","evidence_refs":[]},
+    {"id":"R2","description":"Prior mortgagee consent to second charge","status":"outstanding","blocking":true,"source_document_id":"D-LOAN","source_locator":"p.6 clause 8","evidence_refs":[]}
+  ],
+  "securities": [
+    {"id":"P1","property_id":"auction-title","title_number":"EX123456","intended_rank":"first","charge_instrument_ref":"D-CH1"},
+    {"id":"P2","property_id":"extra-security-title","title_number":"EX223344","intended_rank":"second","charge_instrument_ref":"D-CH2","prior_mortgagee_consent":"outstanding","existing_charge_review":"outstanding"}
+  ],
+  "events":[],
+  "dates":{"tax_effective_date":"2026-11-27","contractual_completion":"2026-11-20","agreed_extended_completion":"2026-11-27","target_completion":"2026-11-27","company_charge_created":"2026-11-27","bank_holidays":[]},
+  "financials":{"purchase_price":"100000.00","deposit_paid":"10000.00","seller_balance_stated":"90000.00","lender_net_advance":"65000.00","client_funds_confirmed":"32000.00","costs_and_disbursements":"2000.00","tax_and_filing":"5000.00"},
+  "registration":{"application_type":"AP1","title_numbers":["EX123456","EX223344"],"deeds_reviewed":false,"tax_return_required":true,"fee_checked_against_live_scale":false,"priority_result_reviewed":false,"restrictions":[{"status":"outstanding"}]},
+  "execution":[{"document_id":"D-CH2","execution_route":"director_with_witness","signatory_capacity":"director","status":"draft_only"}],
+  "specialist":{"uk_company_or_llp_borrower":true,"tenancy":{"applicable":false}},
+  "lender":{"name":"Together","live_instructions_checked":false},
+  "review":{"decision":"pending","reviewer":null,"reviewed_at":null},
+  "external_actions":[],
+  "warnings":["Entirely fictional demonstration only"]
+}

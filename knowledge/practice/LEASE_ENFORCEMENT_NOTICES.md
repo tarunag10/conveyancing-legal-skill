@@ -1,0 +1,11 @@
+# Commercial lease enforcement: break, review, default and forfeiture
+
+Trigger: exercise or challenge break clause, initiate rent review, send contractual notice to complete, section 27 tenant notice, s29B deadline-extension agreement, breach demand or section 146 forfeiture. Read actual signed instrument and incorporated contractual conditions first. **Do not issue an unqualified standard notice where the lease or contract prescribes a form or conditions.**
+
+* Break: correct party, precise break date, contractual notice interval, method of service, conditions (rent, vacant possession, tenant compliance), any personal / assignable right, and landlord/tenant identity. Service proof and conditions satisfaction are separate.
+* Rent review: check rent review trigger, whether notice is required at all, review date, assumptions and disregards, market formula, arbitration/expert path, memoranda; don't silently create notice deadlines.
+* Contract notice to complete: identify incorporated standard/special conditions edition, default, notice threshold, service and time. For auction the special conditions may override standard assumptions. Establish sender's readiness and ability to perform. No arbitrary '10 working days' statement.
+* Section 146 Law of Property Act 1925: verify enforceable right to re-enter, specific breach, remedial capability and compensation, and *additional statutory prerequisites* (particularly residential long leases/rights of relief, section 168 CLRA 2002 and other categories). **Only a preflight worksheet is bundled, not a universal serviceable s146 notice**; supervising solicitor to settle the actual statutory notice. Statute: https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/146 . Do not purport to forfeit or change locks solely from drafting.
+* 1954 Act s27 and s29B: use the specialist business-tenancy module and check up-to-date date and mode of service. A standstill cannot be backdated to cure an expired s29A time limit.
+
+For every document record factual source/evidence, outcome required, jurisdiction, service recipient/address, provision, dates, external conditions, actual method and proof. If unclear, return conditional DRAFT with solicitor-check questions instead of a ready-to-serve notice. Do not combine warning notices for 1954 Act contracting out with section 25 termination notices.

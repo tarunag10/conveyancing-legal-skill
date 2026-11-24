@@ -1,0 +1,39 @@
+{
+  "transaction_type": "remortgage",
+  "property_address": "1 Example Street, London, EX1 1AA",
+  "donees": [
+    {
+      "name": "Alex Example",
+      "address": "1 Example Street, London, EX1 1AA"
+    },
+    {
+      "name": "Taylor Example",
+      "address": "1 Example Street, London, EX1 1AA"
+    }
+  ],
+  "lender": {
+    "name": "Fictional Mortgage Company Ltd",
+    "address": "100 Sample Road, London, EX2 2AA",
+    "loan_description": "interest-only",
+    "offer_date": "1 November 2026",
+    "loan_amount": "500000.00",
+    "application_reference": "EXAMPLE-001"
+  },
+  "donors": [
+    {
+      "name": "Jordan Example",
+      "amount": "25000",
+      "address": "",
+      "source_of_funds": "",
+      "bank": {}
+    },
+    {
+      "name": "Casey Example",
+      "amount": "5000.50",
+      "address": "",
+      "source_of_funds": "",
+      "bank": {}
+    }
+  ],
+  "recipient_allocation": "joint"
+}

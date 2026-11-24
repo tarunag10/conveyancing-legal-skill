@@ -1,3 +1,2 @@
-"""England and Wales conveyancing reference workflow engine. Supervised legal work only."""
-__version__ = "0.1.10"
-
+"""England and Wales conveyancing supervised workbench and reference tools."""
+__version__ = "0.2.0"

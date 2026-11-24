@@ -1,0 +1,15 @@
+# LTA 1954 Part II: protected tenancy renewal and notices
+
+**Triggers:** s25 (landlord renewal/no-renewal), s26 (tenant request), s27 (tenant termination), s29A/B deadline/standstill, s40 information requests, prescribed Forms 1-17. Read title, actual lease, historic notices, parties and service clauses. Verify that the 1954 Act Part II applies and tenancy is not validly contracted out. Do not mistake a section 25 notice for a Schedule 1 new-grant exclusion warning.
+
+Official 2004 SI forms: https://www.legislation.gov.uk/uksi/2004/1005/schedule/2/made . Government current explanatory form guidance (updated **30 July 2026**): https://www.gov.uk/government/publications/renewing-and-ending-business-leases-a-guide-for-tenants-and-landlords/forms-prescribed-under-the-landlord-and-tenant-act-1954-part-2-notices-regulations-2004 . Source 1954 Act: https://www.legislation.gov.uk/ukpga/Eliz2/2-3/56/part/II .
+
+**Routing and hard stop**:
+1. Verify premises/business occupation, protected status, immediate and competent landlord identity, tenant(s), contractual expiry and existing s25/s26 notices. Check whether a statutory scheme such as old telecom Code rights means tribunal rather than court (30 July 2026 update).
+2. Forms **1** or **2** for ordinary opposing/non-opposing **landlord s25**, **3** for tenant **s26**, **4/5** for **s40** requests, **6** for legally available withdrawal; Forms **7–17** for *special statutory gateways* only, never choose from similar-sounding names. See 17-entry index and individual draft worksheets in `templates/notices/business/`.
+3. For s25 and s26 check **six-to-twelve-month notice** limits, correct proposed termination/start date and actual service. Assess s26 response and whether a competing s25/s26 prevents the request. Do not automatically calculate date from a claimed email.
+4. Track **s29A** claim issue deadline, not just tenancy expiry; before expiry (as legally required) an effective **s29B written extension** can extend the application period. A notice cannot itself extend that period. Store execution/service proof and all extensions as a chain. Late applications are high risk and require solicitor/court review.
+5. For **s27(1)** tenant notice before contractual expiry and **s27(2)** notice during statutory continuation, use separate models, each contingent on current law and service. s27(1) written notice not later than 3 months before expiry; s27(2) at least 3 months written notice after statutory continuation, check 2004 amendments (not old quarter-day rule).
+6. Do not file, serve, backdate, or assert ground satisfaction. Approve recipient, applicable section 30(1) grounds/evidence, relevant certificates, compensation, court/tribunal jurisdiction and service with a qualified supervisor. Ordinary tenant section 40 request requires an official Form 5, not a freeform letter.
+
+Forms **1–17 are not bundled as substitute Word forms**; worksheets capture inputs, then the legal professional must use the live official prescribed form. This is intentional: statutory form wording, notes and specialist legal gateways matter and changed in application on 30 July 2026.

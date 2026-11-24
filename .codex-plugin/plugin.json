@@ -1,0 +1,24 @@
+{
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md"
+    }
+  },
+  "name": "ew-conveyancing-legal",
+  "version": "0.4.2",
+  "description": "Supervised England and Wales conveyancing evidence review, workflow and drafting skills",
+  "author": {
+    "name": "Workspace upload"
+  },
+  "interface": {
+    "displayName": "ew-conveyancing-legal",
+    "shortDescription": "Supervised England and Wales conveyancing evidence review, workflow and drafting skills",
+    "longDescription": "Supervised England and Wales conveyancing evidence review, workflow and drafting skills",
+    "developerName": "Workspace upload",
+    "category": "Other",
+    "capabilities": [],
+    "defaultPrompt": null
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

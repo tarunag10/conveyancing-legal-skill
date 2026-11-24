@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ew-conveyancing-legal-skill"
-version = "0.1.10"
-description = "Evidence-gated England and Wales conveyancing skill and deterministic CLI"
+version = "0.2.0"
+description = "Evidence-gated England and Wales conveyancing skill and deterministic workbench"
 requires-python = ">=3.10"
 license = {text = "Proprietary; prior written permission required for all use; commercial use requires separate prior written permission"}
 authors = [{name = "Conveyancing Skill Maintainers"}]
@@ -16,7 +16,8 @@ ocr = ["Pillow>=10.0", "pypdf>=4.0"]
 
 [project.scripts]
 conveyancing = "conveyancing_skill.cli:main"
+conveyancing-gift-deeds = "conveyancing_skill.gift_deeds:main"
+conveyancing-workbench = "conveyancing_skill.workbench:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-

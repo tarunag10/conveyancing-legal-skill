@@ -1,0 +1,128 @@
+[
+  {
+    "code": "OS1",
+    "title": "HMLR priority search of whole registered title",
+    "source_url": "https://www.gov.uk/government/publications/official-search-with-priority-whole-title-os1",
+    "official_application_form_required": true,
+    "template": "templates/searches/OS1_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "OS2",
+    "title": "HMLR priority search of part registered title",
+    "source_url": "https://www.gov.uk/government/publications/official-search-with-priority-part-of-the-title-os2",
+    "official_application_form_required": true,
+    "template": "templates/searches/OS2_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "OS3",
+    "title": "HMLR official search without priority",
+    "source_url": "https://www.gov.uk/government/publications/official-search-without-priority-os3",
+    "official_application_form_required": true,
+    "template": "templates/searches/OS3_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "SIM",
+    "title": "HMLR index map search",
+    "source_url": "https://www.gov.uk/government/publications/index-map-application-for-an-official-search-sim",
+    "official_application_form_required": true,
+    "template": "templates/searches/SIM_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "OC1",
+    "title": "Official copies of register and title plan",
+    "source_url": "https://www.gov.uk/government/publications/official-copies-of-register-or-plan-registration-oc1",
+    "official_application_form_required": true,
+    "template": "templates/searches/OC1_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "OC2",
+    "title": "Official copies of filed documents",
+    "source_url": "https://www.gov.uk/government/publications/official-copies-of-documents-registration-oc2",
+    "official_application_form_required": true,
+    "template": "templates/searches/OC2_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "K15",
+    "title": "Land Charges official search",
+    "source_url": "https://www.gov.uk/government/publications/land-charges-official-search-application-k15",
+    "official_application_form_required": true,
+    "template": "templates/searches/K15_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "K16",
+    "title": "Bankruptcy official search",
+    "source_url": "https://www.gov.uk/government/publications/bankruptcy-official-search-application-k16",
+    "official_application_form_required": true,
+    "template": "templates/searches/K16_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "LLC1",
+    "title": "Local Land Charges official search",
+    "source_url": "https://www.gov.uk/government/publications/local-land-charges-pg79/local-land-charges",
+    "official_application_form_required": true,
+    "template": "templates/searches/LLC1_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "CON29",
+    "title": "Local authority standard enquiries",
+    "source_url": "https://www.gov.uk/find-local-council",
+    "official_application_form_required": false,
+    "template": "templates/searches/CON29_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "CON29O",
+    "title": "Optional local enquiries",
+    "source_url": "https://www.gov.uk/find-local-council",
+    "official_application_form_required": false,
+    "template": "templates/searches/CON29O_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "ENVIRONMENT",
+    "title": "Environmental search",
+    "source_url": "https://www.gov.uk/government/publications/land-contamination-risk-management-lcrm",
+    "official_application_form_required": false,
+    "template": "templates/searches/ENVIRONMENT_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "DRAINAGE",
+    "title": "Water and drainage enquiry",
+    "source_url": "https://www.gov.uk/government/organisations/ofwat",
+    "official_application_form_required": false,
+    "template": "templates/searches/DRAINAGE_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  },
+  {
+    "code": "HIGHWAYS",
+    "title": "Highway status and adoption enquiry",
+    "source_url": "https://www.gov.uk/find-local-council",
+    "official_application_form_required": false,
+    "template": "templates/searches/HIGHWAYS_SEARCH_REQUEST_AND_REVIEW.docx",
+    "must_check_live": true,
+    "checked_on": "2026-11-24"
+  }
+]
