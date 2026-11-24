@@ -1,45 +1,67 @@
 name: Public legal source watch (review queue only)
+
 on:
   schedule:
     - cron: '17 6 * * 1'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/source-watch.yml'
+      - 'src/conveyancing_skill/source_watch.py'
+      - 'tools/legal_source_review.py'
+      - 'knowledge/legislation/source-index.json'
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: public-legal-source-watch
+  cancel-in-progress: false
+
 jobs:
   source-watch:
     runs-on: ubuntu-latest
     timeout-minutes: 25
-    permissions:
-      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Restore prior public-source fingerprint cache (not a legal-rule approval)
+      - name: Restore prior technical source fingerprints
         uses: actions/cache/restore@v4
         with:
           path: source-snapshots/runtime/fingerprints.json
-          key: legal-source-fingerprints-${{ github.run_id }}
+          key: legal-source-fingerprints-v2-${{ github.run_id }}
           restore-keys: |
+            legal-source-fingerprints-v2-
             legal-source-fingerprints-
-      - name: Ensure first-run technical baseline exists
+      - name: Ensure initial baseline exists
         run: |
           mkdir -p source-snapshots/runtime
           test -s source-snapshots/runtime/fingerprints.json || printf '{}\n' > source-snapshots/runtime/fingerprints.json
-      - name: Compare public source fingerprints without changing legal rules
+      - name: Check official publication content (NOT legal approval)
+        env:
+          PYTHONPATH: src
         run: |
-          PYTHONPATH=src python -m conveyancing_skill.cli source-watch \
+          python -m conveyancing_skill.cli source-watch \
             --allow-network --limit 60 \
             --baseline source-snapshots/runtime/fingerprints.json \
             --baseline-out source-snapshots/runtime/fingerprints.json \
-            --output source-snapshots/runtime/source-watch.json \
-            --fail-on-change
-      - name: Save next technical fingerprint cache
+            --output source-snapshots/runtime/source-watch.json
+      - name: Create or update deduplicated legal-review issues
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python tools/legal_source_review.py --report source-snapshots/runtime/source-watch.json
+      - name: Save next technical fingerprint baseline
         if: always()
         uses: actions/cache/save@v4
         with:
           path: source-snapshots/runtime/fingerprints.json
-          key: legal-source-fingerprints-${{ github.run_id }}
-      - name: Attach source status and legal review queue
+          key: legal-source-fingerprints-v2-${{ github.run_id }}
+      - name: Publish monitoring evidence even if a check fails
         if: always()
         uses: actions/upload-artifact@v4
         with:
