@@ -1,29 +1,32 @@
-# ChatGPT Plugin to GitHub Sync Status (24 November 2026)
+# ChatGPT plugin / GitHub synchronization
 
-This repository update compares the user's original GitHub repository with the **EW Conveyancing Legal** ChatGPT plugin v0.4.2, release `pluginrel_6b0609ffca1c819184f0b5fbfc8eedff`. The ChatGPT plugin is the primary source for the new conveyancing skills and notices. GitHub-only CI, community, setup and examples files are preserved rather than deleted.
+**Checked:** 24 November 2026  
+**ChatGPT plugin:** EW Conveyancing Legal v0.4.4 (`plugins_6ae7e06cd0b48191be31abcdb78d6aa1`)  
+**GitHub repository:** `tarunag10/conveyancing-legal-skill`
 
-## Transferred into the proposed GitHub commit
+## Full file inventory reconciliation
 
-- 187 plugin source files (Markdown, JSON, Python and plugin configuration), including new skills for LTA 1954 notices, property searches, commercial leasehold notices, enforcement and residential notices.
-- 58 byte-verified neutral DOCX files covering prescribed-form preparation worksheets, Schedule 1/2/3/4 notices and declarations, search request/review sheets, leasehold notices, enforcement forms and residential forms. The source-to-export base64 decoding was independently checked against SHA-256 digests for each file.
-- The plugin manifest and the compatible .codex-plugin metadata, set to v0.4.2.
+The published ChatGPT plugin has **252 packaged files**. All 252 are present in this GitHub tree at the same relative paths, including **65 reusable DOCX templates**. The 58 notices/searches worksheets and 7 commercial lease/gift deed masters are committed as **actual Word binaries**, not base64 text, shortcuts, or placeholders.
 
-## Outstanding binary master templates (7 files)
+GitHub additionally retains **17 existing repository-only files**, including GitHub Actions workflows, repository community/security documents, setup utilities, and fictional examples. This status record is the remaining one file. Thus the repository has **270 tracked files** following this sync.
 
-The ChatGPT Plugin Creator read interface does not return binary file contents, and a full byte-for-byte archive could not be materialised in this session. These **seven master DOCX files remain in the ChatGPT plugin but are not included in this GitHub sync**:
+The four distinct master DOCX binaries were recovered from previously saved neutral template files, verified as valid Word ZIP packages, matched against the plugin's exact file sizes, and had their Git blob identifiers checked against the created GitHub objects. Master lease checks confirm 50 numbered primary clauses and seven substantive guarantee schedule headings. The 58 other reusable Word binaries were transferred from the earlier plugin export, with SHA-256 verification during staging.
 
-1. `skills/commercial-lease-drafting/assets/COMMERCIAL_LEASE_MASTER.docx`
-2. `skills/commercial-lease-drafting/assets/RENT_DEPOSIT_DEED_MASTER.docx`
-3. `skills/commercial-lease-drafting/assets/STATUTORY_DECLARATION_1954_MASTER.docx`
-4. `templates/COMMERCIAL_LEASE_MASTER.docx`
-5. `templates/DEED_OF_GIFT_TEMPLATE.docx`
-6. `templates/RENT_DEPOSIT_DEED_MASTER.docx`
-7. `templates/STATUTORY_DECLARATION_1954_MASTER.docx`
+## Core modules included
 
-These should be copied from a verified full export of the plugin, retaining the original binary bytes and screening them for confidential client information, before this PR is merged. **The commercial-lease master regression tests will fail until the files are added.** Do not replace the missing documents with dummy or incomplete drafts.
+- Full commercial lease, rent deposit and LTA 1954 declarations drafting precedents.
+- LTA 1954 contracting out (Schedule 1 notice; Schedule 2 declarations) and surrender (Schedules 3–4) workflows.
+- 17 prescribed business-tenancy form *preparation worksheets*, not substitutes for official forms.
+- Commercial lease renewal/termination, possession and notice-selection skills.
+- Land Registry and local authority search request/review templates, priority checks and results tracking.
+- Leasehold notices, consent requests and commercial contractual enforcement drafts.
+- England residential notices/routing including prescribed form selection and statutory commencement checks.
+- Existing conveyancing matter workbench, title, lender, company-charge, gift and completion modules.
 
-## Safety and status
+## Important use and verification limits
 
-The plugin’s prescribed-form preparation worksheets are **not substitutes for official statutory forms** and must not be served as statutory notices. Current rules, individual facts and service deadlines require verification at point of use. This update does not certify any legal instrument.
+This is a **source synchronization**, not confirmation that a legal notice has been served, a declaration sworn or a document executed. Prescribed-form preparation worksheets are **not legally serviceable statutory forms**. Consult the current legislation/official publisher form, actual contractual documents, rules and deadlines at each use, with supervising solicitor sign-off.
 
-This is a source synchronisation candidate, not a completed identical mirror or a completed legal matter.
+The GitHub repository is public: only neutral precedents and existing repository material were included; matter-specific client details and bank information must not be committed.
+
+The local master DOCX integrity and structural checks passed. Further GitHub CI status, where available, must be checked independently after pushing.
