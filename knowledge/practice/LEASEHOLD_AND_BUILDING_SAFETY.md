@@ -8,7 +8,7 @@ Analyse the full lease and every variation: date, original parties, term and sta
 
 Obtain completed current licensed TA7 with TA6 where relevant, LPE1/management enquiries, last three years service-charge and ground rent demands/receipts (as relevant), budget/anticipated major works, accounts, reserve funds, dispute/litigation, insurance schedule, fire risk assessment and landlord/freeholder/management company structure. Check any absent shareholder/RTM/management shares, stock transfer forms, membership and conveyancing restriction certificates.
 
-Law Society TA6 **sixth edition** and TA7 **fifth edition** apply for new CQS matters instructed 30 March 2026 onward, with limited transitional use for previously instructed cases. Both are proprietary; this repository does not copy them. (Law Society official guidance verified 27 October 2026.)
+For applicable new CQS sale or purchase instructions received on or after 30 March 2026, use Law Society TA6 **sixth edition** and TA7 **fifth edition**. If instructed before that date, an older edition may continue only where it had already been used for that transaction. TA6 is designed for owner-occupier home sales and is not intended for new-build purchases; the publisher says it may not suit part-exchange or auctions without amendment. Confirm suitability and any licence limits before use. The forms are proprietary; this repository does not copy them. Public guidance pages manually checked 27 November 2026; form binaries and question-by-question provisions not checked. Human legal review remains required.
 
 ## Building Safety Act 2022 (England)
 

@@ -6,6 +6,8 @@
 
 Request complete auction lot catalogue, special conditions, incorporated general conditions **with edition**, executed auction memorandum, amendments/announcements, actual exchange date/time, vendor replies, title documents, searches and tenancy documents. Determine whether the auction formed an immediate binding contract, and identify any conditions varying ordinary completion or title investigation entitlements.
 
+For a seller's TA6, the Law Society says the form may not be suitable for an auction without amendment. Do not assume the standard form fits the lot, that amendments are permitted by the supplier licence, or that TA6 is required for an auction purchaser. Check the transaction, CQS scope, contract and licensed form terms with the supervising solicitor; keep the unmodified licensed source intact and document any authorised adaptation.
+
 Review clause by clause for: property identity/title and exclusions; full/limited/no title guarantee; seller's covenants for title and carve-outs under LP(MP)A 1994; known or latent defects; scope of replies/ability to raise requisitions; completion date; daily/contractual interest rate and how computed; seller’s costs, reimbursements, buyer premium and additional lot charges; property insurance risk; tenant possession and arrears; deposit forfeiture; remedies; notice to complete service modes and deemed service; VAT/TOGC condition; chattels; apportionments; missing searches; road access and seller title discharge; no-reliance clauses and auction-specific indemnities.
 
 ## Time and remedies

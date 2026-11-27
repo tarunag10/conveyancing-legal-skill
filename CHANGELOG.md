@@ -1,3 +1,9 @@
+# 0.4.8 — 27 November 2026 — Law Society TA form guidance verification
+
+- Confirmed the TA6 sixth edition / TA7 fifth edition CQS requirement and clarified the already-used older-form transition condition.
+- Added TA6 new-build, part-exchange and auction suitability limits to the catalogue and practice modules; linked the official guidance.
+- Added a source verification record and regression tests. Licensed form binaries, question-level provisions and final 2026 Conveyancing Protocol wording remain unverified; no legal reviewer approval is recorded.
+
 # 0.2.0 — 20 November 2026 (matter workbench supervised beta)
 
 - Added standalone, importable evidence-led matter record and tamper-evident local event history; a firm-controlled database, encryption or real legal approval is **not** provided.

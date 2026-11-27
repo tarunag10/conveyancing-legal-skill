@@ -6,6 +6,8 @@
 
 Review approved plans vs contract plans, plot measurements, adoption agreements for roads and sewers, rights to utilities, easements and management company rights, street works, s106/CIL, reserved matters and planning conditions, completion/warranty certification, snagging/retention terms, developer insolvency/deposit protection, reservation fee and notice to complete. Confirm lender incentives disclosure and valuation assumptions. A highway drawing is not an adoption certificate.
 
+The Law Society says TA6 is not intended for new-build purchases. Do not list it as a routine new-build questionnaire; identify transaction-appropriate developer enquiries (including TA8 where suitable), contract/warranty material and lender requirements. The edition rule for applicable CQS instructions does not establish that TA6's content fits a new-build transaction. Confirm current protocol and licensed-supplier terms before selecting or adapting forms.
+
 ## Transfers of part and estate schemes
 
 For TP1 inspect marked plan, exact grant/reservation of rights, benefit/burden of estate rentcharge covenants, fencing/boundary obligations, supply and service media, overage/clawback and lender release of part. Check that both retained and sold land are legally functional.
