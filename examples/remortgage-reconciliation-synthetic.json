@@ -1,0 +1,38 @@
+{
+  "matter_reference": "SYNTHETIC/REMORTGAGE/001",
+  "transaction_type": "remortgage",
+  "completion_date": "2026-11-27",
+  "example_note": "Fictional data for software review only.",
+  "advance": {
+    "gross_amount": "125000.00",
+    "source_ref": "Fictional mortgage offer",
+    "source_locator": "Advance summary, line 1",
+    "net_source_ref": "Fictional lender remittance advice",
+    "net_source_locator": "Funds due, line 3",
+    "confirmed_net_amount": "123000.00",
+    "status": "expected",
+    "deductions": [
+      {"id":"arrangement-fee","amount":"1500.00","source_ref":"Fictional offer","source_locator":"Fees, line 2"},
+      {"id":"discharge-fee","amount":"500.00","source_ref":"Fictional offer","source_locator":"Fees, line 3"}
+    ]
+  },
+  "intended_securities": [
+    {"security_id":"SEC-A","lender":"Fictional Bank A","title_number":"SYNTHETIC-001","source_ref":"Fictional official register","source_locator":"Charges entries 2-3"},
+    {"security_id":"SEC-B","lender":"Fictional Bank B","title_number":"SYNTHETIC-001","source_ref":"Fictional official register","source_locator":"Charges entries 4-5"}
+  ],
+  "redemptions": [
+    {"id":"redeem-a","security_id":"SEC-A","quoted_amount":"75000.00","quoted_date":"2026-11-27","valid_from":"2026-11-27","valid_until":"2026-11-27","source_ref":"Fictional redemption statement A","source_locator":"Balance for 27 November 2026"},
+    {"id":"redeem-b","security_id":"SEC-B","quoted_amount":"30000.00","quoted_date":"2026-11-27","valid_from":"2026-11-27","valid_until":"2026-11-27","source_ref":"Fictional redemption statement B","source_locator":"Balance for 27 November 2026"}
+  ],
+  "client_funds": [
+    {"id":"on-account","amount":"5000.00","status":"cleared","source_ref":"Fictional client ledger","source_locator":"Client account balance, 27 November 2026"}
+  ],
+  "payments": [
+    {"id":"legal-fee","amount":"1200.00","vat_treatment":"net_taxable","vat_rate":"0.20","source_ref":"Fictional client care letter","source_locator":"Fees schedule, line 1"},
+    {"id":"registration-fee","amount":"80.00","vat_treatment":"true_disbursement","source_ref":"Fictional fee schedule","source_locator":"Charge registration, line 1"}
+  ],
+  "invoice_vat": "240.00",
+  "bank_details_verified_by_human": false,
+  "lender_conditions_satisfied_by_human": false,
+  "cashier_ledger_reconciled_by_human": false
+}
