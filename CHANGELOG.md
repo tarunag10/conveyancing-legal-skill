@@ -1,3 +1,16 @@
+# 0.4.9 — 27 November 2026 (TA6/TA7 applicability refinements)
+
+- Tightened TA6/TA7 edition wording to use the solicitor instruction date and the publisher's already-used condition for pre-cutoff matters.
+- Clarified that TA7 is leasehold information for all or part leasehold property; recorded the recommendation to share TA6 explanatory notes separately from any mandatory Protocol step.
+- Added transaction-specific applicability prompts across the catalogue, form references, leasehold and sale-pack workflows while preserving the Law Society's new-build, part-exchange and auction suitability limits.
+- Recorded that public guidance was reviewed while the licensed form binaries remain unverified and no qualified solicitor approval is recorded.
+
+# 0.4.8 — 27 November 2026 — Law Society TA form guidance verification
+
+- Confirmed the TA6 sixth edition / TA7 fifth edition CQS requirement and clarified the already-used older-form transition condition.
+- Added TA6 new-build, part-exchange and auction suitability limits to the catalogue and practice modules; linked the official guidance.
+- Added a source verification record and regression tests. Licensed form binaries, question-level provisions and final 2026 Conveyancing Protocol wording remain unverified; no legal reviewer approval is recorded.
+
 # 0.2.0 — 20 November 2026 (matter workbench supervised beta)
 
 - Added standalone, importable evidence-led matter record and tamper-evident local event history; a firm-controlled database, encryption or real legal approval is **not** provided.

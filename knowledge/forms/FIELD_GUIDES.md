@@ -42,7 +42,9 @@ Confirm claim basis and title class, title identification, accurate plan, comple
 
 ## Law Society forms
 
-TA6 sixth edition, TA7 fifth edition, TA10, TA13, LPE1, FME1 and CPSEs remain copyright/proprietary forms. Obtain originals through the authorised supplier, never copy questions into this repository. Report ambiguous, unanswered or inconsistent responses with question number and supplied copy page. The publisher listing does **not** licence redistribution or modification.
+TA6 sixth edition, TA7 fifth edition, TA10, TA13, LPE1, FME1 and CPSEs remain copyright/proprietary forms. Obtain originals through the authorised supplier; never copy questions into this repository. Report ambiguous, unanswered or inconsistent responses with question number and supplied copy page. The publisher listing does **not** licence redistribution or modification.
+
+For applicable CQS transactions where the solicitor is instructed on or after 30 March 2026, use TA6 sixth edition and TA7 fifth edition where each form is relevant. On a sale or purchase instructed before that date, an older edition may continue only if already used in that transaction. TA6 is intended for owner-occupier home sales, not new-build purchases, and may not suit part-exchange or auction matters without amendment. TA7 applies where all or part of the property is held on a lease. The publisher recommends sharing the separate TA6 explanatory notes with seller and buyer; check the operative Conveyancing Protocol before treating this as mandatory. The licensed files were not inspected in this review.
 
 
 ## Companies House MR01, MR04 and MR05: different register from HM Land Registry

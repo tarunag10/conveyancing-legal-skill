@@ -271,7 +271,7 @@
   },
   {
     "id": "r-law-society-ta6",
-    "proposition": "CQS firms must use TA6 6th and TA7 5th for new matters instructed from 30 March 2026",
+    "proposition": "For applicable new CQS transactions where the solicitor is instructed on or after 30 March 2026, use TA6 sixth edition and TA7 fifth edition where each form is relevant; this is a scheme requirement, not a universal statutory form rule.",
     "source_id": "ls-ta6",
     "authority_url": "https://www.lawsociety.org.uk/topics/property/ta6-6th-edition",
     "reference": "Complying with CQS",
@@ -279,8 +279,8 @@
     "jurisdiction": "England and Wales",
     "effective_date": "2026-03-30",
     "applicability": "applicable_scheme",
-    "transitional_or_scope_note": "Not a universal statutory requirement; limited older matter transitional use",
-    "last_verified_date": "2026-10-27",
+    "transitional_or_scope_note": "For a sale or purchase instructed before 30 March 2026, an older TA6 or TA7 may continue only if that older edition had already been used for that transaction. TA6 is designed for owner-occupier home sales, not intended for new-build purchases, and may not suit part-exchange or auctions without amendment. TA7 is leasehold information for property wholly or partly held on a lease. The publisher recommends sharing TA6 explanatory notes; verify the final operative Conveyancing Protocol before treating that step as mandatory. Check licence and transaction-specific suitability; do not infer binary contents or universal applicability.",
+    "last_verified_date": "2026-11-27",
     "verification_status": "checked_at_reference_date",
     "legal_reviewer_approved": false
   },

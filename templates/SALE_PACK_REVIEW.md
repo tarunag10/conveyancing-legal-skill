@@ -6,7 +6,7 @@ Matter ID / seller / property and titles / tenure / reviewer:
 | Title, plan, filed deeds and property extent | | | |
 | Occupiers, tenancies, vacant possession and contents | | | |
 | Draft contract, special conditions and price/deposit | | | |
-| Licensed seller forms, supporting documents and replies | | | |
+| Licensed seller forms, supporting documents and replies (record CQS status, solicitor instruction date, tenure, TA6/TA7 edition or reason not applicable, transition basis, notes shared and any suitability issue) | | | |
 | Mortgage/redemption, discharge and undertakings | | | |
 | Lease/estate pack, consents, notices and fees where applicable | | | |
 | Tax/VAT, client decisions and lender disclosures where applicable | | | |

@@ -5,7 +5,7 @@
     "url": "https://www.gov.uk/government/collections/hm-land-registry-forms",
     "authority_type": "official_guidance",
     "jurisdiction": "England and Wales",
-    "last_verified_date": "2026-10-27",
+    "last_verified_date": "2026-11-27",
     "verification_status": "official_source_checked",
     "scope_note": "Forms as publisher listed, including 26 October 2026 CIT form; file binary revisions not examined",
     "monitor": true,
@@ -239,9 +239,9 @@
     "url": "https://www.lawsociety.org.uk/Topics/Property/Tools/Transaction-forms",
     "authority_type": "licensed_form_guidance",
     "jurisdiction": "England and Wales",
-    "last_verified_date": "2026-10-27",
-    "verification_status": "official_source_checked",
-    "scope_note": "Page 24 June 2026; CQS mandates TA6 sixth/TA7 fifth for new instructions from 30 March 2026; provider-licensed",
+    "last_verified_date": "2026-11-27",
+    "verification_status": "public_publisher_guidance_reviewed_via_search_index; direct retrieval 403; licensed form files not verified",
+    "scope_note": "Public page dated 24 June 2026; CQS edition rule for new solicitor instructions on/after 30 March 2026; older edition may continue on earlier-instructed sale/purchase only if already used. TA6 likely needed for every sale; TA7 with TA6 for leasehold property where using the Protocol. Publicly indexed content reviewed 27 November; direct retrieval returned 403; licensed files not verified.",
     "monitor": true,
     "licence": "publisher terms apply; reference/link only",
     "effective_date": null
@@ -252,9 +252,9 @@
     "url": "https://www.lawsociety.org.uk/topics/property/ta6-6th-edition",
     "authority_type": "licensed_form_guidance",
     "jurisdiction": "England and Wales",
-    "last_verified_date": "2026-10-27",
-    "verification_status": "official_source_checked",
-    "scope_note": "New CQS matters 30 March 2026; TA6 not designed for new-build or unmodified auctions",
+    "last_verified_date": "2026-11-27",
+    "verification_status": "public_publisher_guidance_reviewed_via_search_index; direct retrieval 403; licensed form files not verified",
+    "scope_note": "Public page dated 4 February 2026; confirms CQS edition rule and already-used transition. TA6 is for owner-occupier home sales and most standard residential transactions, not intended for new-build purchases and may not suit part-exchange/auctions without amendment. TA6 explanatory notes are a separate publisher resource; current final Protocol wording not verified. Direct retrieval returned 403; licensed files not verified.",
     "monitor": true,
     "licence": "publisher terms apply; reference/link only",
     "effective_date": null
@@ -660,6 +660,19 @@
     "scope_note": "Updated 14 September 2026; surrenders, mergers and registration of determination",
     "monitor": true,
     "licence": "publisher terms apply; reference/link only",
+    "effective_date": null
+  },
+  {
+    "id": "ls-ta6-notes",
+    "title": "TA6 sixth edition explanatory notes for sellers and buyers",
+    "url": "https://www.lawsociety.org.uk/topics/property/ta6-6th-edition-explanatory-notes",
+    "authority_type": "publisher_guidance",
+    "jurisdiction": "England and Wales",
+    "last_verified_date": "2026-11-27",
+    "verification_status": "public_publisher_guidance_reviewed_via_search_index; direct retrieval not tested; licensed TA6 form not verified",
+    "scope_note": "Separate public notes for TA6 sixth edition. Transaction forms page recommends sharing the notes with sellers and buyers. TA6 guidance described a planned 2026 Protocol clarification; check current final Protocol before treating sending/reading the notes as mandatory.",
+    "monitor": true,
+    "licence": "Public guidance; transaction forms remain proprietary and supplier-licensed",
     "effective_date": null
   }
 ]

@@ -1,7 +1,7 @@
 # ChatGPT plugin / GitHub synchronization
 
-**Checked:** 24 November 2026  
-**ChatGPT plugin:** EW Conveyancing Legal v0.4.4 (`plugins_6ae7e06cd0b48191be31abcdb78d6aa1`)  
+**Historical inventory snapshot:** 24 November 2026  
+**ChatGPT plugin at historical snapshot:** EW Conveyancing Legal v0.4.4 (`plugins_6ae7e06cd0b48191be31abcdb78d6aa1`)  
 **GitHub repository:** `tarunag10/conveyancing-legal-skill`
 
 ## Full file inventory reconciliation
@@ -30,3 +30,10 @@ This is a **source synchronization**, not confirmation that a legal notice has b
 The GitHub repository is public: only neutral precedents and existing repository material were included; matter-specific client details and bank information must not be committed.
 
 The local master DOCX integrity and structural checks passed. Further GitHub CI status, where available, must be checked independently after pushing.
+
+
+## 27 November 2026 scoped TA form update
+
+The private EW Conveyancing Legal plugin has been updated to **v0.4.9**. This repository update aligns the TA6/TA7 source review, rule, catalogue and affected workflow guidance, with the same plugin version in both package manifests. The dated source-verification record is at `docs/source-verification/2026-11-27-law-society-ta-forms.md`.
+
+This is a scoped content sync, not a fresh whole-package inventory reconciliation. Existing plugin-only and repository-only files are not all reconciled by this update. The licensed TA6 and TA7 binaries were not inspected; their catalogue flags remain unverified. No solicitor approval or issue closure is recorded.
